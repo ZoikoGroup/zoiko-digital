@@ -11,7 +11,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-5 h-19 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center shrink-0">
+        <Link href="/home" className="flex items-center shrink-0">
           <Image
             src="/images/ZoikoDigital_Logo-2048x737.png"
             alt="ZoikoDigital"
@@ -92,7 +92,7 @@ export default function Header() {
             
             {/* Header inside Mobile Menu */}
             <div className="flex items-center justify-between mb-8">
-              <Link href="/" onClick={() => setIsOpen(false)}>
+              <Link href="/home" onClick={() => setIsOpen(false)}>
                 <Image
                   src="/images/ZoikoDigital_Logo-2048x737.png"
                   alt="ZoikoDigital"
