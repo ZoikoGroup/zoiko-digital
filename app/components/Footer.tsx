@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import {
   FaLinkedin,
@@ -13,96 +14,96 @@ const footerSections = [
   {
     title: "Services",
     links: [
-      "Web & App Development",
-      "SaaS Development",
-      "Mobile App Development",
-      "E-Commerce Development",
-      "IT Infrastructure & Cloud",
-      "Managed IT Services",
-      "Cybersecurity",
-      "Branding & Marketing",
-      "SEO & AEO",
-      "Printing & Signage",
-      "Compliance Technology",
-      "AI Automation",
+      { label: "Web & App Development", href: "/services/web-app-development" },
+      { label: "SaaS Development", href: "/services/saas-development" },
+      { label: "Mobile App Development", href: "/services/mobile-app-development" },
+      { label: "E-Commerce Development", href: "/services/ecommerce-development" },
+      { label: "IT Infrastructure & Cloud", href: "/services/it-infrastructure-cloud" },
+      { label: "Managed IT Services", href: "/services/managed-it-services" },
+      { label: "Cybersecurity", href: "/services/cybersecurity" },
+      { label: "Branding & Marketing", href: "/services/branding-marketing" },
+      { label: "SEO & AEO", href: "/services/seo-aeo" },
+      { label: "Printing & Signage", href: "/services/printing-signage" },
+      { label: "Compliance Technology", href: "/services/compliance-technology" },
+      { label: "AI Automation", href: "/services/ai-automation" },
     ],
   },
   {
     title: "Industries",
     links: [
-      "Telecommunications",
-      "Financial Services",
-      "Healthcare",
-      "Travel & Mobility",
-      "Logistics",
-      "Media & Entertainment",
-      "Retail & E-Commerce",
-      "Enterprise SaaS",
-      "Professional Services",
-      "Public Sector",
-      "Nonprofits",
+      { label: "Telecommunications", href: "/industries/telecommunications" },
+      { label: "Financial Services", href: "/industries/financial-services" },
+      { label: "Healthcare", href: "/industries/healthcare" },
+      { label: "Travel & Mobility", href: "/industries/travel-mobility" },
+      { label: "Logistics", href: "/industries/logistics" },
+      { label: "Media & Entertainment", href: "/industries/media-entertainment" },
+      { label: "Retail & E-Commerce", href: "/industries/retail-ecommerce" },
+      { label: "Enterprise SaaS", href: "/industries/enterprise-saas" },
+      { label: "Professional Services", href: "/industries/professional-services" },
+      { label: "Public Sector", href: "/industries/public-sector" },
+      { label: "Nonprofits", href: "/industries/nonprofits" },
     ],
   },
   {
     title: "Company",
     links: [
-      "About",
-      "Global Presence",
-      "Leadership",
-      "Careers",
-      "Partners",
-      "Newsroom",
-      "Sustainability",
-      "Investor Relations",
-      "Contact",
+      { label: "About", href: "/about" },
+      { label: "Global Presence", href: "/global-presence" },
+      { label: "Leadership", href: "/leadership" },
+      { label: "Careers", href: "/company/careers" },
+      { label: "Partners", href: "/company/partners" },
+      { label: "Newsroom", href: "/company/newsroom" },
+      { label: "Sustainability", href: "/company/sustainability" },
+      { label: "Investor Relations", href: "/company/investor-relations" },
+      { label: "Contact", href: "/company/contact" },
     ],
   },
   {
     title: "Resources",
     links: [
-      "Case Studies",
-      "White Papers",
-      "Blog",
-      "Documentation",
-      "APIs",
-      "Webinars",
-      "Pricing",
-      "Help Center",
-      "Procurement",
-      "Service Levels",
+      { label: "Case Studies", href: "/resources/case-studies" },
+      { label: "White Papers", href: "/resources/white-papers" },
+      { label: "Blog", href: "/resources/blog" },
+      { label: "Documentation", href: "/resources/documentation" },
+      { label: "APIs", href: "/resources/apis" },
+      { label: "Webinars", href: "/resources/webinars" },
+      { label: "Pricing", href: "/resources/pricing" },
+      { label: "Help Center", href: "/resources/help-center" },
+      { label: "Procurement", href: "/resources/procurement" },
+      { label: "Service Levels", href: "/resources/service-levels" },
     ],
   },
 ];
 
 const trustAndSecurity = [
-  "Trust Center",
-  "Security",
-  "Data Protection",
-  "Cloud Security",
-  "AI Governance",
-  "Responsible AI",
-  "Compliance",
-  "Business Continuity",
-  "Incident Response",
-  "Vendor Risk",
-  "Accessibility",
-  "Security Contact",
+  { label: "Trust Center", href: "/trust/trust-center" },
+  { label: "Security", href: "/trust/security" },
+  { label: "Data Protection", href: "/trust/data-protection" },
+  { label: "Cloud Security", href: "/trust/cloud-security" },
+  { label: "AI Governance", href: "/trust/ai-governance" },
+  { label: "Responsible AI", href: "/trust/responsible-ai" },
+  { label: "Compliance", href: "/trust/compliance" },
+  { label: "Business Continuity", href: "/trust/business-continuity" },
+  { label: "Incident Response", href: "/trust/incident-response" },
+  { label: "Vendor Risk", href: "/trust/vendor-risk" },
+  { label: "Accessibility", href: "/trust/accessibility" },
+  { label: "Security Contact", href: "/trust/security-contact" },
 ];
 
 const legalLinks = [
-  "Privacy Policy",
-  "Terms of Service",
-  "Cookie Policy",
-  "Acceptable Use Policy",
-  "Data Processing Addendum",
-  "Subprocessors",
-  "Service Level Agreement",
-  "Website Terms",
-  "Accessibility Statement",
-  "Trademark Notice",
-  "Modern Slavery Statement",
-  "Anti-Bribery Policy",
-  "Regulatory Notices",
+  { label: "Privacy Policy", href: "/legal/privacy-policy" },
+  { label: "Terms of Service", href: "/legal/terms-of-service" },
+  { label: "Cookie Policy", href: "/legal/cookie-policy" },
+  { label: "Acceptable Use Policy", href: "/legal/acceptable-use-policy" },
+  { label: "Data Processing Addendum", href: "/legal/data-processing-addendum" },
+  { label: "Subprocessors", href: "/legal/subprocessors" },
+  { label: "Service Level Agreement", href: "/legal/service-level-agreement" },
+  { label: "Website Terms", href: "/legal/website-terms" },
+  { label: "Accessibility Statement", href: "/legal/accessibility-statement" },
+  { label: "Trademark Notice", href: "/legal/trademark-notice" },
+  { label: "Modern Slavery Statement", href: "/legal/modern-slavery-statement" },
+  { label: "Anti-Bribery Policy", href: "/legal/anti-bribery-policy" },
+  { label: "Regulatory Notices", href: "/legal/regulatory-notices" },
 ];
 
 const complianceBadges = [
@@ -127,21 +128,20 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-slate-900 text-white font-['Segoe_UI'] selection:bg-white/10">
-      
+
       {/* ================= DESKTOP ================= */}
       <div className="hidden md:block w-full max-w-[1440px] mx-auto">
-        
+
         {/* TOP BRAND BAND */}
         <div className="w-full border-b border-white/5 py-12 px-8 flex flex-col items-center text-center bg-slate-900">
-          {/* Main Logo Graphic Frame */}
-          <div className="w-64 h-24 mb-6  rounded-lg overflow-hidden flex items-center justify-center shadow-lg">
-            <img 
-              className="w-56 h-20 object-contain" 
-              src="/images/ZoikoDigital_Logo-2048x737.png" 
-              alt="Zoiko Digital Logo" 
+          <div className="w-64 h-24 mb-6 rounded-lg overflow-hidden flex items-center justify-center shadow-lg">
+            <img
+              className="w-56 h-20 object-contain"
+              src="/images/ZoikoDigital_Logo-2048x737.png"
+              alt="Zoiko Digital Logo"
             />
           </div>
-          
+
           <h3 className="text-slate-50 text-xs font-bold uppercase tracking-wider mb-3">
             AI-Powered Web, Cloud & Compliance Technology
           </h3>
@@ -154,7 +154,7 @@ export default function Footer() {
         {/* 7-COLUMN NAVIGATION */}
         <div className="border-b border-white/5 bg-slate-900">
           <div className="mx-auto grid grid-cols-7 gap-6 px-10 py-14 max-w-[1421.87px]">
-            
+
             {/* Dynamic Mapped Columns (Services, Industries, Company, Resources) */}
             {footerSections.map((section) => (
               <div key={section.title} className="flex flex-col">
@@ -163,8 +163,13 @@ export default function Footer() {
                 </h4>
                 <ul className="space-y-3.5 text-white/80 text-xs font-normal leading-4">
                   {section.links.map((link) => (
-                    <li key={link}>
-                      <a href="#" className="hover:text-white transition-colors block">{link}</a>
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
+                        className="hover:text-white transition-colors block"
+                      >
+                        {link.label}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -178,8 +183,10 @@ export default function Footer() {
               </h4>
               <ul className="space-y-3.5 text-white/80 text-xs font-normal leading-4">
                 {trustAndSecurity.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="hover:text-white transition-colors block">{link}</a>
+                  <li key={link.label}>
+                    <Link href={link.href} className="hover:text-white transition-colors block">
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -192,8 +199,10 @@ export default function Footer() {
               </h4>
               <ul className="space-y-3.5 text-white/80 text-xs font-normal leading-4">
                 {legalLinks.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="hover:text-white transition-colors block">{link}</a>
+                  <li key={link.label}>
+                    <Link href={link.href} className="hover:text-white transition-colors block">
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -231,9 +240,9 @@ export default function Footer() {
                 </div>
 
                 <div className="flex items-center gap-2 pt-2 cursor-pointer group">
-                  <span className="text-indigo-500 font-bold group-hover:text-indigo-400 transition-colors">
+                  <Link href="/company/global-presence" className="text-indigo-500 font-bold group-hover:text-indigo-400 transition-colors">
                     View Global Presence
-                  </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -290,10 +299,17 @@ export default function Footer() {
           </h4>
 
           <div className="flex gap-3 mb-8">
-            {[FaLinkedin, FaYoutube, FaInstagram, FaFacebook].map((Icon, index) => (
+            {[
+              { Icon: FaLinkedin, href: "https://linkedin.com" },
+              { Icon: FaYoutube, href: "https://youtube.com" },
+              { Icon: FaInstagram, href: "https://instagram.com" },
+              { Icon: FaFacebook, href: "https://facebook.com" },
+            ].map(({ Icon, href }, index) => (
               <a
                 key={index}
-                href="#"
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-md bg-white/5 hover:bg-white/10 transition-colors"
               >
                 <Icon size={16} className="text-white/80" />
@@ -307,7 +323,7 @@ export default function Footer() {
           {[
             ...footerSections,
             { title: "Trust & Security", links: trustAndSecurity },
-            { title: "Legal", links: legalLinks }
+            { title: "Legal", links: legalLinks },
           ].map((section) => {
             const isOpen = !!openSections[section.title];
             return (
@@ -324,12 +340,14 @@ export default function Footer() {
                     className={`text-white/60 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
                   />
                 </button>
-                
+
                 {isOpen && (
                   <ul className="mt-3 pl-2 space-y-2 text-xs text-slate-400 border-l border-white/10 transition-all">
                     {section.links.map((link) => (
-                      <li key={link}>
-                        <a href="#" className="hover:text-white py-1 block">{link}</a>
+                      <li key={link.label}>
+                        <Link href={link.href} className="hover:text-white py-1 block">
+                          {link.label}
+                        </Link>
                       </li>
                     ))}
                   </ul>

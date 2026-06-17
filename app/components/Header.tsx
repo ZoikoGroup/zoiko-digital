@@ -29,19 +29,19 @@ export default function Header() {
             Services & Solutions
           </Link>
 
-          <Link href="#" className="hover:text-sky-600">
+          <Link href="/industry-focused-digital-solutions-zoiko-web-services" className="hover:text-sky-600">
             Industries
           </Link>
 
-          <Link href="#" className="hover:text-sky-600">
+          <Link href="/zoiko-web-knowledge-hub-articles-reports-webinars" className="hover:text-sky-600">
             Knowledge Hub
           </Link>
 
-          <Link href="#" className="hover:text-sky-600">
+          <Link href="/partner-ecosystem-for-digital-growth-zoiko-web-services" className="hover:text-sky-600">
             Partners & Ecosystem
           </Link>
 
-          <Link href="#" className="hover:text-sky-600">
+          <Link href="/pricing-packages" className="hover:text-sky-600">
             Pricing & Packages
           </Link>
 
@@ -89,7 +89,7 @@ export default function Header() {
 
           {/* White Side Draw Panel */}
           <div className="relative w-[80%] max-w-sm bg-white h-full shadow-xl flex flex-col p-6 animate-in slide-in-from-left duration-200">
-            
+
             {/* Header inside Mobile Menu */}
             <div className="flex items-center justify-between mb-8">
               <Link href="/home" onClick={() => setIsOpen(false)}>
@@ -133,7 +133,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="#"
+                href="/industry-focused-digital-solutions-zoiko-web-services"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-sky-600 transition-colors"
               >
@@ -141,7 +141,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="#"
+                href="/zoiko-web-knowledge-hub-articles-reports-webinars"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-sky-600 transition-colors"
               >
@@ -149,7 +149,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="#"
+                href="/partner-ecosystem-for-digital-growth-zoiko-web-services"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-sky-600 transition-colors"
               >
@@ -157,7 +157,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="#"
+                href="/pricing-packages"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-sky-600 transition-colors"
               >
