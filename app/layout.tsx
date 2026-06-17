@@ -17,9 +17,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Zoiko Digital",
   description: "Zoiko Digital Website",
-  icons: {
-    icon: "",
-  },
 };
 
 export default function RootLayout({
