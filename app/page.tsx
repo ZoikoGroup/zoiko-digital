@@ -1,4 +1,4 @@
-import ContactTransformationSection from "./services-solutions/components/contactsection";
+import Contact from "./home/components/contact";
 import CoreSolutions from "./home/components/coresolutions";
 import CTASection from "./home/components/ctasection";
 import SectorExpertiseSection from "./home/components/expertisesection";
@@ -17,7 +17,7 @@ export default function(){
             <TrustedByGlobalLeaders/>
             <InsightsSection/>
             <CTASection/>
-            <ContactTransformationSection/>
+            <Contact/>
         </>
     )
 }

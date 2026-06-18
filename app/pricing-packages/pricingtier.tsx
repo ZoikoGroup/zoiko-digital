@@ -2,37 +2,67 @@
 import React, { useState } from "react";
 
 export default function PricingTierGrid() {
-  // Track active state highlights cleanly
   const [selectedTier, setSelectedTier] = useState<string>("Growth");
+
+  // 3 distinct path locations for the 3 unique tiers
+  const tiers = [
+    { 
+      id: "Starter", 
+      label: "SMB", 
+      sub: "Starter–Growth Packages",
+      iconPath: "/images/pricing-packages/bxs_rocket (2).png" // Icon 1
+    },
+    { 
+      id: "Growth", 
+      label: "Mid-Market", 
+      sub: "Scaling Plans",
+      iconPath: "/images/pricing-packages/streamline_graph-remix.png" // Icon 2
+    },
+    { 
+      id: "Enterprise", 
+      label: "Enterprise", 
+      sub: "Custom Quote",
+      iconPath: "/images/pricing-packages/streamline_web-remix.png" // Icon 3
+    },
+  ];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
       {/* Category Toggles Navigation Bar */}
       <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
-        {[
-          { id: "Starter", label: "SMB", sub: "Starter–Growth Packages" },
-          { id: "Growth", label: "Mid-Market", sub: "Scaling Plans" },
-          { id: "Enterprise", label: "Enterprise", sub: "Custom Quote" },
-        ].map((tier) => (
-          <button
-            key={tier.id}
-            onClick={() => setSelectedTier(tier.id)}
-            className={`w-full sm:w-56 h-32 rounded-xl p-5 flex flex-col justify-center items-center text-center border transition-all duration-300 ${
-              selectedTier === tier.id
-                ? "bg-fuchsia-700 border-fuchsia-700 text-white shadow-md"
-                : "bg-white dark:bg-gray-800 border-slate-200 dark:border-gray-700 text-fuchsia-700 dark:text-fuchsia-400 hover:border-fuchsia-700/40"
-            }`}
-          >
-            {/* Embedded dynamic icon slot containers */}
-            <div className="w-6 h-6 rounded-lg bg-current opacity-20 mb-2"></div>
-            <span className={`text-lg font-semibold block ${selectedTier === tier.id ? "text-white" : "text-slate-800 dark:text-white"}`}>
-              {tier.label}
-            </span>
-            <span className={`text-sm font-normal ${selectedTier === tier.id ? "text-white/85" : "text-slate-500 dark:text-gray-400"}`}>
-              {tier.sub}
-            </span>
-          </button>
-        ))}
+        {tiers.map((tier) => {
+          const isActive = selectedTier === tier.id;
+          return (
+            <button
+              key={tier.id}
+              onClick={() => setSelectedTier(tier.id)}
+              className={`w-full sm:w-56 h-32 rounded-xl p-5 flex flex-col justify-center items-center text-center border transition-all duration-300 ${
+                isActive
+                  ? "bg-fuchsia-700 border-fuchsia-700 text-white shadow-md"
+                  : "bg-white dark:bg-gray-800 border-slate-200 dark:border-gray-700 text-fuchsia-700 dark:text-fuchsia-400 hover:border-fuchsia-700/40"
+              }`}
+            >
+              {/* Clean Icon Container without opacity masking */}
+              <div className="w-9 h-9 mb-2 flex items-center justify-center overflow-hidden">
+                <img 
+                  className={`w-full h-full object-contain transition-all duration-300 ${
+                    isActive 
+                      ? "brightness-0 invert" // Turns icon white when the background goes dark fuchsia
+                      : "dark:brightness-100" // Normal look on white backgrounds
+                  }`}
+                  src={tier.iconPath}       
+                  alt={`${tier.label} icon`}
+                />
+              </div>
+              <span className={`text-lg font-semibold block ${isActive ? "text-white" : "text-slate-800 dark:text-white"}`}>
+                {tier.label}
+              </span>
+              <span className={`text-sm font-normal ${isActive ? "text-white/85" : "text-slate-500 dark:text-gray-400"}`}>
+                {tier.sub}
+              </span>
+            </button>
+          );
+        })}
       </div>
 
       {/* Main Double Card Presentation Pipeline */}
@@ -62,7 +92,7 @@ export default function PricingTierGrid() {
                   <span>{feat}</span>
                 </li>
               ))}
-            </ul>
+            </ul>  
           </div>
           <button className="h-12 w-full max-w-xs border border-fuchsia-700 dark:border-fuchsia-500 text-fuchsia-700 dark:text-fuchsia-400 font-semibold rounded-lg hover:bg-fuchsia-700/5 mt-8 transition-colors">
             Choose Starter

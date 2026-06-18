@@ -45,7 +45,7 @@ export default function Header() {
             Pricing & Packages
           </Link>
 
-          <Link href="#" className="hover:text-sky-600">
+          <Link href="/about" className="hover:text-sky-600">
             About
           </Link>
           <Link
@@ -165,7 +165,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="#"
+                href="/about"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-sky-600 transition-colors"
               >

@@ -31,12 +31,12 @@ const footerSections = [
   {
     title: "Industries",
     links: [
-      { label: "Telecommunications", href: "/industries/telecommunications" },
-      { label: "Financial Services", href: "/industries/financial-services" },
-      { label: "Healthcare", href: "/industries/healthcare" },
-      { label: "Travel & Mobility", href: "/industries/travel-mobility" },
-      { label: "Logistics", href: "/industries/logistics" },
-      { label: "Media & Entertainment", href: "/industries/media-entertainment" },
+      { label: "Telecommunications", href: "/telecommunication" },
+      { label: "Financial Services", href: "/financial-services-fintech" },
+      { label: "Healthcare", href: "/healthcare-life-science" },
+      { label: "Travel & Mobility", href: "/travel-mobility" },
+      { label: "Logistics", href: "/logistics" },
+      { label: "Media & Entertainment", href: "/media-entertainment" },
       { label: "Retail & E-Commerce", href: "/industries/retail-ecommerce" },
       { label: "Enterprise SaaS", href: "/industries/enterprise-saas" },
       { label: "Professional Services", href: "/industries/professional-services" },
