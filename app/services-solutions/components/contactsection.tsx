@@ -1,191 +1,133 @@
-"use client";
+<section className="w-full bg-zinc-100 py-16 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
-import React, { useState } from "react";
-// Import Lucide icons
-import { Mail, Phone, MessageSquare } from "lucide-react";
+          <div className="flex flex-col gap-12 pt-8 lg:max-w-[552px]">
+            <div className="flex flex-col gap-[34px]">
+              <h2 className="text-zinc-800 text-xl lg:text-[32px] font-bold    leading-8 lg:leading-9">
+                Ready to Transform<br />Your Business?
+              </h2>
+              <p className="text-neutral-600 text-base lg:text-lg font-normal    leading-7">
+                Connect with our global team of experts to discuss your digital<br className="hidden lg:block" />transformation journey and discover how we can accelerate your<br className="hidden lg:block" />success.
+              </p>
+            </div>
 
-const contactMethods = [
-  {
-    title: "Email Us",
-    detail: "info@zoikodigital.com",
-    meta: "Response within 4 hours",
-    iconSlot: <Mail className="w-5 h-5 text-white" />,
-  },
-  {
-    title: "Call Us",
-    detail: "+1 800 484 5574",
-    meta: "24/7 Support Available",
-    iconSlot: <Phone className="w-5 h-5 text-white" />,
-  },
-  {
-    title: "Live Chat",
-    detail: "Instant Support",
-    meta: "Online now",
-    iconSlot: <MessageSquare className="w-5 h-5 text-white" />,
-  },
-];
-
-export default function ContactTransformationSection() {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    company: "",
-    topic: "",
-    message: "",
-    agreeToTerms: false,
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Submitting Contact Form:", formData);
-  };
-
-  return (
-    <section className="w-full bg-zinc-100 py-16 lg:py-10 px-4 sm:px-6 md:px-12 lg:px-[108px] transition-colors duration-200">
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-        
-        {/* ================= LEFT COLUMN: INFRASTRUCTURE INFO ================= */}
-        <div className="lg:col-span-5 flex flex-col justify-center">
-          <h2 className="text-zinc-800 text-3xl md:text-4xl font-bold leading-tight mb-4">
-            Ready to Transform<br />Your Business?
-          </h2>
-          <p className="text-neutral-600 text-base md:text-lg font-normal leading-relaxed mb-10 max-w-xl">
-            Connect with our global team of experts to discuss your digital transformation journey and discover how we can accelerate your success.
-          </p>
-
-          {/* Contact Methods Stack */}
-          <div className="flex flex-col gap-6">
-            {contactMethods.map((method, idx) => (
-              <div key={idx} className="flex items-start gap-4">
-                {/* Icon Circle Container */}
-                <div className="w-14 h-14 bg-sky-900 rounded-xl flex items-center justify-center border border-zinc-800 shrink-0">
-                  {method.iconSlot}
+            <div className="flex flex-col gap-8">
+              {/* Email */}
+              <div className="flex items-start gap-6">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                  <img src="/images/about/SVG.svg" alt="Email Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
-                {/* Metadata Column */}
-                <div className="flex flex-col justify-start">
-                  <h4 className="text-zinc-800 text-lg font-semibold leading-tight">
-                    {method.title}
-                  </h4>
-                  <span className="text-zinc-400 text-base font-normal mt-1 leading-normal">
-                    {method.detail}
-                  </span>
-                  <span className="text-zinc-500 text-sm font-normal mt-0.5 leading-normal">
-                    {method.meta}
-                  </span>
+                <div className="flex flex-col mt-1 lg:gap-1">
+                  <h4 className="text-zinc-800 text-base lg:text-lg font-semibold    leading-7">Email Us</h4>
+                  <a href="mailto:hello@zws.com" className="text-zinc-400 text-sm lg:text-base font-normal    leading-6 hover:text-sky-900 transition-colors">hello@zws.com</a>
+                  <span className="text-zinc-500 text-xs lg:text-sm font-normal    leading-6 mt-0 lg:mt-1">Response within 4 hours</span>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* ================= RIGHT COLUMN: INTERACTIVE FORM CARD ================= */}
-        <div className="lg:col-span-7 w-full flex justify-center lg:justify-end">
-          <div className="w-full max-w-[572px] bg-white rounded-[20px] border border-neutral-400 p-6 md:p-10 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-              
-              {/* Contact Form Name */}
-              <div className="flex flex-col gap-1.5">
-                <label className="text-zinc-800 text-sm font-semibold leading-6">
-                  Name <span className="text-red-500">*</span>
-                </label>
+              {/* Call */}
+              <div className="flex items-start gap-6">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                  <img src="/images/about/SVG-1.svg" alt="Phone Icon" className="w-5 h-5 md:w-6 md:h-6" />
+                </div>
+                <div className="flex flex-col mt-1 lg:gap-1">
+                  <h4 className="text-zinc-800 text-base lg:text-lg font-semibold    leading-7">Call Us</h4>
+                  <a href="tel:+15551234567" className="text-zinc-400 text-sm lg:text-base font-normal    leading-6 hover:text-sky-900 transition-colors">+1 (555) 123-4567</a>
+                  <span className="text-zinc-500 text-xs lg:text-sm font-normal    leading-6 mt-0 lg:mt-1">24/7 Support Available</span>
+                </div>
+              </div>
+
+              {/* Chat */}
+              <div className="flex items-start gap-6">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                  <img src="/images/about/SVG-2.svg" alt="Chat Icon" className="w-5 h-5 md:w-6 md:h-6" />
+                </div>
+                <div className="flex flex-col mt-1 lg:gap-1">
+                  <h4 className="text-zinc-800 text-base lg:text-lg font-semibold    leading-7">Live Chat</h4>
+                  <span className="text-zinc-400 text-sm lg:text-base font-normal    leading-6">Instant Support</span>
+                  <div className="flex items-center gap-2 mt-0 lg:mt-1">
+                    <span className="text-zinc-500 text-xs lg:text-sm font-normal    leading-6">Online now</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-[20px] p-8 md:p-10 border border-neutral-400 w-full lg:max-w-[572px] lg:ml-auto">
+            <form className="flex flex-col gap-6">
+              <div className="flex flex-col gap-[6px]">
+                <label className="text-zinc-800 text-sm font-semibold    leading-6">Full Name</label>
                 <input
                   type="text"
-                  required
-                  placeholder="Your name"
-                  className="w-full h-12 bg-neutral-100 rounded-lg border border-stone-300 px-4 text-zinc-800 focus:outline-none focus:border-sky-900 transition-colors"
-                  value={formData.fullName}
-                  onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  placeholder=""
                 />
               </div>
 
-              {/* Work Email */}
-              <div className="flex flex-col gap-1.5">
-                <label className="text-zinc-800 text-sm font-semibold leading-6">
-                  Work email <span className="text-red-500">*</span>
-                </label>
+              <div className="flex flex-col gap-[6px]">
+                <label className="text-zinc-800 text-sm font-semibold    leading-6">Business Email</label>
                 <input
                   type="email"
-                  required
-                  placeholder="you@company.com"
-                  className="w-full h-12 bg-neutral-100 rounded-lg border border-stone-300 px-4 text-zinc-800 focus:outline-none focus:border-sky-900 transition-colors"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  placeholder=""
                 />
               </div>
 
-              {/* Company */}
-              <div className="flex flex-col gap-1.5">
-                <label className="text-zinc-800 text-sm font-semibold leading-6">Company</label>
+              <div className="flex flex-col gap-[6px]">
+                <label className="text-zinc-800 text-sm font-semibold    leading-6">Company</label>
                 <input
                   type="text"
-                  placeholder="Company name"
-                  className="w-full h-12 bg-neutral-100 rounded-lg border border-stone-300 px-4 text-zinc-800 focus:outline-none focus:border-sky-900 transition-colors"
-                  value={formData.company}
-                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  placeholder=""
                 />
               </div>
 
-              {/* Topic dropdown */}
-              <div className="flex flex-col gap-1.5">
-                <label className="text-zinc-800 text-sm font-semibold leading-6">Topic</label>
-                <select
-                  className="w-full h-12 bg-neutral-100 rounded-lg border border-stone-300 px-4 text-neutral-500 focus:outline-none focus:border-sky-900 transition-colors appearance-none"
-                  value={formData.topic}
-                  onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
-                >
-                  <option value="" disabled>Sales & pricing</option>
-                  <option value="sales">Sales & Pricing</option>
-                  <option value="support">Technical Support</option>
-                  <option value="partnership">Partnership Inquiry</option>
-                  <option value="general">General Questions</option>
-                </select>
+              <div className="flex flex-col gap-[6px]">
+                <label className="text-zinc-800 text-sm font-semibold    leading-6">Service Interest</label>
+                <div className="relative">
+                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
+                    <option value="" disabled className="text-neutral-400">Select a service</option>
+                    <option value="cloud">Cloud Solutions</option>
+                    <option value="web">Web Development</option>
+                    <option value="compliance">Compliance</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg className="w-5 h-5 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </div>
+                </div>
               </div>
 
-              {/* Message */}
-              <div className="flex flex-col gap-1.5">
-                <label className="text-zinc-800 text-sm font-semibold leading-6">
-                  Message <span className="text-red-500">*</span>
-                </label>
+              <div className="flex flex-col gap-[6px]">
+                <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Budget</label>
+                <div className="relative">
+                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
+                    <option value="" disabled className="text-neutral-400">Select budget range</option>
+                    <option value="small">Under $10,000</option>
+                    <option value="medium">$10,000 - $50,000</option>
+                    <option value="large">$50,000+</option>
+                  </select>
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg className="w-5 h-5 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-[6px]">
+                <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Details</label>
                 <textarea
-                  rows={4}
-                  required
-                  placeholder="How can we help?"
-                  className="w-full bg-neutral-100 rounded-lg border border-stone-300 p-4 text-zinc-800 focus:outline-none focus:border-sky-900 transition-colors resize-none text-sm md:text-base leading-relaxed"
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                />
+                  className="w-full h-28 p-4 bg-neutral-100 rounded-lg border border-stone-300 resize-none focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all text-zinc-800 placeholder-neutral-400"
+                  placeholder="Tell us about your project requirements, timeline, and objectives..."
+                ></textarea>
               </div>
 
-              {/* Privacy Policy Checkbox */}
-              <div className="flex items-start gap-3 mt-2">
-                <input
-                  type="checkbox"
-                  id="privacy-policy"
-                  required
-                  className="mt-1 accent-sky-900"
-                  checked={formData.agreeToTerms}
-                  onChange={(e) => setFormData({ ...formData, agreeToTerms: e.target.checked })}
-                />
-                <label htmlFor="privacy-policy" className="text-zinc-800 text-sm leading-normal cursor-pointer select-none">
-                  I agree to be contacted in accordance with the Privacy Policy.
-                </label>
-              </div>
-
-              {/* Submission CTA Action */}
-              <div className="mt-4">
-                <button
-                  type="submit"
-                  className="w-full sm:w-56 h-14 text-white text-base font-semibold rounded-xl bg-sky-900 hover:opacity-95 transition-opacity shadow-md flex items-center justify-center text-center cursor-pointer"
-                >
-                  Send message
-                </button>
-              </div>
-
+              <button
+                type="button"
+                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-fuchsia-700 to-sky-900 hover:from-fuchsia-800 hover:to-sky-950 text-white text-base font-semibold    rounded-xl transition-all"
+              >
+                Start Your Project
+              </button>
             </form>
           </div>
-        </div>
 
-      </div>
-    </section>
-  );
-}
+        </div>
+      </section>
