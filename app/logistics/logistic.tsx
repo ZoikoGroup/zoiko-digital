@@ -34,57 +34,11 @@ export default function LogisticsIndustryOverview() {
             {/* =========================================================================
                 EXACT FIGMA MOBILE HERO IMAGE REPRODUCTION
                ========================================================================= */}
-            <div className="lg:hidden w-full max-w-[343px] h-[312px] bg-[#020b14] rounded-2xl relative overflow-hidden shadow-[0px_20px_40px_rgba(0,0,0,0.4)] border border-slate-900">
-              
-              {/* Figma Background Radial Gradient Glows */}
-              <div className="absolute top-[35%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[240px] h-[240px] bg-[#06b6d4]/15 rounded-full blur-[40px] pointer-events-none" />
-              <div className="absolute top-[20%] left-[20%] w-[120px] h-[120px] bg-sky-500/10 rounded-full blur-[30px] pointer-events-none" />
-
-              {/* Exact Connected Vector Paths from Figma */}
-              <svg className="absolute inset-0 w-full h-full" viewBox="0 0 343 312" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* Path from Bottom-Left Node to Center Node */}
-                <path d="M 64 212 C 90 180, 120 150, 166 142" stroke="#0ea5e9" strokeWidth="2" opacity="0.8" />
-                {/* Path from Center Node to Top-Right Pin */}
-                <path d="M 176 132 C 210 110, 240 100, 286 102" stroke="#0ea5e9" strokeWidth="2" opacity="0.8" />
-                {/* Path from Center Node to Bottom-Right Node */}
-                <path d="M 176 142 C 210 170, 240 200, 280 206" stroke="#0ea5e9" strokeWidth="1.5" opacity="0.5" />
-                {/* Soft secondary atmospheric path echo */}
-                <path d="M 64 212 C 100 240, 200 240, 280 206" stroke="#06b6d4" strokeWidth="1" strokeDasharray="3 3" opacity="0.3" />
-              </svg>
-
-              {/* Node 1: Bottom Left Node (Home/Supplier Icon) */}
-              <div className="absolute left-[48px] top-[196px] z-10 flex items-center justify-center">
-                <div className="w-8 h-8 bg-[#0284c7] rounded-full flex items-center justify-center shadow-[0_0_12px_rgba(14,165,233,0.4)]">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-                  </svg>
-                </div>
-              </div>
-
-              {/* Node 2: Center Highlight White Card Node (Dashboard Code/Icon) */}
-              <div className="absolute left-[152px] top-[118px] z-20 flex items-center justify-center">
-                <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center border border-sky-400 shadow-[0_0_16px_rgba(6,182,212,0.5)]">
-                  <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
-
-              {/* Node 3: Top Right Active Map Pin Node */}
-              <div className="absolute left-[274px] top-[84px] z-10 flex items-center justify-center">
-                <svg className="w-7 h-7 text-[#0ea5e9] drop-shadow-[0_0_8px_rgba(14,165,233,0.6)]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                </svg>
-              </div>
-
-              {/* Node 4: Bottom Right Node (Secondary Connected Endpoint) */}
-              <div className="absolute left-[268px] top-[192px] z-10 flex items-center justify-center">
-                <div className="w-6 h-6 bg-sky-950 border border-sky-500/50 rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-sky-400 rounded-full" />
-                </div>
-              </div>
-
-            </div>
+            <img 
+              className="lg:hidden w-full max-w-[343px] rounded-[18px] shadow-[0px_20px_40px_rgba(0,0,0,0.2)]"
+              src="/images/logistics/mobile.png"
+              alt="Logistics Technology Mobile"
+            />
           </div>
         </div>
       </section>
@@ -171,31 +125,37 @@ export default function LogisticsIndustryOverview() {
           <div className="w-full relative py-4">
             
             {/* Visual background connection wire layer */}
-            <div className="absolute top-7 left-[8%] right-[8%] h-0.5 bg-sky-500 lg:bg-fuchsia-700 z-0" />
+            {/* Mobile (Blue) */}
+            <div className="lg:hidden absolute top-[24px] sm:top-[40px] left-[32px] right-[32px] sm:left-[48px] sm:right-[48px] h-[2px] bg-sky-400 z-0" />
+            {/* Desktop (Purple) */}
+            <div className="hidden lg:block absolute top-[48px] left-[80px] right-[80px] h-[2.8px] bg-[#90509F] z-0" />
             
             {/* Horizontal tracking nodes including Customer */}
-            <div className="w-full flex justify-between items-start relative z-10 mb-6">
+            <div className="w-full flex justify-between items-start relative z-10 mb-6 lg:mb-10 px-2 sm:px-4 lg:px-8">
               {[
                 { 
                   label: "Supplier", 
-                  icon: (
-                    <svg className="w-5 h-5 text-sky-500 lg:text-fuchsia-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  desktopIcon: <img src="/images/logistics/vector2.svg" className="w-[41px] h-auto relative z-10" alt="Supplier" />,
+                  mobileIcon: (
+                    <svg className="w-5 h-5 sm:w-8 sm:h-8 text-sky-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                   )
                 },
                 { 
                   label: "Warehouse", 
-                  icon: (
-                    <svg className="w-5 h-5 text-sky-500 lg:text-fuchsia-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  desktopIcon: <img src="/images/logistics/vector3.svg" className="w-[50px] h-auto relative z-10" alt="Warehouse" />,
+                  mobileIcon: (
+                    <svg className="w-5 h-5 sm:w-8 sm:h-8 text-sky-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                   )
                 },
                 { 
                   label: "Transport", 
-                  icon: (
-                    <svg className="w-5 h-5 text-sky-500 lg:text-fuchsia-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  desktopIcon: <img src="/images/logistics/vector4.svg" className="w-[57px] h-auto relative z-10" alt="Transport" />,
+                  mobileIcon: (
+                    <svg className="w-5 h-5 sm:w-8 sm:h-8 text-sky-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
                     </svg>
@@ -203,8 +163,14 @@ export default function LogisticsIndustryOverview() {
                 },
                 { 
                   label: "Last mile", 
-                  icon: (
-                    <svg className="w-5 h-5 text-sky-500 lg:text-fuchsia-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  desktopIcon: (
+                    <div className="relative flex items-center justify-center z-10">
+                      <img src="/images/logistics/vector5.svg" className="w-[41px] h-auto" alt="Last mile pin" />
+                      <img src="/images/logistics/vector6.svg" className="absolute top-[30%] w-[13px] h-auto" alt="Dot" />
+                    </div>
+                  ),
+                  mobileIcon: (
+                    <svg className="w-5 h-5 sm:w-8 sm:h-8 text-sky-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
@@ -213,22 +179,44 @@ export default function LogisticsIndustryOverview() {
                 { 
                   label: "Customer", 
                   isCustom: true,
-                  icon: (
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  desktopIcon: <img src="/images/logistics/vector8.svg" className="w-[41px] h-auto relative z-10" alt="Customer" />,
+                  mobileIcon: (
+                    <svg className="w-5 h-5 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   )
                 }
               ].map((node, idx) => (
-                <div key={idx} className="flex flex-col items-center gap-1.5 flex-1 min-w-0">
-                  <div className={`w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl border flex items-center justify-center font-bold bg-white text-xs transition-all ${
-                    node.isCustom 
-                      ? 'bg-fuchsia-700 border-fuchsia-700 text-white lg:bg-fuchsia-700 shadow-md shadow-fuchsia-200' 
-                      : 'border-sky-500 text-zinc-900 lg:border-fuchsia-700'
-                  }`}>
-                    {node.icon}
+                <div key={idx} className="flex flex-col items-center flex-1 min-w-0 relative h-full">
+                  
+                  {/* Vertical Dotted Line (All nodes) */}
+                  <img 
+                    src="/images/logistics/vector9.svg" 
+                    className="hidden lg:block absolute top-[96px] h-[61px] object-cover object-top opacity-80 z-0" 
+                    alt="Connector"
+                  />
+                  <div className="lg:hidden absolute top-[48px] sm:top-[80px] h-[30px] sm:h-[40px] w-px bg-transparent border-l border-dotted border-sky-400 z-0" />
+
+                  {/* Desktop Node (Purple SVGs) */}
+                  <div className="hidden lg:flex relative w-[96px] h-[96px] items-center justify-center transition-all">
+                    {node.isCustom ? (
+                      <img src="/images/logistics/vector7.svg" className="absolute inset-0 w-full h-full drop-shadow-[0_0_15px_rgba(144,80,159,0.3)] z-0" alt="Customer Circle" />
+                    ) : (
+                      <img src="/images/logistics/vector1.svg" className="absolute inset-0 w-full h-full z-0" alt="Node Circle" />
+                    )}
+                    {node.desktopIcon}
                   </div>
-                  <span className="text-zinc-900 text-[9px] sm:text-xs font-bold tracking-tight text-center truncate w-full px-0.5">
+
+                  {/* Mobile Node (Blue CSS/SVGs) */}
+                  <div className={`lg:hidden relative z-10 w-12 h-12 sm:w-20 sm:h-20 rounded-full flex items-center justify-center transition-all ${
+                    node.isCustom
+                      ? 'bg-sky-500 shadow-md border-0 text-white'
+                      : 'bg-white border-2 border-sky-400'
+                  }`}>
+                    {node.mobileIcon}
+                  </div>
+
+                  <span className="relative z-10 text-zinc-900 text-[10px] sm:text-sm lg:text-base font-bold tracking-tight text-center truncate w-full pt-2 lg:pt-[15px] bg-transparent px-1">
                     {node.label}
                   </span>
                 </div>
