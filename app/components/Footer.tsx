@@ -39,9 +39,9 @@ const footerSections = [
       { label: "Media & Entertainment", href: "/media-entertainment" },
       { label: "Retail & E-Commerce", href: "/retail-ecommerce" },
       { label: "Enterprise SaaS", href: "/enterprise-saas" },
-      { label: "Professional Services", href: "/industries/professional-services" },
-      { label: "Public Sector", href: "/industries/public-sector" },
-      { label: "Nonprofits", href: "/industries/nonprofits" },
+      { label: "Professional Services", href: "/professional-services" },
+      { label: "Public Sector", href: "/government-public-sector" },
+      { label: "Nonprofits", href: "/nonprofit" },
     ],
   },
   {
@@ -87,9 +87,9 @@ const trustAndSecurity = [
 ];
 
 const legalLinks = [
-  { label: "Privacy Policy", href: "/legal/privacy-policy" },
-  { label: "Terms of Service", href: "/legal/terms-of-service" },
-  { label: "Cookie Policy", href: "/legal/cookie-policy" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-services" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
   { label: "Acceptable Use Policy", href: "/legal/acceptable-use-policy" },
   { label: "Data Processing Addendum", href: "/legal/data-processing-addendum" },
   { label: "Subprocessors", href: "/legal/subprocessors" },
