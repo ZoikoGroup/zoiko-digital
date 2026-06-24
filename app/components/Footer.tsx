@@ -14,9 +14,9 @@ const footerSections = [
   {
     title: "Services",
     links: [
-      { label: "Web & App Development", href: "/services/web-app-development" },
-      { label: "SaaS Development", href: "/services/saas-development" },
-      { label: "Mobile App Development", href: "/services/mobile-app-development" },
+      { label: "Web & App Development", href: "/web-app-development" },
+      { label: "SaaS Development", href: "/saas-development" },
+      { label: "Mobile App Development", href: "/mobile-app-development" },
       { label: "E-Commerce Development", href: "/services/ecommerce-development" },
       { label: "IT Infrastructure & Cloud", href: "/services/it-infrastructure-cloud" },
       { label: "Managed IT Services", href: "/services/managed-it-services" },
