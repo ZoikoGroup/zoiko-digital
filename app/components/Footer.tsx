@@ -72,18 +72,18 @@ const footerSections = [
 ];
 
 const trustAndSecurity = [
-  { label: "Trust Center", href: "/trust/trust-center" },
-  { label: "Security", href: "/trust/security" },
-  { label: "Data Protection", href: "/trust/data-protection" },
-  { label: "Cloud Security", href: "/trust/cloud-security" },
-  { label: "AI Governance", href: "/trust/ai-governance" },
-  { label: "Responsible AI", href: "/trust/responsible-ai" },
-  { label: "Compliance", href: "/trust/compliance" },
-  { label: "Business Continuity", href: "/trust/business-continuity" },
-  { label: "Incident Response", href: "/trust/incident-response" },
-  { label: "Vendor Risk", href: "/trust/vendor-risk" },
-  { label: "Accessibility", href: "/trust/accessibility" },
-  { label: "Security Contact", href: "/trust/security-contact" },
+  { label: "Trust Center", href: "/trust-center" },
+  { label: "Security", href: "/security" },
+  { label: "Data Protection", href: "/data-protection" },
+  { label: "Cloud Security", href: "/cloud-security" },
+  { label: "AI Governance", href: "/ai-governance" },
+  { label: "Responsible AI", href: "/responsible-ai" },
+  { label: "Compliance", href: "/compliance" },
+  { label: "Business Continuity", href: "/business-continuity" },
+  { label: "Incident Response", href: "/incident-response" },
+  { label: "Vendor Risk", href: "/vendor-risk" },
+  { label: "Accessibility", href: "/accessibility" },
+  { label: "Security Contact", href: "/security-contact" },
 ];
 
 const legalLinks = [

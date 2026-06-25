@@ -24,10 +24,25 @@ export default function AIGovernance() {
             </p>
           </div>
 
-          <div className="mt-12 md:mt-0 relative flex-shrink-0">
-            <div className="w-64 h-64 bg-white/5 rounded-full absolute -top-8 -left-8 blur-2xl"></div>
-            <div className="w-48 h-48 bg-white/10 rounded-3xl backdrop-blur-md border border-white/20 flex items-center justify-center relative z-10 shadow-2xl">
-              <Cpu className="w-24 h-24 text-white opacity-80" strokeWidth={1.5} />
+          <div className="mt-12 md:mt-0 relative flex-shrink-0 w-[502px] h-96 shadow-[0px_30px_50px_0px_rgba(0,0,0,0.40)] overflow-hidden rounded-3xl hidden md:block">
+            <div className="absolute size-80 left-[83px] top-[28px] opacity-10 bg-white rounded-full"></div>
+            <div className="absolute size-60 left-[131px] top-[75px] opacity-5 bg-white rounded-full"></div>
+            <div className="absolute size-60 left-[134px] top-[78px] bg-gradient-to-br from-white/25 to-white/5 outline outline-2 outline-offset-[-1px] outline-white/30 rounded-[40px]"></div>
+            
+            {/* Pure CSS CPU Icon */}
+            <div className="absolute size-40 left-[174px] top-[118px] outline outline-[10.46px] outline-offset-[-5.23px] outline-white rounded-2xl"></div>
+            <div className="absolute size-20 left-[209px] top-[153px] outline outline-[10.46px] outline-offset-[-5.23px] outline-white rounded-xl"></div>
+            <div className="absolute size-9 left-[234px] top-[178px] outline outline-[10.46px] outline-offset-[-5.23px] outline-white rounded-md"></div>
+          </div>
+          {/* Mobile fallback for hero icon */}
+          <div className="mt-12 md:hidden relative flex-shrink-0 w-64 h-64 shadow-[0px_30px_50px_0px_rgba(0,0,0,0.40)] overflow-hidden rounded-3xl mx-auto flex items-center justify-center">
+            <div className="absolute inset-0 opacity-10 bg-white"></div>
+            <div className="absolute size-48 bg-gradient-to-br from-white/25 to-white/5 outline outline-2 outline-offset-[-1px] outline-white/30 rounded-3xl flex items-center justify-center">
+              <div className="relative size-24">
+                <div className="absolute inset-0 outline outline-[6px] outline-offset-[-3px] outline-white rounded-2xl"></div>
+                <div className="absolute size-12 left-6 top-6 outline outline-[6px] outline-offset-[-3px] outline-white rounded-xl"></div>
+                <div className="absolute size-4 left-10 top-10 outline outline-[6px] outline-offset-[-3px] outline-white rounded-md"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -44,35 +59,43 @@ export default function AIGovernance() {
             </button>
             
             {/* Card 1 */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
-                <Settings className="w-5 h-5 text-white" />
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-500 rounded-xl mb-6 relative">
+                <div className="absolute size-5 left-[10px] top-[10px]">
+                  <div className="absolute size-2.5 left-[5px] top-[5px] outline outline-[1.67px] outline-offset-[-0.83px] outline-white rounded-sm"></div>
+                  <div className="absolute size-5 left-[0.83px] top-[0.83px] outline outline-[1.67px] outline-offset-[-0.83px] outline-white rounded-[4px]"></div>
+                </div>
               </div>
-              <h3 className="text-slate-900 text-base font-bold font-['Inter'] mb-3">Oversight structure</h3>
-              <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-6">
-                Defined roles and review gates govern how AI systems are approved and operated.
+              <h3 className="text-zinc-900 text-base font-bold font-['Inter'] leading-7 mb-2">Oversight structure</h3>
+              <p className="text-zinc-700 text-sm font-normal font-['Inter'] leading-6">
+                Defined roles and review gates govern how AI<br className="hidden md:block"/>systems are approved and operated.
               </p>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
-                <ShieldAlert className="w-5 h-5 text-white" />
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-500 rounded-xl mb-6 relative">
+                <div className="absolute size-5 left-[10px] top-[10px]">
+                  <div className="absolute size-3.5 left-[3.33px] top-[2.50px] outline outline-[1.67px] outline-offset-[-0.83px] outline-white rounded-sm"></div>
+                </div>
               </div>
-              <h3 className="text-slate-900 text-base font-bold font-['Inter'] mb-3">Risk management</h3>
-              <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-6">
-                We assess AI risks for impact, fairness, and security before and after deployment.
+              <h3 className="text-zinc-900 text-base font-bold font-['Inter'] leading-7 mb-2">Risk management</h3>
+              <p className="text-zinc-700 text-sm font-normal font-['Inter'] leading-6">
+                We assess AI risks for impact, fairness, and<br className="hidden md:block"/>security before and after deployment.
               </p>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
-                <Eye className="w-5 h-5 text-white" />
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-500 rounded-xl mb-6 relative">
+                <div className="absolute size-5 left-[10px] top-[10px]">
+                  <div className="absolute w-4 h-3 left-[1.67px] top-[4.17px] outline outline-[1.67px] outline-offset-[-0.83px] outline-white rounded-sm"></div>
+                  <div className="absolute size-[5px] left-[7.50px] top-[7.50px] outline outline-[1.67px] outline-offset-[-0.83px] outline-white rounded-sm"></div>
+                </div>
               </div>
-              <h3 className="text-slate-900 text-base font-bold font-['Inter'] mb-3">Monitoring</h3>
-              <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-6">
-                Deployed models are monitored for performance, drift, and unexpected behavior.
+              <h3 className="text-zinc-900 text-base font-bold font-['Inter'] leading-7 mb-2">Monitoring</h3>
+              <p className="text-zinc-700 text-sm font-normal font-['Inter'] leading-6">
+                Deployed models are monitored for performance,<br className="hidden md:block"/>drift, and unexpected behavior.
               </p>
             </div>
           </div>

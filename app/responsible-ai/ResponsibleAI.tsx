@@ -24,10 +24,19 @@ export default function ResponsibleAI() {
             </p>
           </div>
 
-          <div className="mt-12 md:mt-0 relative flex-shrink-0">
-            <div className="w-64 h-64 bg-white/5 rounded-full absolute -top-8 -left-8 blur-2xl"></div>
-            <div className="w-48 h-48 bg-white/10 rounded-3xl backdrop-blur-md border border-white/20 flex items-center justify-center relative z-10 shadow-2xl">
-              <User className="w-24 h-24 text-white opacity-80" strokeWidth={1.5} />
+          <div className="mt-12 md:mt-0 relative flex-shrink-0 w-[502px] h-96 shadow-[0px_30px_50px_0px_rgba(0,0,0,0.40)] overflow-hidden rounded-3xl hidden md:block">
+            <div className="absolute size-80 left-[83px] top-[28px] opacity-10 bg-white rounded-full"></div>
+            <div className="absolute size-60 left-[131px] top-[75px] opacity-5 bg-white rounded-full"></div>
+            <div className="absolute size-60 left-[134px] top-[78px] bg-gradient-to-br from-white/25 to-white/5 outline outline-2 outline-offset-[-1px] outline-white/30 rounded-[40px]"></div>
+            <div className="absolute flex items-center justify-center size-60 left-[134px] top-[78px]">
+              <User className="w-[123px] h-[137px] text-white opacity-80" strokeWidth={1.5} />
+            </div>
+          </div>
+          {/* Mobile fallback for hero icon */}
+          <div className="mt-12 md:hidden relative flex-shrink-0 w-64 h-64 shadow-[0px_30px_50px_0px_rgba(0,0,0,0.40)] overflow-hidden rounded-3xl mx-auto flex items-center justify-center">
+            <div className="absolute inset-0 opacity-10 bg-white"></div>
+            <div className="absolute size-48 bg-gradient-to-br from-white/25 to-white/5 outline outline-2 outline-offset-[-1px] outline-white/30 rounded-3xl flex items-center justify-center">
+              <User className="w-20 h-20 text-white opacity-80" strokeWidth={1.5} />
             </div>
           </div>
         </div>
@@ -44,45 +53,45 @@ export default function ResponsibleAI() {
             </button>
 
             {/* Card 1 */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
-                <Scale className="w-5 h-5 text-white" />
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-500 rounded-xl flex items-center justify-center mb-12 relative">
+                <img src="/images/ai/fairness.svg" alt="Fairness" className="w-5 h-5" />
               </div>
-              <h3 className="text-slate-900 text-base font-bold font-['Inter'] mb-3">Fairness</h3>
-              <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-6">
+              <h3 className="text-zinc-900 text-base font-bold font-['Inter'] leading-7 mb-2">Fairness</h3>
+              <p className="text-zinc-700 text-sm font-normal font-['Inter'] leading-6">
                 We test for harmful bias and work to ensure equitable outcomes.
               </p>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
-                <Eye className="w-5 h-5 text-white" />
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-500 rounded-xl flex items-center justify-center mb-12 relative">
+                <img src="/images/ai/transparency.svg" alt="Transparency" className="w-5 h-5" />
               </div>
-              <h3 className="text-slate-900 text-base font-bold font-['Inter'] mb-3">Transparency</h3>
-              <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-6">
+              <h3 className="text-zinc-900 text-base font-bold font-['Inter'] leading-7 mb-2">Transparency</h3>
+              <p className="text-zinc-700 text-sm font-normal font-['Inter'] leading-6">
                 We are clear about where and how AI is used and its limitations.
               </p>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-500 rounded-xl flex items-center justify-center mb-12 relative">
                 <Users className="w-5 h-5 text-white" />
               </div>
-              <h3 className="text-slate-900 text-base font-bold font-['Inter'] mb-3">Human oversight</h3>
-              <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-6">
+              <h3 className="text-zinc-900 text-base font-bold font-['Inter'] leading-7 mb-2">Human oversight</h3>
+              <p className="text-zinc-700 text-sm font-normal font-['Inter'] leading-6">
                 People stay in the loop for consequential decisions.
               </p>
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-500 rounded-xl flex items-center justify-center mb-12 relative">
                 <Shield className="w-5 h-5 text-white" />
               </div>
-              <h3 className="text-slate-900 text-base font-bold font-['Inter'] mb-3">Safety & privacy</h3>
-              <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-6">
+              <h3 className="text-zinc-900 text-base font-bold font-['Inter'] leading-7 mb-2">Safety & privacy</h3>
+              <p className="text-zinc-700 text-sm font-normal font-['Inter'] leading-6">
                 We safeguard data and test for misuse before release.
               </p>
             </div>
