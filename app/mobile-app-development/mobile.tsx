@@ -5,7 +5,7 @@ export default function MobileAppDevelopmentPage() {
     <div className="relative w-full min-h-screen bg-neutral-50 bg-radial-[at_92%_-8%] from-lime-500/10 to-transparent to-60%  overflow-x-hidden">
     
         <img className="lg:col-span-5 w-full h-[400px] rounded-[20px]  relative overflow-hidden flex items-center justify-center p-4 md:hidden block" 
-                src="/mobile-app-development/pearson-mobile.jpg"
+                src="/images/mobile-app-development/pearson-mobile.jpg"
                 alt="icon"
         />
       {/* 2. HERO HEADER SECTION */}
@@ -29,7 +29,7 @@ export default function MobileAppDevelopmentPage() {
         
         {/* Mockup Canvas */}
         <img className=" md:block hidden lg:col-span-5 w-full h-[400px] rounded-[20px]  relative overflow-hidden flex items-center justify-center p-4" 
-                src="/mobile-app-development/Person using a mobile app.png"
+                src="/images/mobile-app-development/Person using a mobile app.png"
                 alt="icon"
         />
         
@@ -187,13 +187,13 @@ export default function MobileAppDevelopmentPage() {
       {/* Desktop image */}
       <img 
         className="hidden md:block w-full rounded-3xl overflow-hidden"
-        src="/mobile-app-development/Mobile app design on screens.png"
+        src="/images/mobile-app-development/Mobile app design on screens.png"
         alt="image"
       /> 
       {/* Mobile image */}
       <img 
         className="block md:hidden w-full rounded-3xl overflow-hidden"
-        src="/mobile-app-development/Mobile app design mobile.jpg"
+        src="/images/mobile-app-development/Mobile app design mobile.jpg"
         alt="image"
       /> 
     </div>
