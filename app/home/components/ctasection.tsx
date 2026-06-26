@@ -1,11 +1,11 @@
 export default function CTASection() {
   return (
-    <section className="bg-gradient-to-r from-[#1F1F2E] via-[#8B3FAE] to-[#0F5B8D] py-16">
+    <section className="bg-linear-57 from-indigo-950 via-teal-400 to-teal-700 to 91% py-16">
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="flex flex-col items-center text-center">
           {/* Heading */}
-          <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold max-w-4xl leading-tight mb-10">
-            Partner with ZWS to Redefine Your Digital Future.
+          <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold max-w-2xl leading-tight mb-10">
+            Partner with Zoiko Digital to Redefine Your Digital Future.
           </h2>
 
           {/* Buttons */}

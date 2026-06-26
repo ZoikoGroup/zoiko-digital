@@ -50,7 +50,7 @@ export default function Header() {
           </Link>
           <Link
             href="/request-a-demo"
-            className="px-5 py-2 bg-[#90509F] text-white rounded-xl text-sm font-semibold shadow-md"
+            className="px-5 py-2 bg-[#207373] text-white rounded-xl text-sm font-semibold shadow-md"
           >
             Request a Demo
           </Link>

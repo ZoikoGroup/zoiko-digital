@@ -39,7 +39,7 @@ const hubs = [
 
 export default function GlobalPresence() {
   return (
-    <section className="w-full bg-rgba(239, 249, 255, 1)  dark:bg-gray-900 text-slate-800 dark:text-white py-16 lg:py-15 px-4 sm:px-6 md:px-8 lg:px-[70px] transition-colors duration-200">
+    <section className="w-full bg-sky-50  dark:bg-gray-900 text-slate-800 dark:text-white py-16 lg:py-15 px-4 sm:px-6 md:px-8 lg:px-[70px] transition-colors duration-200">
       <div className="max-w-[1440px] mx-auto">
         
         {/* ================= HEADER SEGMENT ================= */}
@@ -61,7 +61,7 @@ export default function GlobalPresence() {
             >
               {/* Upper Content Frame */}
               <div>
-                <h3 className="text-fuchsia-700 dark:text- fuchsia-400 text-2xl font-semibold leading-none mb-3">
+                <h3 className="text-[#207373] dark:text-[#207373] text-2xl font-semibold leading-none mb-3">
                   {hub.title}
                 </h3>
                 <p className="text-zinc-500 dark:text-slate-300 text-sm md:text-base font-normal leading-6 ">
@@ -73,7 +73,7 @@ export default function GlobalPresence() {
               <div className="border-t border-slate-100 dark:border-slate-700/50 ">
                 <div className="flex justify-between items-start gap-2">
                   <div className="flex flex-col">
-                    <span className="text-zinc-900 dark:text-white text-sm font-semibold">
+                    <span className="text-black dark:text-white text-sm font-semibold">
                       {hub.stats[0].value}
                     </span>
                     {hub.stats[0].label && (
@@ -83,7 +83,7 @@ export default function GlobalPresence() {
                     )}
                   </div>
                   <div className="text-right shrink-0">
-                    <span className="text-zinc-900 dark:text-white text-sm font-semibold block">
+                    <span className="text-black dark:text-white text-sm font-semibold block">
                       {hub.stats[1].value}
                     </span>
                   </div>

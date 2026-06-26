@@ -34,7 +34,7 @@ export default function MetricsSection() {
     <section 
       className="w-full py-16 md:py-15 text-white border-t border-b border-slate-200/20"
       style={{
-        background: "linear-gradient(41deg, #342647 0%, #814A92 50%, #2F4A76 100%)"
+        background:"linear-gradient(41deg, #131E40 0%, #43D9BD 50%, #207373 100%);"
       }}
     >
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
@@ -60,7 +60,7 @@ export default function MetricsSection() {
               key={idx}
               className="w-full h-39 bg-white rounded-xl p-6 flex flex-col justify-center items-center text-center shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] border border-slate-200"
             >
-              <div className="text-fuchsia-700 text-lg md:text-xl font-semibold leading-8">
+              <div className="text-[#207373] text-lg md:text-xl font-semibold leading-8">
                 {card.company}
               </div>
               <div 

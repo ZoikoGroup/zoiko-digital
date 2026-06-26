@@ -64,7 +64,7 @@ export default function TrustedByGlobalLeaders() {
             >
               {/* Top */}
               <div className="flex items-center justify-between mb-8">
-                <span className="px-4 py-2 rounded-full bg-[#A855F7]/10 border border-[#A855F7]/20 text-[#A855F7] text-xs font-semibold">
+                <span className="px-4 py-2 rounded-full bg-teal-700/10 border border-[#A855F7]/20 text-[#207373] text-xs font-semibold">
                   {item.category}
                 </span>
 
@@ -87,7 +87,7 @@ export default function TrustedByGlobalLeaders() {
               <div className="grid grid-cols-2 gap-6 mb-10">
                 {item.stats.map((stat, idx) => (
                   <div key={idx}>
-                    <h4 className="text-[#A855F7] text-3xl font-bold">
+                    <h4 className="text-[#207373] text-3xl font-bold">
                       {stat.value}
                     </h4>
 

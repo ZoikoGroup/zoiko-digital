@@ -12,8 +12,8 @@ export default function HeroSection() {
         <div className="lg:col-span-6 flex flex-col justify-center text-left">
           {/* Mobile uses text-2xl with leading-9 based on mobile frame specs */}
           <h1 className="text-slate-800 text-2xl md:text-4xl font-semibold leading-9 md:leading-[53px]">
-            Solutions Engineered<br />
-            <span className="text-[#A21CAF]">for Measurable Growth</span>
+            Solutions Engineered for<br />
+            <span className="text-[#207373]"> Measurable Growth</span>
           </h1>
           
           {/* Mobile paragraph matches leading-6 opacity values from Figma */}
@@ -24,10 +24,10 @@ export default function HeroSection() {
           {/* Action Buttons: Kept side-by-side layout with flex-row on mobile */}
           <div className="mt-6 md:mt-8 flex flex-row gap-4 justify-start">
             {/* Mobile buttons use h-11 and text-sm according to specs */}
-            <button className="h-11 md:h-12 px-6 bg-fuchsia-700 hover:bg-fuchsia-800 text-white text-sm md:text-base font-semibold rounded-lg transition-colors shadow-sm">
+            <button className="h-11 md:h-12 px-6 bg-[#207373] hover:bg-f[#207373] text-white text-sm md:text-base font-semibold rounded-lg transition-colors shadow-sm">
               Explore Solutions
             </button>
-            <button className="h-11 md:h-12 px-5 md:px-6 rounded-lg border border-fuchsia-700 hover:bg-fuchsia-700/5 text-fuchsia-700 text-sm md:text-base font-semibold transition-colors">
+            <button className="h-11 md:h-12 px-5 md:px-6 rounded-lg border border-[#207373] hover:bg-[#207373] text-[#207373] text-sm md:text-base font-semibold transition-colors">
               Book a Consultation
             </button>
           </div>
