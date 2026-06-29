@@ -73,8 +73,9 @@ export default function Governancecardsection() {
   const currentSolutions = solutionsData[activeTab];
 
   return (
-    <section className="w-full bg-sky-50 py-12 text-slate-800 transition-colors duration-200 dark:bg-gray-900 dark:text-white md:py-20">
+    <section className="w-full bg-sky-50 py-12 text-slate-800 transition-colors duration-300 dark:bg-gray-900 dark:text-white md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-[108px]">
+        
         {/* Audience Tabs */}
         <div className="mb-10 flex flex-wrap items-center justify-center gap-3 md:mb-14">
           {targetAudience.map((tab) => {
@@ -91,10 +92,10 @@ export default function Governancecardsection() {
                       | "global-brands"
                   )
                 }
-                className={`h-10 rounded-full border px-6 text-sm transition-all duration-200 ${
+                className={`h-10 rounded-full border px-6 text-sm font-medium transition-all duration-200 ${
                   isActive
-                    ? "border-sky-900 bg-sky-900 text-white"
-                    : "border-slate-200 bg-white text-slate-500 hover:bg-slate-50"
+                    ? "border-sky-900 bg-sky-900 text-white dark:border-sky-500 dark:bg-sky-600"
+                    : "border-slate-200 bg-white text-slate-500 hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700"
                 }`}
               >
                 {tab.label}
@@ -108,10 +109,10 @@ export default function Governancecardsection() {
           {currentSolutions.map((card, index) => (
             <div
               key={index}
-              className="mx-auto flex h-60 w-full max-w-[384px] flex-col items-center justify-between rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-all duration-200 hover:shadow-md"
+              className="mx-auto flex h-60 w-full max-w-[384px] flex-col items-center justify-between rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-all duration-300 hover:shadow-md dark:border-gray-700 dark:bg-gray-800 dark:shadow-black/20"
             >
-              {/* Icon */}
-              <div className="mt-4 mb-2 flex h-11 w-11 items-center justify-center">
+              {/* Icon Frame */}
+              <div className="mt-4 mb-2 flex h-11 w-11 items-center justify-center dark:brightness-110 dark:contrast-125">
                 <Image
                   src={card.iconSlot}
                   alt={card.title}
@@ -123,11 +124,11 @@ export default function Governancecardsection() {
 
               {/* Content */}
               <div className="flex flex-1 flex-col justify-center">
-                <h4 className="mb-2 text-xl font-semibold leading-8 text-sky-900">
+                <h4 className="mb-2 text-xl font-semibold leading-8 text-sky-900 dark:text-sky-400">
                   {card.title}
                 </h4>
 
-                <p className="px-2 text-sm leading-6 text-slate-500 md:text-base">
+                <p className="px-2 text-sm leading-6 text-slate-500 dark:text-gray-300 md:text-base">
                   {card.description}
                 </p>
               </div>

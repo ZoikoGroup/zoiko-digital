@@ -119,45 +119,8 @@ export default function KnowledgeHub() {
 
   return (
     <>
-      {/* ================= HERO SECTION ================= */}
-      <section className="w-full min-h-[447px] bg-gradient-to-br from-[#8D509E] to-[#1C486E] dark:from-gray-900 dark:to-zinc-900 text-white py-12 px-6 sm:px-12 lg:px-[58px] flex items-center transition-colors duration-300">
-        <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          <div className="lg:col-span-7 flex flex-col justify-center">
-            <h1 className="text-3xl sm:text-4xl font-semibold leading-snug sm:leading-[53px] dark:text-white">
-              Knowledge Hub:<br className="hidden sm:inline"/>Insights that Drive Action
-            </h1>
-            <p className="mt-4 text-base sm:text-lg font-normal leading-relaxed sm:leading-7 text-white/90 dark:text-gray-300 max-w-xl">
-              Your single destination for articles, case studies, compliance
-              insights, and technical resources — engineered to help
-              enterprises, developers, and leaders get more from Zoiko Web
-              Services.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <a href="#" className="inline-flex items-center justify-center px-6 h-12 bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold text-base rounded-lg shadow-md transition-colors duration-200">
-                Explore Resources
-              </a>
-              <a href="#" className="inline-flex items-center justify-center px-6 h-12 bg-white hover:bg-gray-100 text-fuchsia-700 dark:bg-transparent dark:text-white dark:border dark:border-white dark:hover:bg-white/10 font-semibold text-base rounded-lg shadow-sm transition-colors duration-200">
-                Get Executive Updates
-              </a>
-            </div>
-          </div>
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="w-full max-w-[747px] aspect-[747/320] sm:h-80 bg-white rounded-xl overflow-hidden shadow-xl border border-white/10">
-              <Image 
-                className="w-full h-full object-cover object-center" 
-                src="/images/Knowledgehub/engineers-wearing-safety-gear.png" 
-                alt="Engineers wearing safety gear"
-                width={747}
-                height={320}
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ================= INTERACTIVE INDUSTRY TABS SECTION ================= */}
-      <section className="w-full bg-sky-50 dark:bg-gray-950 border-t border-b border-slate-200 dark:border-gray-800 py-16 px-4 sm:px-8 lg:px-[108px] transition-colors duration-300">
+      <section className="w-full bg-sky-50/50 dark:bg-gray-950 border-t border-b border-slate-200 dark:border-gray-800 py-16 px-4 sm:px-8 lg:px-[108px] transition-colors duration-300">
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center mb-10">
@@ -174,7 +137,7 @@ export default function KnowledgeHub() {
                 onClick={() => setActiveTab(industry)}
                 className={`h-10 px-5 text-sm font-medium rounded-lg border transition-all duration-200 ${
                   activeTab === industry
-                    ? "bg-sky-900 border-sky-900 text-white shadow-sm"
+                    ? "bg-sky-900 border-sky-900 text-white shadow-sm dark:bg-teal-600 dark:border-teal-600"
                     : "bg-white dark:bg-gray-800 border-slate-200 dark:border-gray-700 text-slate-500 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-gray-700"
                 }`}
               >
@@ -195,12 +158,12 @@ export default function KnowledgeHub() {
                 {telecomResources.map((resource, index) => (
                   <div
                     key={index}
-                    className="w-full bg-white dark:bg-gray-900 rounded-xl p-6 sm:p-8 border border-slate-200 dark:border-gray-800 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] hover:shadow-md transition-all duration-200 group"
+                    className="w-full bg-white dark:bg-gray-900 rounded-xl p-6 sm:p-8 border border-slate-200 dark:border-gray-800 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] hover:shadow-md dark:hover:shadow-black/20 transition-all duration-200 group"
                   >
-                    <div className="inline-flex items-center justify-center h-7 px-4 bg-sky-900 text-white text-xs font-semibold rounded-full mb-4">
+                    <div className="inline-flex items-center justify-center h-7 px-4 bg-sky-900 dark:bg-teal-600 text-white text-xs font-semibold rounded-full mb-4">
                       {resource.type}
                     </div>
-                    <h3 className="text-slate-800 dark:text-white text-lg sm:text-xl font-semibold mb-2 group-hover:text-sky-900 dark:group-hover:text-sky-400 transition-colors">
+                    <h3 className="text-slate-800 dark:text-white text-lg sm:text-xl font-semibold mb-2 group-hover:text-sky-900 dark:group-hover:text-teal-400 transition-colors">
                       {resource.title}
                     </h3>
                     <p className="text-slate-500 dark:text-gray-300 text-sm sm:text-base font-normal leading-relaxed mb-4">
@@ -213,7 +176,7 @@ export default function KnowledgeHub() {
                   </div>
                 ))}
                 <div className="flex justify-center mt-4">
-                  <button className="h-11 px-6 rounded-lg border border-sky-900 text-sky-900 dark:border-sky-400 dark:text-sky-400 text-sm font-medium hover:bg-sky-900/5 dark:hover:bg-sky-400/5 transition-colors">
+                  <button className="h-11 px-6 rounded-lg border border-sky-900 text-sky-900 dark:border-teal-500 dark:text-teal-400 text-sm font-medium hover:bg-sky-900/5 dark:hover:bg-teal-500/5 transition-colors">
                     Load More Resources
                   </button>
                 </div>
@@ -225,7 +188,7 @@ export default function KnowledgeHub() {
                 
                 {/* Left Column Area: Documentation Guides */}
                 <div className="lg:col-span-7 flex flex-col justify-center">
-                  <span className="text-xs font-bold text-sky-900 dark:text-sky-400 uppercase tracking-wider mb-2">
+                  <span className="text-xs font-bold text-sky-900 dark:text-teal-400 uppercase tracking-wider mb-2">
                     Custom Solutions / {activeTab} Hub
                   </span>
                   <h2 className="text-2xl sm:text-3xl font-semibold text-slate-800 dark:text-white mb-4">
@@ -237,7 +200,7 @@ export default function KnowledgeHub() {
                   
                   {/* Action Link Row */}
                   <div className="flex flex-wrap gap-4 mb-10">
-                    <a href="#" className="inline-flex items-center justify-center h-12 px-6 bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold text-base rounded-lg shadow-sm transition-colors duration-200">
+                    <a href="#" className="inline-flex items-center justify-center h-12 px-6 bg-[#207373] dark:bg-teal-600 hover:bg-[#195959] dark:hover:bg-teal-500 text-white font-semibold text-base rounded-lg shadow-sm transition-colors duration-200">
                       View API Docs
                     </a>
                     <a href="#" className="inline-flex items-center justify-center h-12 px-6 bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-gray-700 font-semibold text-base rounded-lg transition-colors duration-200">
@@ -255,7 +218,7 @@ export default function KnowledgeHub() {
                     <ul className="flex flex-col gap-3.5">
                       {quickStartGuides.map((guide, i) => (
                         <li key={i}>
-                          <a href="#" className="text-fuchsia-700 dark:text-fuchsia-400 hover:underline text-base font-normal transition-all">
+                          <a href="#" className="text-[#207373] dark:text-teal-400 hover:underline text-base font-normal transition-all">
                             {guide}
                           </a>
                         </li>
@@ -312,9 +275,9 @@ export default function KnowledgeHub() {
       </section>
 
       {/* =========================================================
-          SECTION 3: GUIDED LEARNING PATHS (EMERALD)
+          SECTION 3: GUIDED LEARNING PATHS (EMERALD / TEAL GRADIENT)
           ========================================================= */}
-      <section className="w-full bg-emerald-500 dark:bg-gray-950 border-t border-b border-slate-200 dark:border-gray-800 py-16 px-4 sm:px-8 lg:px-[108px] transition-colors duration-300">
+      <section className="w-full bg-emerald-600 dark:bg-gray-950 border-t border-b border-slate-200 dark:border-gray-800 py-16 px-4 sm:px-8 lg:px-[108px] transition-colors duration-300">
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center mb-12">
@@ -333,8 +296,8 @@ export default function KnowledgeHub() {
                 className="bg-white dark:bg-gray-900 rounded-xl shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] border border-slate-200 dark:border-gray-800 overflow-hidden flex flex-col justify-between"
               >
                 <div>
-                  <div className="bg-emerald-50 dark:bg-gray-800/40 p-6 sm:p-8 flex flex-col items-center text-center border-b border-slate-100 dark:border-gray-800">
-                    <div className="w-14 h-14  dark:bg-fuchsia-950/40 rounded-xl flex items-center justify-center mb-4 overflow-hidden p-3.5">
+                  <div className="bg-slate-50 dark:bg-gray-800/40 p-6 sm:p-8 flex flex-col items-center text-center border-b border-slate-100 dark:border-gray-800">
+                    <div className="w-14 h-14 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center mb-4 overflow-hidden p-3.5 border dark:border-gray-700 shadow-sm">
                       <img 
                         className="w-full h-full object-contain dark:brightness-0 dark:invert"
                         src={path.icon} 
@@ -344,7 +307,7 @@ export default function KnowledgeHub() {
                     <h3 className="text-slate-800 dark:text-white text-lg sm:text-xl font-semibold leading-snug max-w-md">
                       {path.title}
                     </h3>
-                    <span className="mt-3 inline-flex items-center justify-center px-4 py-1 bg-emerald-500 text-white text-xs font-semibold rounded-full shadow-sm">
+                    <span className="mt-3 inline-flex items-center justify-center px-4 py-1 bg-emerald-600 dark:bg-teal-600 text-white text-xs font-semibold rounded-full shadow-sm">
                       {path.level}
                     </span>
                   </div>
@@ -357,10 +320,10 @@ export default function KnowledgeHub() {
                     {path.modules.map((module) => (
                       <div 
                         key={module.step}
-                        className="w-full h-12 px-4 bg-slate-50 dark:bg-gray-800/60 rounded-lg border border-slate-100 dark:border-gray-800 flex items-center justify-between gap-4"
+                        className="w-full h-12 px-4 bg-slate-50 dark:bg-gray-800/50 rounded-lg border border-slate-100 dark:border-gray-800 flex items-center justify-between gap-4"
                       >
                         <div className="flex items-center gap-3">
-                          <div className="w-6 h-6 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xs font-semibold shadow-sm select-none">
+                          <div className="w-6 h-6 bg-emerald-600 dark:bg-teal-600 text-white rounded-full flex items-center justify-center text-xs font-semibold shadow-sm select-none">
                             {module.step}
                           </div>
                           <span className="text-slate-800 dark:text-gray-200 text-sm font-medium truncate max-w-[180px] sm:max-w-xs">
@@ -376,7 +339,7 @@ export default function KnowledgeHub() {
                 </div>
 
                 <div className="px-6 pb-6 sm:px-8 sm:pb-8 pt-2">
-                  <button className="w-full h-11 bg-emerald-500 hover:bg-emerald-600 active:scale-[0.99] text-white text-sm font-semibold rounded-lg shadow-sm hover:shadow transition-all duration-200">
+                  <button className="w-full h-11 bg-emerald-600 dark:bg-teal-600 hover:bg-emerald-700 dark:hover:bg-teal-500 active:scale-[0.99] text-white text-sm font-semibold rounded-lg shadow-sm hover:shadow transition-all duration-200">
                     Start Learning Path
                   </button>
                 </div>
