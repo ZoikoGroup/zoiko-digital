@@ -1,6 +1,6 @@
 export default function Contact(){
 return(
-            <section className="w-full bg-zinc-100 py-16 px-15">
+            <section id="contact" className="w-full bg-zinc-100 py-16 px-15">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
           <div className="flex flex-col gap-12 pt-8 lg:max-w-[552px]">

@@ -10,7 +10,7 @@ export default function SecurityContact() {
       <section className="w-full bg-[#353840] flex justify-center py-20 px-4 relative overflow-hidden">
         <div className="max-w-[1160px] w-full relative z-10 flex flex-col md:flex-row items-center justify-between">
           <div className="max-w-2xl text-left">
-            <Link href="/trust-center" className="inline-flex items-center text-white/70 hover:text-white mb-6 text-sm font-semibold transition-colors">
+            <Link href="/trust-security" className="inline-flex items-center text-white/70 hover:text-white mb-6 text-sm font-semibold transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Trust Center
             </Link>
@@ -140,7 +140,7 @@ export default function SecurityContact() {
                 <ArrowLeft className="w-3.5 h-3.5 mr-1.5" /> Accessibility
               </div>
             </Link>
-            <Link href="/trust-center" className="group text-right">
+            <Link href="/trust-security" className="group text-right">
               <div className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mb-1 transition-colors group-hover:text-indigo-600">DONE</div>
               <div className="text-zinc-900 text-[13px] font-extrabold flex items-center justify-end group-hover:text-indigo-600 transition-colors">
                 Trust Center <ArrowRight className="w-3.5 h-3.5 ml-1.5" />

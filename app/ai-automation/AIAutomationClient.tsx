@@ -157,7 +157,7 @@ export default function AIAutomationClient() {
 
             <div className="flex flex-wrap items-center gap-4 mt-2">
               <Link
-                href="/request-a-demo"
+                href="/#contact"
                 className="px-6 py-3.5 bg-fuchsia-700 text-white rounded-xl text-base font-bold shadow-md hover:bg-fuchsia-800 hover:shadow-lg transition-all duration-200"
               >
                 Book a discovery call
@@ -389,7 +389,7 @@ export default function AIAutomationClient() {
                 </ul>
 
                 <Link
-                  href="/request-a-demo"
+                  href="/#contact"
                   className={`w-full py-3 rounded-xl text-center text-sm font-bold transition-all duration-200 ${plan.popular
                     ? "bg-fuchsia-700 text-white hover:bg-fuchsia-800 shadow-md hover:shadow-lg"
                     : "border border-gray-200 text-zinc-900 hover:bg-gray-50 bg-white"
@@ -465,7 +465,7 @@ export default function AIAutomationClient() {
           </p>
 
           <Link
-            href="/request-a-demo"
+            href="/#contact"
             className="mt-4 px-6 py-4 bg-white text-zinc-950 rounded-xl text-base font-bold shadow-md hover:bg-neutral-100 hover:shadow-lg transition-all duration-200 z-10 flex items-center gap-2"
           >
             Book a discovery call <ArrowRight className="w-4 h-4" />

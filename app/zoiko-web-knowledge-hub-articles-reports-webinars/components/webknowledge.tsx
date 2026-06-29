@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const categories = [
   {
@@ -9,6 +10,7 @@ const categories = [
     count: "120+ Articles",
     actionText: "Browse Articles",
     icon: "/images/Knowledgehub/basil_document-solid.png",
+    href: "/resources/blog",
   },
   {
     title: "Case Studies",
@@ -16,6 +18,7 @@ const categories = [
     count: "45+ Case Studies",
     actionText: "View Case Studies",
     icon: "/images/Knowledgehub/bi_file-earmark-bar-graph-fill.png",
+    href: "/case-study",
   },
   {
     title: "Whitepapers & Reports",
@@ -23,6 +26,7 @@ const categories = [
     count: "25+ Whitepapers",
     actionText: "Download Reports",
     icon: "/images/Knowledgehub/lets-icons_paper-fill.png",
+    href: "/white-paper",
   },
   {
     title: "Webinars & Events",
@@ -30,6 +34,7 @@ const categories = [
     count: "30+ Webinars",
     actionText: "Watch Webinars",
     icon: "/images/Knowledgehub/ph_video-camera-fill.png",
+    href: "/Webinar-and-digital",
   },
   {
     title: "Developer Resources",
@@ -37,6 +42,7 @@ const categories = [
     count: "50+ Resources",
     actionText: "Access Docs",
     icon: "/images/Knowledgehub/lsicon_setting-filled.png",
+    href: "/Technical-docs",
   },
   {
     title: "Compliance Updates",
@@ -44,6 +50,7 @@ const categories = [
     count: "Weekly Updates",
     actionText: "Get Updates",
     icon: "/images/Knowledgehub/si_lock-fill.png",
+    href: "/compliance-technology",
   },
 ];
 
@@ -283,12 +290,12 @@ export default function KnowledgeHub() {
                     </span>
                   </div>
                   
-                  <a 
-                    href="#" 
+                  <Link 
+                    href={category.href} 
                     className="px-4 py-2 rounded-lg border border-fuchsia-700 dark:border-fuchsia-500 text-fuchsia-700 dark:text-fuchsia-400 text-sm font-medium hover:bg-fuchsia-50 dark:hover:bg-fuchsia-950/20 whitespace-nowrap transition-colors duration-200"
                   >
                     {category.actionText}
-                  </a>
+                  </Link>
                 </div>
 
               </div>

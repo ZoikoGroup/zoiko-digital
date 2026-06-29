@@ -53,7 +53,7 @@ const footerSections = [
       { label: "News & Media", href: "/news-and-media" },
       { label: "Sustainability", href: "/sustainability" },
       { label: "Investor Relations", href: "/investor-relations" },
-      { label: "Contact", href: "/contact" },
+      { label: "Contact", href: "/#contact" },
     ],
   },
   {
@@ -62,7 +62,7 @@ const footerSections = [
       { label: "Blog", href: "/resources/blog" },
       { label: "Documentation", href: "/resources/documentation" },
       { label: "APIs", href: "/resources/apis" },
-      { label: "Webinars", href: "/resources/webinars" },
+      { label: "Webinars", href: "/Webinar-and-digital" },
       { label: "Pricing", href: "/pricing-packages" },
       { label: "Help Center", href: "/resources/help-center" },
       { label: "Procurement", href: "/resources/procurement" },
@@ -72,7 +72,7 @@ const footerSections = [
 ];
 
 const trustAndSecurity = [
-  { label: "Trust Center", href: "/trust-center" },
+  { label: "Trust Center", href: "/trust-security" },
   { label: "Security", href: "/security" },
   { label: "Data Protection", href: "/data-protection" },
   { label: "Cloud Security", href: "/cloud-security" },
@@ -88,7 +88,7 @@ const trustAndSecurity = [
 
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms of Service", href: "/terms-of-services" },
+  { label: "Terms of Service", href: "/terms-of-service" },
   { label: "Cookie Policy", href: "/cookie-policy" },
   { label: "Acceptable Use Policy", href: "/acceptable-use-policy" },
   { label: "Data Processing Addendum", href: "/data-processing-addendum" },
@@ -236,7 +236,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex items-center gap-2 pt-2 cursor-pointer group">
-                  <Link href="/company/global-presence" className="text-indigo-500 font-bold group-hover:text-indigo-400 transition-colors">
+                  <Link href="/global-presence" className="text-indigo-500 font-bold group-hover:text-indigo-400 transition-colors">
                     View Global Presence
                   </Link>
                 </div>
