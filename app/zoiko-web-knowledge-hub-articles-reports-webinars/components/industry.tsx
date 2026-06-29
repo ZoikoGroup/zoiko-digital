@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ResourceCard {
   type: string;
@@ -202,13 +203,13 @@ export default function KnowledgeHub() {
                   <div className="flex flex-wrap gap-4 mb-10">
                     <a href="#" className="inline-flex items-center justify-center h-12 px-6 bg-[#207373] dark:bg-teal-600 hover:bg-[#195959] dark:hover:bg-teal-500 text-white font-semibold text-base rounded-lg shadow-sm transition-colors duration-200">
                       View API Docs
-                    </a>
-                    <a href="#" className="inline-flex items-center justify-center h-12 px-6 bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-gray-700 font-semibold text-base rounded-lg transition-colors duration-200">
+                    </Link>
+                    <Link href="/resources/documentation" className="inline-flex items-center justify-center h-12 px-6 bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-gray-700 font-semibold text-base rounded-lg transition-colors duration-200">
                       Download SDKs
-                    </a>
-                    <a href="#" className="inline-flex items-center justify-center h-12 px-6 bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-gray-700 font-semibold text-base rounded-lg transition-colors duration-200">
+                    </Link>
+                    <Link href="/resources/apis" className="inline-flex items-center justify-center h-12 px-6 bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-gray-700 font-semibold text-base rounded-lg transition-colors duration-200">
                       Access Sandbox
-                    </a>
+                    </Link>
                   </div>
 
                   <div>
@@ -220,7 +221,7 @@ export default function KnowledgeHub() {
                         <li key={i}>
                           <a href="#" className="text-[#207373] dark:text-teal-400 hover:underline text-base font-normal transition-all">
                             {guide}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
