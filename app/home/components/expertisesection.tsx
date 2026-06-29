@@ -57,7 +57,7 @@ export default function SectorExpertiseSection() {
                 onClick={() => setActiveSector(index)}
                 className={`w-full h-16 rounded-xl border text-left px-6 text-base transition-all ${
                   activeSector === index
-                    ? "bg-gradient-to-r from-[#5B2A86] via-[#9C4DCC] to-[#004D7A] text-white border-[#9C4DCC]"
+                    ? "bg-linear-57 from-indigo-950 via-teal-700 to-teal-400 text-white border-[#9C4DCC]"
                     : "bg-white text-black border-stone-300 hover:border-[#9C4DCC]"
                 }`}
               >
@@ -68,7 +68,7 @@ export default function SectorExpertiseSection() {
 
           {/* Middle Content */}
           <div>
-            <h3 className="text-[27px] font-bold text-[#9C4DCC] mb-6">
+            <h3 className="text-[27px] font-bold text-[#207373] mb-6">
               {sector.heading}
             </h3>
 
@@ -91,7 +91,7 @@ export default function SectorExpertiseSection() {
             <div className="flex gap-16">
               {sector.stats.map((stat, index) => (
                 <div key={index}>
-                  <h4 className="text-3xl font-bold text-[#6B4EA0] mb-2">
+                  <h4 className="text-3xl font-bold text-[#207373] mb-2">
                     {stat.value}
                   </h4>
 

@@ -78,7 +78,7 @@ export default function PartnerSpotlight() {
               </div>
               
               {activeSlide.hasPlusDivider && (
-                <span className="text-fuchsia-700 dark:text-fuchsia-400 text-2xl font-bold select-none">
+                <span className="text-[#207373] dark:text-[#207373] text-2xl font-bold select-none">
                   +
                 </span>
               )}
@@ -105,7 +105,7 @@ export default function PartnerSpotlight() {
               <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-16 pt-6 border-t border-slate-100 dark:border-gray-800 w-full max-w-xl">
                 {activeSlide.metrics.map((metric, index) => (
                   <div key={index} className="flex flex-col items-center">
-                    <span className="text-fuchsia-700 dark:text-fuchsia-400 text-3xl sm:text-4xl font-semibold tracking-tight leading-none mb-2">
+                    <span className="text-[#207373] dark:[#207373] text-3xl sm:text-4xl font-semibold tracking-tight leading-none mb-2">
                       {metric.value}
                     </span>
                     <span className="text-slate-400 dark:text-gray-500 text-xs sm:text-sm font-medium uppercase tracking-wider">

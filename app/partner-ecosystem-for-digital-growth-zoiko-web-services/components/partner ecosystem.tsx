@@ -166,18 +166,18 @@ export default function PartnersEcosystem() {
       {/* =========================================================
           SECTION 1: HERO SECTION (GLOBAL ECOSYSTEM)
           ========================================================= */}
-      <section className="w-full bg-gradient-to-br from-zinc-600 to-cyan-900 dark:from-gray-900 dark:to-zinc-950 text-white py-16 px-6 sm:px-12 lg:px-[108px] transition-colors duration-300">
+      <section className="w-full bg-linear-57 from-indigo-950 via-teal-700 to-teal-400 dark:from-gray-900 dark:to-zinc-950 text-white py-16 px-6 sm:px-12 lg:px-[108px] transition-colors duration-300">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 flex flex-col justify-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
               A Global Ecosystem <br />
-              of <span className="text-fuchsia-100 dark:text-fuchsia-400">Trusted Partners</span>
+              of <span className="text-white dark:text-white">Trusted Partners</span>
             </h1>
             <p className="text-white/90 dark:text-gray-300 text-base sm:text-lg font-normal leading-relaxed max-w-xl mb-8">
               Zoiko Web Services collaborates with technology leaders, system integrators, and industry innovators to deliver scalable, compliant, and future-ready solutions for businesses worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#" className="inline-flex items-center justify-center h-12 px-6 bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold text-base rounded-lg shadow-sm transition-colors duration-200">
+              <a href="#" className="inline-flex items-center justify-center h-12 px-6 bg-teal-700 hover:bg-[#207373] text-white font-semibold text-base rounded-lg shadow-sm transition-colors duration-200">
                 Become a Partner
               </a>
               <a href="#" className="inline-flex items-center justify-center h-12 px-6 border border-white hover:bg-white/10 text-white font-semibold text-base rounded-lg transition-colors duration-200">
@@ -211,7 +211,7 @@ export default function PartnersEcosystem() {
                 onClick={() => setActiveTab(tab.name)}
                 className={`flex flex-col items-center justify-center p-5 rounded-xl border text-center transition-all duration-200 w-full min-h-[144px] ${
                   activeTab === tab.name
-                    ? "bg-white dark:bg-gray-900 border-fuchsia-700 dark:border-fuchsia-500 shadow-md ring-1 ring-fuchsia-700/20"
+                    ? "bg-white dark:bg-gray-900 border-[#207373] dark:border-[#207373]shadow-md ring-1 ring-[#207373]"
                     : "bg-white dark:bg-gray-900 border-slate-200 dark:border-gray-800 shadow-sm hover:border-slate-300 dark:hover:border-gray-700"
                 }`}
               >
@@ -254,7 +254,7 @@ export default function PartnersEcosystem() {
                       {partner.badges.map((badge, bIdx) => (
                         <span
                           key={bIdx}
-                          className="px-3 py-1 bg-fuchsia-700 text-white text-xs font-semibold rounded-full shadow-sm"
+                          className="px-3 py-1 bg-[#207373] text-white text-xs font-semibold rounded-full shadow-sm"
                         >
                           {badge}
                         </span>
@@ -345,7 +345,7 @@ export default function PartnersEcosystem() {
             </ul>
 
             <div className="flex flex-wrap gap-4">
-              <button className="h-12 px-6 bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold text-base rounded-lg shadow-sm transition-colors duration-200">
+              <button className="h-12 px-6 bg-[#207373] hover:bg-[#207373] text-white font-semibold text-base rounded-lg shadow-sm transition-colors duration-200">
                 Apply to Become a Partner
               </button>
               <button className="h-12 px-6 bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-gray-700 font-semibold text-base rounded-lg transition-colors duration-200">
@@ -435,163 +435,269 @@ export default function PartnersEcosystem() {
         </div>
       </section>
 
+    <section className="w-full bg-[#FCF1FF] (or bg-fuchsia-50) dark:bg-gray-900 py-24 px-4 flex flex-col items-center justify-center text-center">
+      <div className="max-w-4xl mx-auto flex flex-col items-center">
+        
+        {/* Title */}
+        <h2 className="text-slate-800 dark:text-white text-3xl md:text-4xl font-semibold font-sans tracking-tight mb-4">
+          Together, We Build the Future
+        </h2>
+        
+        {/* Subtitle */}
+        <p className="text-slate-500 text-lg font-normal font-sans max-w-2xl leading-relaxed mb-10">
+          Join our growing ecosystem of partners and create innovative solutions 
+          that transform industries worldwide.
+        </p>
+        
+        {/* Call to Actions Container */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
+          
+          {/* Primary CTA */}
+          <button className="w-48 h-12 bg-[#207373] hover:bg-teal-800 transition-colors duration-200 text-white text-base font-semibold rounded-lg shadow-sm">
+            Join the Ecosystem
+          </button>
+          
+          {/* Secondary CTA */}
+          <button className="w-56 h-12 bg-white hover:bg-slate-50 transition-colors duration-200 text-[#207373] text-base font-semibold rounded-lg border border-slate-200 shadow-sm">
+            Talk to Our Partner Team
+          </button>
+          
+          {/* Link CTA */}
+          <button className="h-12 px-4 text-[#207373] hover:underline text-base font-semibold transition-all duration-200">
+            Request a Demo
+          </button>
+          
+        </div>
+      </div>
+    </section>
+  
       {/* =========================================================
           SECTION 7: TOGETHER, We BUILD THE FUTURE (FOOTER SIGNPOST)
           ========================================================= */}
-      <section className="w-full bg-fuchsia-50 dark:bg-gray-900 py-16 px-4 sm:px-8 lg:px-[108px] transition-colors duration-300">
-        <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-slate-800 dark:text-white leading-tight mb-4">
-            Together, We Build the Future
-          </h2>
-          <p className="text-slate-500 dark:text-gray-400 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mb-8">
-            Join our growing ecosystem of partners and create innovative solutions that transform industries worldwide.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <button className="h-12 px-6 bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold text-base rounded-lg shadow-sm transition-colors duration-200">
-              Join the Ecosystem
-            </button>
-            <button className="h-12 px-6 bg-white dark:bg-gray-800 text-fuchsia-700 dark:text-fuchsia-400 rounded-lg border border-slate-200 dark:border-gray-700 hover:bg-slate-50 dark:hover:bg-gray-700 font-semibold text-base shadow-sm transition-all duration-200">
-              Talk to Our Partner Team
-            </button>
-            <button className="h-12 px-4 text-fuchsia-700 dark:text-fuchsia-400 font-semibold text-base hover:underline transition-all">
-              Request a Demo
-            </button>
-          </div>
-        </div>
-      </section>
-        <section className="w-full bg-zinc-100 py-16 px-15">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+      <section className="w-full bg-zinc-100 py-16 px-6 md:px-15 transition-colors duration-300 dark:bg-gray-900">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
-          <div className="flex flex-col gap-12 pt-8 lg:max-w-[552px]">
-            <div className="flex flex-col gap-[34px]">
-              <h2 className="text-zinc-800 text-xl lg:text-[32px] font-bold    leading-8 lg:leading-9">
-                Ready to Transform<br />Your Business?
-              </h2>
-              <p className="text-neutral-600 text-base lg:text-lg font-normal    leading-7">
-                Connect with our global team of experts to discuss your digital<br className="hidden lg:block" />transformation journey and discover how we can accelerate your<br className="hidden lg:block" />success.
-              </p>
+        {/* ================= LEFT COLUMN: DETAILS ================= */}
+        <div className="flex flex-col gap-12 pt-8 lg:max-w-[552px]">
+          <div className="flex flex-col gap-[34px]">
+            <h2 className="text-zinc-800 dark:text-white text-xl lg:text-[32px] font-bold leading-8 lg:leading-9">
+              Ready to Transform
+              <br />
+              Your Business?
+            </h2>
+            <p className="text-neutral-600 dark:text-gray-300 text-base lg:text-lg font-normal leading-7">
+              Connect with our global team of experts to discuss your digital
+              <br className="hidden lg:block" />
+              transformation journey and discover how we can accelerate your
+              <br className="hidden lg:block" />
+              success.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-8">
+            {/* Email */}
+            <div className="flex items-start gap-6">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 dark:border-gray-700 flex items-center justify-center shrink-0">
+                <img
+                  src="/images/about/SVG.svg"
+                  alt="Email Icon"
+                  className="w-5 h-5 md:w-6 md:h-6 dark:brightness-0 dark:invert"
+                />
+              </div>
+              <div className="flex flex-col mt-1 lg:gap-1">
+                <h4 className="text-zinc-800 dark:text-white text-base lg:text-lg font-semibold leading-7">
+                  Email Us
+                </h4>
+                <a
+                  href="mailto:hello@zws.com"
+                  className="text-zinc-500 dark:text-teal-400 text-sm lg:text-base font-normal leading-6 hover:text-sky-900 dark:hover:text-teal-300 transition-colors"
+                >
+                  hello@zws.com
+                </a>
+                <span className="text-zinc-400 dark:text-gray-400 text-xs lg:text-sm font-normal leading-6 mt-0 lg:mt-1">
+                  Response within 4 hours
+                </span>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-8">
-              {/* Email */}
-              <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
-                  <img src="/images/about/SVG.svg" alt="Email Icon" className="w-5 h-5 md:w-6 md:h-6" />
-                </div>
-                <div className="flex flex-col mt-1 lg:gap-1">
-                  <h4 className="text-zinc-800 text-base lg:text-lg font-semibold    leading-7">Email Us</h4>
-                  <a href="mailto:hello@zws.com" className="text-zinc-400 text-sm lg:text-base font-normal    leading-6 hover:text-sky-900 transition-colors">hello@zws.com</a>
-                  <span className="text-zinc-500 text-xs lg:text-sm font-normal    leading-6 mt-0 lg:mt-1">Response within 4 hours</span>
-                </div>
+            {/* Call */}
+            <div className="flex items-start gap-6">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 dark:border-gray-700 flex items-center justify-center shrink-0">
+                <img
+                  src="/images/about/SVG-1.svg"
+                  alt="Phone Icon"
+                  className="w-5 h-5 md:w-6 md:h-6 dark:brightness-0 dark:invert"
+                />
               </div>
-
-              {/* Call */}
-              <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
-                  <img src="/images/about/SVG-1.svg" alt="Phone Icon" className="w-5 h-5 md:w-6 md:h-6" />
-                </div>
-                <div className="flex flex-col mt-1 lg:gap-1">
-                  <h4 className="text-zinc-800 text-base lg:text-lg font-semibold    leading-7">Call Us</h4>
-                  <a href="tel:+15551234567" className="text-zinc-400 text-sm lg:text-base font-normal    leading-6 hover:text-sky-900 transition-colors">+1 (555) 123-4567</a>
-                  <span className="text-zinc-500 text-xs lg:text-sm font-normal    leading-6 mt-0 lg:mt-1">24/7 Support Available</span>
-                </div>
+              <div className="flex flex-col mt-1 lg:gap-1">
+                <h4 className="text-zinc-800 dark:text-white text-base lg:text-lg font-semibold leading-7">
+                  Call Us
+                </h4>
+                <a
+                  href="tel:+15551234567"
+                  className="text-zinc-500 dark:text-teal-400 text-sm lg:text-base font-normal leading-6 hover:text-sky-900 dark:hover:text-teal-300 transition-colors"
+                >
+                  +1 (555) 123-4567
+                </a>
+                <span className="text-zinc-400 dark:text-gray-400 text-xs lg:text-sm font-normal leading-6 mt-0 lg:mt-1">
+                  24/7 Support Available
+                </span>
               </div>
+            </div>
 
-              {/* Chat */}
-              <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
-                  <img src="/images/about/SVG-2.svg" alt="Chat Icon" className="w-5 h-5 md:w-6 md:h-6" />
-                </div>
-                <div className="flex flex-col mt-1 lg:gap-1">
-                  <h4 className="text-zinc-800 text-base lg:text-lg font-semibold    leading-7">Live Chat</h4>
-                  <span className="text-zinc-400 text-sm lg:text-base font-normal    leading-6">Instant Support</span>
-                  <div className="flex items-center gap-2 mt-0 lg:mt-1">
-                    <span className="text-zinc-500 text-xs lg:text-sm font-normal    leading-6">Online now</span>
-                  </div>
+            {/* Chat */}
+            <div className="flex items-start gap-6">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 dark:border-gray-700 flex items-center justify-center shrink-0">
+                <img
+                  src="/images/about/SVG-2.svg"
+                  alt="Chat Icon"
+                  className="w-5 h-5 md:w-6 md:h-6 dark:brightness-0 dark:invert"
+                />
+              </div>
+              <div className="flex flex-col mt-1 lg:gap-1">
+                <h4 className="text-zinc-800 dark:text-white text-base lg:text-lg font-semibold leading-7">
+                  Live Chat
+                </h4>
+                <span className="text-zinc-500 dark:text-teal-400 text-sm lg:text-base font-normal leading-6">
+                  Instant Support
+                </span>
+                <div className="flex items-center gap-2 mt-0 lg:mt-1">
+                  <span className="text-zinc-400 dark:text-gray-400 text-xs lg:text-sm font-normal leading-6">
+                    Online now
+                  </span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="bg-white rounded-[20px] p-8 md:p-10 border border-neutral-400 w-full lg:max-w-[572px] lg:ml-auto">
-            <form className="flex flex-col gap-6">
-              <div className="flex flex-col gap-[6px]">
-                <label className="text-zinc-800 text-sm font-semibold    leading-6">Full Name</label>
-                <input
-                  type="text"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
-                  placeholder=""
-                />
-              </div>
-
-              <div className="flex flex-col gap-[6px]">
-                <label className="text-zinc-800 text-sm font-semibold    leading-6">Business Email</label>
-                <input
-                  type="email"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
-                  placeholder=""
-                />
-              </div>
-
-              <div className="flex flex-col gap-[6px]">
-                <label className="text-zinc-800 text-sm font-semibold    leading-6">Company</label>
-                <input
-                  type="text"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
-                  placeholder=""
-                />
-              </div>
-
-              <div className="flex flex-col gap-[6px]">
-                <label className="text-zinc-800 text-sm font-semibold    leading-6">Service Interest</label>
-                <div className="relative">
-                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
-                    <option value="" disabled className="text-neutral-400">Select a service</option>
-                    <option value="cloud">Cloud Solutions</option>
-                    <option value="web">Web Development</option>
-                    <option value="compliance">Compliance</option>
-                    <option value="other">Other</option>
-                  </select>
-                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-                    <svg className="w-5 h-5 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-[6px]">
-                <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Budget</label>
-                <div className="relative">
-                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
-                    <option value="" disabled className="text-neutral-400">Select budget range</option>
-                    <option value="small">Under $10,000</option>
-                    <option value="medium">$10,000 - $50,000</option>
-                    <option value="large">$50,000+</option>
-                  </select>
-                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-                    <svg className="w-5 h-5 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-[6px]">
-                <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Details</label>
-                <textarea
-                  className="w-full h-28 p-4 bg-neutral-100 rounded-lg border border-stone-300 resize-none focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all text-zinc-800 placeholder-neutral-400"
-                  placeholder="Tell us about your project requirements, timeline, and objectives..."
-                ></textarea>
-              </div>
-
-              <button
-                type="button"
-                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-fuchsia-700 to-sky-900 hover:from-fuchsia-800 hover:to-sky-950 text-white text-base font-semibold    rounded-xl transition-all"
-              >
-                Start Your Project
-              </button>
-            </form>
-          </div>
-
         </div>
-      </section>
+
+        {/* ================= RIGHT COLUMN: INTERACTIVE FORM ================= */}
+        <div className="bg-white dark:bg-gray-800 rounded-[20px] p-8 md:p-10 border border-neutral-300 dark:border-gray-700 w-full lg:max-w-[572px] lg:ml-auto shadow-sm dark:shadow-black/20 transition-colors duration-300">
+          <form className="flex flex-col gap-6">
+            
+            <div className="flex flex-col gap-[6px]">
+              <label className="text-zinc-800 dark:text-gray-200 text-sm font-semibold leading-6">
+                Full Name
+              </label>
+              <input
+                type="text"
+                className="w-full h-12 px-4 bg-neutral-100 dark:bg-gray-900 text-zinc-800 dark:text-white rounded-lg border border-stone-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-sky-900 dark:focus:ring-teal-500 focus:border-transparent transition-all"
+                placeholder=""
+              />
+            </div>
+
+            <div className="flex flex-col gap-[6px]">
+              <label className="text-zinc-800 dark:text-gray-200 text-sm font-semibold leading-6">
+                Business Email
+              </label>
+              <input
+                type="email"
+                className="w-full h-12 px-4 bg-neutral-100 dark:bg-gray-900 text-zinc-800 dark:text-white rounded-lg border border-stone-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-sky-900 dark:focus:ring-teal-500 focus:border-transparent transition-all"
+                placeholder=""
+              />
+            </div>
+
+            <div className="flex flex-col gap-[6px]">
+              <label className="text-zinc-800 dark:text-gray-200 text-sm font-semibold leading-6">
+                Company
+              </label>
+              <input
+                type="text"
+                className="w-full h-12 px-4 bg-neutral-100 dark:bg-gray-900 text-zinc-800 dark:text-white rounded-lg border border-stone-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-sky-900 dark:focus:ring-teal-500 focus:border-transparent transition-all"
+                placeholder=""
+              />
+            </div>
+
+            <div className="flex flex-col gap-[6px]">
+              <label className="text-zinc-800 dark:text-gray-200 text-sm font-semibold leading-6">
+                Service Interest
+              </label>
+              <div className="relative">
+                <select
+                  defaultValue=""
+                  className="w-full h-14 px-4 bg-neutral-100 dark:bg-gray-900 rounded-lg border border-stone-300 dark:border-gray-700 appearance-none text-zinc-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-900 dark:focus:ring-teal-500 focus:border-transparent transition-all"
+                >
+                  <option value="" disabled className="text-neutral-400 dark:text-gray-500">
+                    Select a service
+                  </option>
+                  <option value="cloud">Cloud Solutions</option>
+                  <option value="web">Web Development</option>
+                  <option value="compliance">Compliance</option>
+                  <option value="other">Other</option>
+                </select>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                  <svg
+                    className="w-5 h-5 text-zinc-500 dark:text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-[6px]">
+              <label className="text-zinc-800 dark:text-gray-200 text-sm font-semibold leading-6">
+                Project Budget
+              </label>
+              <div className="relative">
+                <select
+                  defaultValue=""
+                  className="w-full h-14 px-4 bg-neutral-100 dark:bg-gray-900 rounded-lg border border-stone-300 dark:border-gray-700 appearance-none text-zinc-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-900 dark:focus:ring-teal-500 focus:border-transparent transition-all"
+                >
+                  <option value="" disabled className="text-neutral-400 dark:text-gray-500">
+                    Select budget range
+                  </option>
+                  <option value="small">Under $10,000</option>
+                  <option value="medium">$10,000 - $50,000</option>
+                  <option value="large">$50,000+</option>
+                </select>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                  <svg
+                    className="w-5 h-5 text-zinc-500 dark:text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-[6px]">
+              <label className="text-zinc-800 dark:text-gray-200 text-sm font-semibold leading-6">
+                Project Details
+              </label>
+              <textarea
+                className="w-full h-28 p-4 bg-neutral-100 dark:bg-gray-900 rounded-lg border border-stone-300 dark:border-gray-700 resize-none focus:outline-none focus:ring-2 focus:ring-sky-900 dark:focus:ring-teal-500 focus:border-transparent transition-all text-zinc-800 dark:text-white placeholder-neutral-400 dark:placeholder-gray-500"
+                placeholder="Tell us about your project requirements, timeline, and objectives..."
+              ></textarea>
+            </div>
+
+            <button
+              type="button"
+              className="mt-4 w-56 h-14 self-start bg-linear-57 from-indigo-950 via-teal-700 to-teal-400 hover:from-teal-600 hover:to-indigo-900 dark:from-teal-600 dark:via-teal-700 dark:to-teal-500 text-white text-base font-semibold rounded-xl transition-all shadow-sm"
+            >
+              Start Your Project
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
     </div>
   );
 }

@@ -27,7 +27,7 @@ export default function PricingCalculator() {
           <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
             <div>
               <label className="block text-slate-800 dark:text-gray-200 text-sm font-semibold mb-2">Project Type</label>
-              <select value={projectType} onChange={(e) => setProjectType(e.target.value)} className="w-full h-11 px-4 bg-white dark:bg-gray-800 rounded-lg border border-slate-200 dark:border-gray-700 text-sm text-neutral-500 dark:text-white focus:outline-none focus:border-fuchsia-700">
+              <select value={projectType} onChange={(e) => setProjectType(e.target.value)} className="w-full h-11 px-4 bg-white dark:bg-gray-800 rounded-lg border border-slate-200 dark:border-gray-700 text-sm text-neutral-500 dark:text-white focus:outline-none focus:border-[#207373]">
                 <option value="">Select project type</option>
                 <option value="web">Web & App Development</option>
                 <option value="cloud">Cloud Infrastructure</option>
@@ -37,7 +37,7 @@ export default function PricingCalculator() {
 
             <div>
               <label className="block text-slate-800 dark:text-gray-200 text-sm font-semibold mb-2">Scale</label>
-              <select value={scale} onChange={(e) => setScale(e.target.value)} className="w-full h-11 px-4 bg-white dark:bg-gray-800 rounded-lg border border-slate-200 dark:border-gray-700 text-sm text-neutral-500 dark:text-white focus:outline-none focus:border-fuchsia-700">
+              <select value={scale} onChange={(e) => setScale(e.target.value)} className="w-full h-11 px-4 bg-white dark:bg-gray-800 rounded-lg border border-slate-200 dark:border-gray-700 text-sm text-neutral-500 dark:text-white focus:outline-none focus:border-[#207373]">
                 <option value="">Select scale</option>
                 <option value="startup">Startup</option>
                 <option value="mid">Mid-Market</option>
@@ -47,7 +47,7 @@ export default function PricingCalculator() {
 
             <div>
               <label className="block text-slate-800 dark:text-gray-200 text-sm font-semibold mb-2">Industry</label>
-              <select value={industry} onChange={(e) => setIndustry(e.target.value)} className="w-full h-11 px-4 bg-white dark:bg-gray-800 rounded-lg border border-slate-200 dark:border-gray-700 text-sm text-neutral-500 dark:text-white focus:outline-none focus:border-fuchsia-700">
+              <select value={industry} onChange={(e) => setIndustry(e.target.value)} className="w-full h-11 px-4 bg-white dark:bg-gray-800 rounded-lg border border-slate-200 dark:border-gray-700 text-sm text-neutral-500 dark:text-white focus:outline-none focus:border-[#207373]">
                 <option value="">Select industry</option>
                 <option value="telecom">Telecommunications</option>
                 <option value="finance">Financial Services</option>
@@ -57,11 +57,11 @@ export default function PricingCalculator() {
 
             <div>
               <label className="block text-slate-800 dark:text-gray-200 text-sm font-semibold mb-2">User Count</label>
-              <input type="number" placeholder="Number of users" value={userCount} onChange={(e) => setUserCount(e.target.value)} className="w-full h-11 px-4 bg-white dark:bg-gray-800 rounded-lg border border-slate-200 dark:border-gray-700 text-sm text-neutral-500 dark:text-white focus:outline-none focus:border-fuchsia-700" />
+              <input type="number" placeholder="Number of users" value={userCount} onChange={(e) => setUserCount(e.target.value)} className="w-full h-11 px-4 bg-white dark:bg-gray-800 rounded-lg border border-slate-200 dark:border-gray-700 text-sm text-neutral-500 dark:text-white focus:outline-none focus:border-[#207373]" />
             </div>
 
             <div className="sm:col-span-2 pt-2">
-              <button className="h-12 px-8 bg-fuchsia-700 hover:bg-fuchsia-800 text-white text-base font-semibold rounded-lg w-full sm:w-auto transition-colors duration-200 shadow-sm">
+              <button className="h-12 px-8 bg-[#207373] hover:bg-[#207373] text-white text-base font-semibold rounded-lg w-full sm:w-auto transition-colors duration-200 shadow-sm">
                 Calculate Estimate
               </button>
             </div>

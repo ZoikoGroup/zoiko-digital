@@ -67,7 +67,7 @@ const solutions = [
 
 export default function CoreSolutions() {
   return (
-    <section className="w-full min-h-[851px] bg-gradient-to-br from-gray-900 via-fuchsia-800 to-sky-950 py-16 lg:py-15 px-4 sm:px-6 md:px-12 lg:px-[108px] text-white overflow-hidden flex items-center">
+    <section className="w-full min-h-[851px] bg-linear-57 from-indigo-950 via-teal-700 to-teal-400 py-16 lg:py-15 px-4 sm:px-6 md:px-12 lg:px-[108px] text-white overflow-hidden flex items-center">
       <div className="max-w-[1440px] mx-auto w-full">
         
         {/* ================= SECTION HEADERS ================= */}

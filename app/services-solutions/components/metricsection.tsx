@@ -13,40 +13,35 @@ const stats = [
 const testimonials = [
   {
     company: "InnovateCo",
-    quote: '"Scaled from startup to enterprise"',
+    quote: "Scaled from startup to<br/>enterprise",
   },
   {
     company: "ACME Corp",
-    quote: '"Transformed our global operations"',
+    quote: "Transformed our global<br/>operations",
   },
   {
     company: "TechFlow",
-    quote: '"Reduced compliance costs by 65%"',
+    quote: "Reduced compliance costs<br/>by 65%",
   },
   {
     company: "GlobalBank",
-    quote: '"Achieved 99.99% uptime reliability"',
+    quote: "Achieved 99.99% uptime<br/>reliability",
   },
 ];
 
 export default function MetricsSection() {
   return (
-    <section 
-      className="w-full py-16 md:py-15 text-white border-t border-b border-slate-200/20"
-      style={{
-        background: "linear-gradient(41deg, #342647 0%, #814A92 50%, #2F4A76 100%)"
-      }}
-    >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+    <section className="w-full h-auto min-h-[480px] py-16 relative bg-linear-57 from-indigo-950 via-teal-700 to-teal-400 dark:from-gray-900 dark:via-gray-900 dark:to-gray-900 border-t border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 h-full flex flex-col justify-center">
         
         {/* ================= STATS COUNTERS PACK ================= */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-10 text-center items-start">
           {stats.map((stat, idx) => (
             <div key={idx} className="flex flex-col items-center">
-              <span className="text-4xl md:text-5xl font-semibold leading-tight text-white tracking-tight">
+              <span className="text-5xl font-semibold font-['Inter'] leading-[76.80px] text-white dark:text-white">
                 {stat.value}
               </span>
-              <span className="mt-2 text-xs md:text-sm font-semibold uppercase tracking-wide text-white/70 max-w-[160px]">
+              <span className="text-sm font-semibold font-['Inter'] uppercase leading-6 tracking-wide text-white/90 dark:text-gray-300 max-w-[160px]">
                 {stat.label}
               </span>
             </div>
@@ -54,18 +49,18 @@ export default function MetricsSection() {
         </div>
 
         {/* ================= TESTIMONIAL CARDS GRID ================= */}
-        <div className="mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
           {testimonials.map((card, idx) => (
             <div
               key={idx}
-              className="w-full h-39 bg-white rounded-xl p-6 flex flex-col justify-center items-center text-center shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] border border-slate-200"
+              className="w-full max-w-[240px] h-36 bg-white dark:bg-gray-800 rounded-xl flex flex-col justify-center items-center text-center shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] outline outline-1 outline-offset-[-1px] outline-slate-200 dark:outline-gray-700 transition-colors duration-300"
             >
-              <div className="text-fuchsia-700 text-lg md:text-xl font-semibold leading-8">
+              <div className="text-teal-700 dark:text-teal-400 text-xl font-semibold font-['Inter'] leading-8">
                 {card.company}
               </div>
               <div 
-                className="mt-2 text-slate-500 text-xs md:text-sm font-normal leading-6 max-w-[180px]"
-                dangerouslySetInnerHTML={{ __html: card.quote }}
+                className="mt-1 text-slate-500 dark:text-gray-300 text-sm font-normal font-['Inter'] leading-6"
+                dangerouslySetInnerHTML={{ __html: `"${card.quote}"` }}
               />
             </div>
           ))}

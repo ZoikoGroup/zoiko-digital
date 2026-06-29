@@ -104,7 +104,7 @@ export default function SolutionsPortfolio() {
               </div>
 
               {/* Action Button */}
-              <button className="w-28 h-8 flex items-center justify-center rounded-md border border-fuchsia-700 dark:border-fuchsia-500 text-fuchsia-700 dark:text-fuchsia-400 text-sm font-normal transition-colors duration-200 hover:bg-fuchsia-700/5 dark:hover:bg-fuchsia-400/5 mb-1">
+              <button className="w-28 h-8 flex items-center justify-center rounded-md border border-[#207373] dark:border-[#207373] text-[#207373] dark:text-[#207373] text-sm font-normal transition-colors duration-200 hover:bg-fuchsia-700/5 dark:hover:bg-fuchsia-400/5 mb-1">
                 Learn More
               </button>
             </div>

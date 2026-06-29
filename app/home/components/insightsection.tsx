@@ -50,7 +50,7 @@ export default function InsightsSection() {
                 hover:shadow-xl
               "
             >
-              <h3 className="text-lg font-semibold text-fuchsia-700 mb-6">
+              <h3 className="text-lg font-semibold text-[#207373] mb-6">
                 {item.title}
               </h3>
 
