@@ -13,7 +13,7 @@ export default function Security() {
 
         <div className="max-w-[1160px] w-full relative z-10 flex flex-col md:flex-row items-center justify-between">
           <div className="max-w-2xl text-left">
-            <Link href="/trust-center" className="inline-flex items-center text-white/70 hover:text-white mb-6 text-sm font-semibold transition-colors">
+            <Link href="/trust-security" className="inline-flex items-center text-white/70 hover:text-white mb-6 text-sm font-semibold transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Trust Center
             </Link>
@@ -116,7 +116,7 @@ export default function Security() {
 
           {/* Pagination */}
           <div className="border-t border-gray-200 pt-8 pb-16 flex justify-between items-center">
-            <Link href="/trust-center" className="group">
+            <Link href="/trust-security" className="group">
               <div className="text-gray-600 text-xs font-semibold uppercase tracking-wide mb-1 transition-colors group-hover:text-indigo-600">Back</div>
               <div className="text-zinc-900 text-sm font-bold flex items-center group-hover:text-indigo-600 transition-colors">
                 <ArrowLeft className="w-4 h-4 mr-2" /> Trust Center

@@ -125,7 +125,7 @@ export default function Header() {
             {/* Mobile Navigation Links */}
             <nav className="flex flex-col gap-6 text-base font-normal text-slate-700">
               <Link
-                href="/service&solution"
+                href="/services-solutions"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-sky-600 transition-colors"
               >
@@ -173,7 +173,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="/request-a-demo"
+                href="/#contact"
                 onClick={() => setIsOpen(false)}
                 className="mt-4 w-full text-center py-3 bg-[#90509F] text-white rounded-xl text-sm font-semibold shadow-md active:bg-[#7b4388]"
               >

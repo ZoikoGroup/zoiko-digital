@@ -587,7 +587,7 @@ export default function ComplianceTechnologyClient() {
               </Link>
               
               <Link 
-                href="/trust-center"
+                href="/trust-security"
                 className="px-4 py-2.5 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-white/20 rounded-full text-white text-sm font-semibold transition-all duration-200 flex items-center gap-1.5"
               >
                 Trust Center <ArrowRight className="w-4 h-4" />
@@ -601,7 +601,7 @@ export default function ComplianceTechnologyClient() {
               </Link>
 
               <Link 
-                href="/contact"
+                href="/#contact"
                 className="px-4 py-2.5 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-white/20 rounded-full text-white text-sm font-semibold transition-all duration-200 flex items-center gap-1.5"
               >
                 Contact us <ArrowRight className="w-4 h-4" />
