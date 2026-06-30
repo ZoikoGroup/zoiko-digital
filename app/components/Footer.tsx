@@ -50,12 +50,12 @@ const footerSections = [
   {
     title: "Resources",
     links: [
-      { label: "Case Studies & Clients", href: "/resources/case-studies" },
-      { label: "Whitepapers & Reports", href: "/resources/whitepapers" },
-      { label: "Technical Docs & APIs", href: "/resources/apis" },
-      { label: "Webinars & Events", href: "/resources/webinars" },
+      { label: "Case Studies & Clients", href: "/case-studies" },
+      { label: "Whitepapers & Reports", href: "/white-paper" },
+      { label: "Technical Docs & APIs", href: "/Technical-docs" },
+      { label: "Webinars & Events", href: "/Webinar-and-digital" },
       { label: "Pricing & Packages", href: "/pricing-packages" },
-      { label: "Help & Support", href: "/resources/help-center" },
+      { label: "Help & Support", href: "/help-support" },
       { label: "Trust & Security", href: "/trust-center" },
     ],
   },
