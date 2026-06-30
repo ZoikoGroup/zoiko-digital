@@ -1,9 +1,9 @@
-import TechnicalDocs from "./technical-docs";
+import DocumentationPage from "./technical-docs";
 
 export default function TechnicalDocumentationPage() {
   return (
     <>
-      <TechnicalDocs />
+      <DocumentationPage/>
     </>
   );
 }
