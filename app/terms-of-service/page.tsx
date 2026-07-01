@@ -1,9 +1,9 @@
-import ZoikoTermsOfService from "./terms-of-service ";
+import TermsOfServicePage from "./terms-of-service ";
 
 export default function(){
     return(
         <>
-            <ZoikoTermsOfService/>
+            <TermsOfServicePage/>
         </>
     )
 }

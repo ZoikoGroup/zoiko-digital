@@ -38,7 +38,7 @@ const footerSections = [
     title: "Company",
     links: [
       { label: "About Us", href: "/about" },
-      { label: "Global Presence", href: "/company/global-presence" },
+      { label: "Global Presence", href: "/global-presence" },
       { label: "Leadership", href: "/leadership" },
       { label: "Careers", href: "/carrers" },
       { label: "News & Media", href: "/news-and-media" },
@@ -75,7 +75,7 @@ const bottomLegalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms-of-service" },
   { label: "Cookie Policy", href: "/cookie-policy" },
-  { label: "Accessibility", href: "/accessibility" },
+  { label: "Accessibility", href: "/accessibility-statement" },
 ];
 
 export default function Footer() {

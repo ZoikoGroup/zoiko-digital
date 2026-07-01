@@ -1,5 +1,7 @@
 "use client";
 
+import React from "react";
+
 const caseStudies = [
   {
     category: "Banking",
@@ -41,77 +43,83 @@ const caseStudies = [
 
 export default function TrustedByGlobalLeaders() {
   return (
-    <section className="bg-[#114A69] py-20 lg:py-15">
-      <div className="max-w-[1280px] mx-auto px-6">
+    <section className="bg-[#114A69] dark:bg-gray-900 py-12 md:py-20 lg:py-16 px-4 sm:px-6 transition-colors duration-300">
+      <div className="max-w-[1280px] mx-auto">
+        
         {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-white text-4xl font-bold mb-4">
+        <div className="text-center mb-10 md:mb-16 max-w-3xl mx-auto px-2">
+          <h2 className="text-white dark:text-white text-3xl md:text-4xl font-bold mb-4">
             Trusted by Global Leaders
           </h2>
-
-          <p className="text-white/80 text-lg leading-7 max-w-3xl mx-auto">
+          <p className="text-white/80 dark:text-gray-300 text-base md:text-lg leading-relaxed">
             Real results from our global partnerships, showcasing
             transformative solutions that drive measurable business outcomes.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        {/* Cards Grid Grid Matrix */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full justify-center">
           {caseStudies.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-[20px] border border-zinc-200 shadow-sm p-8 flex flex-col"
+              className="w-full bg-white dark:bg-gray-800/60 rounded-[20px] border border-zinc-200 dark:border-gray-700/60 shadow-sm p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-md"
             >
-              {/* Top */}
-              <div className="flex items-center justify-between mb-8">
-                <span className="px-4 py-2 rounded-full bg-teal-700/10 border border-[#A855F7]/20 text-[#207373] text-xs font-semibold">
-                  {item.category}
-                </span>
-
-                <span className="text-sm text-zinc-600">
-                  {item.region}
-                </span>
-              </div>
-
-              {/* Title */}
-              <h3 className="text-3xl font-semibold text-zinc-900 mb-6 leading-tight">
-                {item.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-zinc-500 text-base leading-7 mb-10">
-                {item.description}
-              </p>
-
-              {/* Stats */}
-              <div className="grid grid-cols-2 gap-6 mb-10">
-                {item.stats.map((stat, idx) => (
-                  <div key={idx}>
-                    <h4 className="text-[#207373] text-3xl font-bold">
-                      {stat.value}
-                    </h4>
-
-                    <p className="text-zinc-500 text-sm mt-2">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-3 mt-auto">
-                {item.tags.map((tag, idx) => (
-                  <span
-                    key={idx}
-                    className="px-3 py-1.5 rounded-full bg-zinc-100 text-black text-xs font-medium"
-                  >
-                    {tag}
+              {/* Upper Section */}
+              <div>
+                {/* Top Meta Details Row */}
+                <div className="flex items-center justify-between mb-6 md:mb-8">
+                  <span className="px-3.5 py-1.5 rounded-full bg-teal-700/10 dark:bg-teal-500/10 border border-[#A855F7]/20 text-[#207373] dark:text-teal-400 text-xs font-semibold">
+                    {item.category}
                   </span>
-                ))}
+                  <span className="text-xs sm:text-sm text-zinc-500 dark:text-gray-400 font-medium">
+                    {item.region}
+                  </span>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-2xl sm:text-3xl font-semibold text-zinc-900 dark:text-white mb-4 leading-tight">
+                  {item.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-zinc-500 dark:text-gray-300 text-sm sm:text-base leading-relaxed mb-6 md:mb-8">
+                  {item.description}
+                </p>
               </div>
+
+              {/* Lower Section */}
+              <div>
+                {/* Stats Subgrid */}
+                <div className="grid grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8 border-t border-zinc-100 dark:border-gray-700/50 pt-5">
+                  {item.stats.map((stat, idx) => (
+                    <div key={idx}>
+                      <h4 className="text-[#207373] dark:text-teal-400 text-2xl sm:text-3xl font-bold leading-none">
+                        {stat.value}
+                      </h4>
+                      <p className="text-zinc-500 dark:text-gray-400 text-xs sm:text-sm mt-2 leading-snug">
+                        {stat.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Tags Collection */}
+                <div className="flex flex-wrap gap-2 pt-2">
+                  {item.tags.map((tag, idx) => (
+                    <span
+                      key={idx}
+                      className="px-2.5 py-1.5 rounded-full bg-zinc-100 dark:bg-gray-700 text-zinc-800 dark:text-gray-200 text-[11px] sm:text-xs font-medium tracking-wide whitespace-nowrap"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
