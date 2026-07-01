@@ -333,10 +333,10 @@ export default function IndustriesPage() {
                   Email Us
                 </h4>
                 <a
-                  href="mailto:hello@zws.com"
+                  href="mailto:hello@zoikodigital.com"
                   className="text-zinc-500 dark:text-teal-400 text-sm lg:text-base font-normal leading-6 hover:text-sky-900 dark:hover:text-teal-300 transition-colors"
                 >
-                  hello@zws.com
+                  hello@zoikodigital.com
                 </a>
                 <span className="text-zinc-400 dark:text-gray-400 text-xs lg:text-sm font-normal leading-6 mt-0 lg:mt-1">
                   Response within 4 hours

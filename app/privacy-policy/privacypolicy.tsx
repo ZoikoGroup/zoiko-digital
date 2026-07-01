@@ -1,267 +1,196 @@
-"use client"
-import React, { useState, useEffect } from 'react';
+"use client";
 
-interface SidebarNav {
-  num: number;
-  label: string;
-}
+import React from "react";
 
-interface CookieData {
-  cookie: string;
-  provider: string;
-  purpose: string;
-}
-
-export default function CookiePolicyPage() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState<number>(1);
-  const [copiedSection, setCopiedSection] = useState<number | null>(null);
-
-  // Updated to match the exact navigation from your Figma design
-  const tableOfContents: SidebarNav[] = [
-    { num: 1, label: 'What cookies are' },
-    { num: 2, label: 'How we use cookies' },
-    { num: 3, label: 'First-party cookies' },
-    { num: 4, label: 'Essential cookies' },
-    { num: 5, label: 'Performance & analytics' },
-    { num: 6, label: 'Browser controls' },
-    { num: 7, label: 'Do Not Track & GPC' },
-    { num: 8, label: 'Third-party cookies' },
-    { num: 9, label: 'Updates' },
-    { num: 10, label: 'Contact us' },
-  ];
-
-  const cookiesData: CookieData[] = [
-    { cookie: 'zws_session', provider: 'Zoiko (First-party)', purpose: 'Maintains your authenticated session.' },
-    { cookie: 'zws_csrf', provider: 'Zoiko (First-party)', purpose: 'Protects against cross-site request forgery.' },
-    { cookie: 'zws_consent', provider: 'Zoiko (First-party)', purpose: 'Stores your cookie preferences.' },
-    { cookie: 'zws_lang', provider: 'Zoiko (First-party)', purpose: 'Remembers your language and region.' },
-  ];
-
-  // Intersection Observer to highlight active section on scroll
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const sectionNum = parseInt(entry.target.id.split('-')[1]);
-            setActiveSection(sectionNum);
-          }
-        });
-      },
-      { rootMargin: '-20% 0px -75% 0px' }
-    );
-
-    tableOfContents.forEach((item) => {
-      const element = document.getElementById(`section-${item.num}`);
-      if (element) observer.observe(element);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  // Smooth Scroll Handler mapping directly to section-${num}
-  const scrollToSection = (e: React.MouseEvent, num: number) => {
-    e.preventDefault();
-    const element = document.getElementById(`section-${num}`);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      window.history.pushState(null, '', `#section-${num}`);
-      setActiveSection(num);
-      setIsMobileMenuOpen(false);
-    }
-  };
-
-  const handleCopyLink = (num: number) => {
-    const url = `${window.location.origin}${window.location.pathname}#section-${num}`;
-    navigator.clipboard.writeText(url);
-    setCopiedSection(num);
-    setTimeout(() => setCopiedSection(null), 2000);
-  };
-
+export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-neutral-50 text-zinc-700 selection:bg-indigo-100 selection:text-indigo-900">
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-sky-900 dark:text-gray-100  transition-colors duration-300">
       
-      {/* RICH BRAND HERO BANNER */}
-      <section className="w-full relative bg-gradient-to-r from-fuchsia-700 to-sky-900 py-16 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-24 relative z-10 flex flex-col justify-center h-full">
-          <span className="text-white text-xs font-bold uppercase tracking-wider">Core Privacy & Usage</span>
-          <h1 className="mt-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight">Cookie Policy</h1>
-          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-white text-sm">
-            <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-emerald-400 rounded-sm" />
-              <span className="text-white/70">Last Updated: June 2026</span>
-            </div>
-          </div>
+     
+
+      {/* ================= HERO BANNER ================= */}
+      <section className="w-full bg-linear-57 from-indigo-950 via-teal-700 to-teal-400 py-16 md:py-20 text-center text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+            Privacy Policy
+          </h1>
         </div>
       </section>
 
-      {/* MOBILE COMPACT MENU */}
-      <div className="lg:hidden sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
-        <button 
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="w-full h-14 px-6 flex items-center justify-between bg-neutral-50"
-        >
-          <span className="text-zinc-900 text-base font-bold">On this page</span>
-          <span className={`transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-45' : ''}`}>+</span>
-        </button>
-        {isMobileMenuOpen && (
-          <nav className="bg-white p-6 grid grid-cols-1 gap-2 shadow-inner">
-            {tableOfContents.map((item) => (
-              <a
-                key={item.num}
-                href={`#section-${item.num}`}
-                onClick={(e) => scrollToSection(e, item.num)}
-                className={`py-2 text-sm ${activeSection === item.num ? 'text-indigo-600 font-bold' : 'text-gray-600'}`}
-              >
-                {item.num} · {item.label}
-              </a>
-            ))}
-          </nav>
-        )}
-      </div>
-
-      {/* MAIN DOCUMENT INTERFACE */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-24 py-12 lg:py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      {/* ================= MAIN CONFIGURABLE CONTENT ================= */}
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-14">
         
-        {/* DESKTOP SIDEBAR */}
-        <aside className="hidden lg:block lg:col-span-4 xl:col-span-3 sticky top-28 space-y-6">
-          <div>
-            <h3 className="text-gray-600 text-xs font-bold uppercase tracking-wider mb-3 px-3">On this page</h3>
-            <nav className="border-l border-gray-200">
-              {tableOfContents.map((item) => (
-                <a
-                  key={item.num}
-                  href={`#section-${item.num}`}
-                  onClick={(e) => scrollToSection(e, item.num)}
-                  className={`block pl-4 py-1.5 text-sm border-l-2 transition-all -ml-[1px] ${
-                    activeSection === item.num 
-                      ? 'border-indigo-600 text-indigo-600 font-semibold' 
-                      : 'border-transparent text-gray-600 hover:text-zinc-900'
-                  }`}
-                >
-                  {item.num} · {item.label}
-                </a>
-              ))}
-            </nav>
+        {/* Section 1: Introduction */}
+        <section className="space-y-4">
+          <div className="border-b-2 border-teal-700 dark:border-teal-500 pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold text-sky-900 dark:text-white">1. Introduction</h2>
           </div>
- <button className="w-full h-11 px-4 bg-white border border-gray-200 hover:bg-neutral-50 transition-colors rounded-lg flex items-center gap-3 text-zinc-900 text-sm font-semibold shadow-sm">
-              {/* Download icon */}
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-zinc-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
-              </svg>
-              Download PDF
-            </button>
-        </aside>
+          <div className="w-full bg-linear-78 from-fuchsia-700/5 to-sky-900/5 dark:from-gray-800 dark:to-gray-800/40 p-5 sm:p-6 rounded-xl border border-stone-200 dark:border-gray-700 space-y-4 text-sm sm:text-base leading-relaxed text-sky-900 dark:text-gray-300">
+            <p>
+              <strong className="text-teal-700 dark:text-teal-400 font-semibold block sm:inline">Commitment Statement: </strong> 
+              Zoiko Digital (&quot;ZOIKO DIGITAL&quot;) values your privacy and is committed to protecting personal data in compliance with global, regional, and national privacy laws, including GDPR (EU/UK), CCPA/CPRA (California), PIPEDA (Canada), NDPR (Nigeria), POPIA (South Africa), and other applicable frameworks.
+            </p>
+            <p>
+              <strong className="text-teal-700 dark:text-teal-400 font-semibold block sm:inline">Purpose: </strong> 
+              This Privacy Policy explains how we collect, use, share, and protect personal information.
+            </p>
+            <p>
+              <strong className="text-teal-700 dark:text-teal-400 font-semibold block sm:inline">Scope: </strong> 
+              Applies to all users, customers, and visitors of ZOIKO DIGITAL services globally.
+            </p>
+          </div>
+        </section>
 
-        {/* POLICY CONTENT TARGETS */}
-        <main className="lg:col-span-8 xl:col-span-9 space-y-12">
-          
-          <section id="section-1" className="scroll-mt-24 pt-4 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 1)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">1</span>
-                <h2 className="text-zinc-900 text-xl font-bold">What cookies are</h2>
-              </div>
-              <button onClick={() => handleCopyLink(1)} className="text-xs border p-1 rounded bg-white">
-                {copiedSection === 1 ? 'Copied!' : 'Copy link'}
-              </button>
+        {/* Section 2: Information We Collect */}
+        <section className="space-y-4">
+          <div className="border-b-2 border-teal-700 dark:border-teal-500 pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold text-sky-900 dark:text-white">2. Information We Collect</h2>
+          </div>
+          <ul className="space-y-3 text-sm sm:text-base pl-1 text-sky-900 dark:text-gray-300 list-none">
+            <li className="flex gap-2 items-start"><span className="text-teal-700 dark:text-teal-400 font-bold">•</span><div><strong className="text-teal-700 dark:text-teal-400">Personal Information:</strong> Name, email, phone, billing information, government IDs (for regulated services).</div></li>
+            <li className="flex gap-2 items-start"><span className="text-teal-700 dark:text-teal-400 font-bold">•</span><div><strong className="text-teal-700 dark:text-teal-400">Usage Data:</strong> Device identifiers, IP address, browser, OS, and interactions with ZOIKO DIGITAL platforms.</div></li>
+            <li className="flex gap-2 items-start"><span className="text-teal-700 dark:text-teal-400 font-bold">•</span><div><strong className="text-teal-700 dark:text-teal-400">Cookies & Tracking:</strong> See Cookie Policy links.</div></li>
+            <li className="flex gap-2 items-start"><span className="text-teal-700 dark:text-teal-400 font-bold">•</span><div><strong className="text-teal-700 dark:text-teal-400">Special Categories:</strong> Health or biometric data only when required and with explicit consent (GDPR/POPIA compliant).</div></li>
+          </ul>
+        </section>
+
+        {/* Section 3: Usage Matrix */}
+        <section className="space-y-4">
+          <div className="border-b-2 border-teal-700 dark:border-teal-500 pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold text-sky-900 dark:text-white">3. How We Use Your Information</h2>
+          </div>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm sm:text-base text-sky-900 dark:text-gray-300 list-disc pl-5">
+            <li>Delivering and improving ZOIKO DIGITAL services.</li>
+            <li>Authentication, fraud prevention, and account security.</li>
+            <li>Billing, payments, and operational support.</li>
+            <li>Compliance with legal and regulatory obligations.</li>
+            <li>Personalization and marketing (where permitted).</li>
+          </ul>
+        </section>
+
+        {/* Section 4: Legal Bases */}
+        <section className="space-y-4">
+          <div className="border-b-2 border-teal-700 dark:border-teal-500 pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold text-sky-900 dark:text-white">4. Legal Bases for Processing</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm sm:text-base text-sky-900 dark:text-gray-300">
+            <div className="p-4 bg-slate-50 dark:bg-gray-800 rounded-xl"><strong className="text-teal-700 dark:text-teal-400 block mb-1">EU/UK (GDPR):</strong> Contractual necessity, legal obligations, legitimate interests, and consent.</div>
+            <div className="p-4 bg-slate-50 dark:bg-gray-800 rounded-xl"><strong className="text-teal-700 dark:text-teal-400 block mb-1">California (CCPA/CPRA):</strong> Business purposes, service provision, and compliance.</div>
+            <div className="p-4 bg-slate-50 dark:bg-gray-800 rounded-xl"><strong className="text-teal-700 dark:text-teal-400 block mb-1">Canada (PIPEDA):</strong> Knowledge and consent, subject to exceptions.</div>
+            <div className="p-4 bg-slate-50 dark:bg-gray-800 rounded-xl"><strong className="text-teal-700 dark:text-teal-400 block mb-1">Africa (NDPR, POPIA):</strong> Explicit consent, lawful processing, data minimization.</div>
+          </div>
+        </section>
+
+        {/* Section 5: Sharing Info */}
+        <section className="space-y-4">
+          <div className="border-b-2 border-teal-700 dark:border-teal-500 pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold text-sky-900 dark:text-white">5. Information Sharing & Disclosure</h2>
+          </div>
+          <div className="space-y-4">
+            <ul className="space-y-2 text-sm sm:text-base text-sky-900 dark:text-gray-300 list-none pl-1">
+              <li><strong className="text-teal-700 dark:text-teal-400">Service Providers:</strong> Cloud hosting, analytics, payment processors (bound by DPA contracts).</li>
+              <li><strong className="text-teal-700 dark:text-teal-400">Affiliates:</strong> Zoiko Group subsidiaries (compliance maintained across entities).</li>
+              <li><strong className="text-teal-700 dark:text-teal-400">Regulators & Authorities:</strong> As legally required.</li>
+              <li><strong className="text-teal-700 dark:text-teal-400">Business Transactions:</strong> In mergers or acquisitions, subject to safeguards.</li>
+            </ul>
+            <div className="w-full bg-fuchsia-700/5 dark:bg-fuchsia-500/5 rounded-md border-l-[4px] border-teal-700 dark:border-teal-400 p-4 mt-2">
+              <p className="text-sm sm:text-base font-semibold text-teal-700 dark:text-teal-400">Prohibition on Sale: <span className="font-normal text-sky-900 dark:text-gray-300">ZOIKO DIGITAL does not sell personal information under CCPA/CPRA definitions.</span></p>
             </div>
-            <p className="leading-7">Cookies are small text files placed on your device to store data that can be recalled by a web server.</p>
-          </section>
+          </div>
+        </section>
 
-          <section id="section-2" className="border-t border-gray-200 scroll-mt-24 pt-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 2)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">2</span>
-                <h2 className="text-zinc-900 text-xl font-bold">How we use cookies</h2>
-              </div>
+        {/* Section 6: Security Measures Block */}
+        <section className="space-y-4">
+          <div className="border-b-2 border-teal-700 dark:border-teal-500 pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold text-sky-900 dark:text-white">6. Data Security</h2>
+          </div>
+          <div className="w-full bg-sky-900 dark:bg-gray-800 text-white rounded-xl p-5 sm:p-6 space-y-4">
+            <h3 className="text-lg font-semibold border-b border-white/20 pb-2">Data Security Measures</h3>
+            <ul className="space-y-3 text-sm sm:text-base text-gray-100 list-disc pl-5">
+              <li><strong>Encryption & Storage:</strong> AES-256 encryption, multi-factor authentication, zero-trust architecture.</li>
+              <li><strong>Certifications:</strong> ISO 27001, SOC 2 Type II, PCI DSS (for payments).</li>
+              <li><strong>Breach Notifications:</strong> In line with GDPR (72-hour rule), CCPA, NDPR, and POPIA frameworks.</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Section 7 & 8 Row Frame */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <section className="space-y-3">
+            <h3 className="text-lg font-semibold text-sky-900 dark:text-white border-b border-slate-200 dark:border-gray-800 pb-1">7. Data Retention</h3>
+            <p className="text-sm sm:text-base leading-relaxed text-sky-900/90 dark:text-gray-300">Retained only as necessary for business and legal purposes. Subject to statutory retention rules (e.g., 7 years for financial records in the US/EU). Right to erasure requests handled within 30 days under GDPR standards.</p>
+          </section>
+          <section className="space-y-3">
+            <h3 className="text-lg font-semibold text-sky-900 dark:text-white border-b border-slate-200 dark:border-gray-800 pb-1">8. International Data Transfers</h3>
+            <p className="text-sm sm:text-base leading-relaxed text-sky-900/90 dark:text-gray-300">Transfers safeguarded via Standard Contractual Clauses (SCCs) and adequacy rules. Cloud setups are globally distributed across secure redundant setups across the US, EU, APAC, and African continents.</p>
+          </section>
+        </div>
+
+        {/* Section 9: Regional Framework Cards */}
+        <section className="space-y-4">
+          <div className="border-b-2 border-teal-700 dark:border-teal-500 pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold text-sky-900 dark:text-white">9. Your Global Privacy Rights</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white dark:bg-gray-800 p-5 rounded-lg border-2 border-sky-950 dark:border-gray-700 shadow-xs">
+              <h4 className="font-bold text-teal-700 dark:text-teal-400 text-lg mb-2">EU/UK (GDPR)</h4>
+              <p className="text-sm text-sky-900 dark:text-gray-300">Access, rectification, erasure, restriction, portability, and objection mandates.</p>
             </div>
-            <p className="leading-7">We use cookies to remember your preferences, fight fraud, analyze service performance, and fulfill other legitimate operational intents.</p>
-          </section>
-
-          <section id="section-3" className="border-t border-gray-200 scroll-mt-24 pt-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 3)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">3</span>
-                <h2 className="text-zinc-900 text-xl font-bold">First-party cookies</h2>
-              </div>
+            <div className="bg-white dark:bg-gray-800 p-5 rounded-lg border-2 border-sky-950 dark:border-gray-700 shadow-xs">
+              <h4 className="font-bold text-teal-700 dark:text-teal-400 text-lg mb-2">California (CCPA/CPRA)</h4>
+              <p className="text-sm text-sky-900 dark:text-gray-300">Right to know, delete, opt-out of sharing or selling, and non-discrimination tracking safeguards.</p>
             </div>
-            <p className="leading-7">These are set directly by the domain you are visiting to keep your workflows responsive and verified.</p>
-          </section>
-
-          <section id="section-4" className="border-t border-gray-200 scroll-mt-24 pt-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 4)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">4</span>
-                <h2 className="text-zinc-900 text-xl font-bold">Essential cookies</h2>
-              </div>
+            <div className="bg-white dark:bg-gray-800 p-5 rounded-lg border-2 border-sky-950 dark:border-gray-700 shadow-xs">
+              <h4 className="font-bold text-teal-700 dark:text-teal-400 text-lg mb-2">Canada (PIPEDA)</h4>
+              <p className="text-sm text-sky-900 dark:text-gray-300">Right to access, correction, and tracking escalation loops directly to the Privacy Commissioner.</p>
             </div>
-            <p className="leading-7">Mandatory cookies serving core operations such as network security layer and framework load balances.</p>
-          </section>
+          </div>
+        </section>
 
-          <section id="section-5" className="border-t border-gray-200 scroll-mt-24 pt-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 5)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">5</span>
-                <h2 className="text-zinc-900 text-xl font-bold">Performance & analytics</h2>
-              </div>
+        {/* Section 10 & 11: Extra Disclosures */}
+        <section className="space-y-4">
+          <div className="border-b-2 border-teal-700 dark:border-teal-500 pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold text-sky-900 dark:text-white">10. Children&apos;s Privacy Mandate</h2>
+          </div>
+          <div className="w-full bg-linear-57 from-fuchsia-700/5 to-sky-900/5 dark:from-gray-800 p-5 rounded-lg border border-teal-700/30 text-sm sm:text-base text-sky-900 dark:text-gray-300 leading-relaxed">
+            <p className="mb-2">ZOIKO DIGITAL does not knowingly collect personal data from children under:</p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li><strong>16</strong> (EU/UK GDPR)</li>
+              <li><strong>13</strong> (US COPPA)</li>
+              <li><strong>18</strong> (NDPR/POPIA without verified guardian authorization workflows).</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Section 12: Updates */}
+        <section className="space-y-2 text-sm sm:text-base text-sky-900 dark:text-gray-300">
+          <div className="border-b-2 border-teal-700 dark:border-teal-500 pb-2 mb-4">
+            <h2 className="text-xl sm:text-2xl font-semibold text-sky-900 dark:text-white">11. Privacy Policy Updates</h2>
+          </div>
+          <p>This statement is updated periodically. Material revisions will be broadcast natively inside core dashboards or verified user contact feeds.</p>
+        </section>
+
+        {/* Section 13: Privacy Contact Form */}
+        <section className="w-full bg-linear-57 from-indigo-950 via-teal-700 to-teal-400 text-white rounded-xl p-6 sm:p-8 space-y-6">
+          <h3 className="text-xl font-bold border-b border-white/20 pb-2">12. Contact the Privacy Team</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm sm:text-base">
+            <div className="space-y-2">
+              <p><strong>Data Protection Officer (DPO):</strong> dpo@zoikoweb.com</p>
+              <p><strong>General Inquiries:</strong> privacy@zoikoweb.com</p>
+              <p><strong>Headquarters:</strong> Zoiko Digital, Sacramento, California, USA</p>
             </div>
-            <p className="leading-7">Tracks user telemetry patterns anonymously to isolate loading bottlenecks and interface improvements.</p>
-          </section>
-
-          <section id="section-6" className="border-t border-gray-200 scroll-mt-24 pt-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 6)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">6</span>
-                <h2 className="text-zinc-900 text-xl font-bold">Browser controls</h2>
-              </div>
+            <div className="space-y-1 md:border-l md:border-white/20 md:pl-6">
+              <p className="font-semibold text-teal-300">Regional Escalation Links:</p>
+              <p>• EU/UK Routing: privacy.eu@zoikoweb.com</p>
+              <p>• Africa Systems: privacy.africa@zoikoweb.com</p>
+              <p>• Canada Frameworks: privacy.ca@zoikoweb.com</p>
             </div>
-            <p className="leading-7">Most web browsers automatically accept cookies but provide configuration panes allowing you to block or purge them completely.</p>
-          </section>
+          </div>
+        </section>
 
-          <section id="section-7" className="border-t border-gray-200 scroll-mt-24 pt-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 7)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">7</span>
-                <h2 className="text-zinc-900 text-xl font-bold">Do Not Track & GPC</h2>
-              </div>
-            </div>
-            <p className="leading-7">Our applications parse Global Privacy Control signals sent programmatically via supporting ecosystem clients.</p>
-          </section>
+      </main>
 
-          <section id="section-8" className="border-t border-gray-200 scroll-mt-24 pt-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 8)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">8</span>
-                <h2 className="text-zinc-900 text-xl font-bold">Third-party cookies</h2>
-              </div>
-            </div>
-            <p className="leading-7">Cookies provisioned by auxiliary processing platforms embedded into our systems to support edge integrations.</p>
-          </section>
-
-          <section id="section-9" className="border-t border-gray-200 scroll-mt-24 pt-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 9)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">9</span>
-                <h2 className="text-zinc-900 text-xl font-bold">Updates</h2>
-              </div>
-            </div>
-            <p className="leading-7">We review this operational tracking overview periodically to reflect compliance adjustments correctly.</p>
-          </section>
-
-          <section id="section-10" className="border-t border-gray-200 scroll-mt-24 pt-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3 cursor-pointer" onClick={(e) => scrollToSection(e, 10)}>
-                <span className="w-7 h-7 flex items-center justify-center bg-violet-100 rounded-lg text-indigo-600 text-xs font-extrabold">10</span>
-                <h2 className="text-zinc-900 text-xl font-bold">Contact us</h2>
-              </div>
-            </div>
-            <p className="leading-7">For support with data policy options, open a ticket via our legal inquiry dashboard directly.</p>
-          </section>
-
-        </main>
-      </div>
+      
     </div>
   );
 }

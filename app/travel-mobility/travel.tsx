@@ -361,7 +361,7 @@ export default function TravelMobilitySolutionsHub() {
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
                   <h4 className="text-zinc-800 text-base lg:text-lg font-semibold    leading-7">Email Us</h4>
-                  <a href="mailto:hello@zws.com" className="text-zinc-400 text-sm lg:text-base font-normal    leading-6 hover:text-sky-900 transition-colors">hello@zws.com</a>
+                  <a href="mailto:hello@zoikodigital.com" className="text-zinc-400 text-sm lg:text-base font-normal    leading-6 hover:text-sky-900 transition-colors">hello@zoikodigital.com</a>
                   <span className="text-zinc-500 text-xs lg:text-sm font-normal    leading-6 mt-0 lg:mt-1">Response within 4 hours</span>
                 </div>
               </div>

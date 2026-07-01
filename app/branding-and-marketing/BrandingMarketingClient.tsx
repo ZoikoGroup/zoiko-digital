@@ -639,7 +639,7 @@ export default function BrandingMarketingClient() {
                 </div>
                 <div>
                   <h4 className="text-zinc-800 font-semibold text-lg">Email Us</h4>
-                  <div className="text-zinc-500 font-medium">hello@zws.com</div>
+                  <div className="text-zinc-500 font-medium">hello@zoikodigital.com</div>
                   <div className="text-zinc-400 text-sm">Response within 4 hours</div>
                 </div>
               </div>

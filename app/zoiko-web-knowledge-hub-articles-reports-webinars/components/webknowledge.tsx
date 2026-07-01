@@ -295,7 +295,7 @@ export default function KnowledgeHub() {
                     className="px-4 py-2 rounded-lg border border-[#207373] dark:border-teal-500 text-[#207373] dark:text-teal-400 text-sm font-medium hover:bg-[#207373] dark:hover:bg-teal-600 hover:text-white dark:hover:text-white whitespace-nowrap transition-colors duration-200"
                   >
                     {category.actionText}
-                  </Link>
+                  </a>
                 </div>
 
               </div>
