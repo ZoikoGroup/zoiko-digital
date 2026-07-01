@@ -103,7 +103,7 @@ export default function TelecomSolutionsHub() {
       {/* =========================================================
           SECTION 1: CARRIER-GRADE HERO BANNER
           ========================================================= */}
-      <section className="w-full bg-gradient-to-br from-fuchsia-700 to-sky-900 text-white py-16 px-6 sm:px-12 lg:px-[108px]">
+      <section className="w-full bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 text-white py-16 px-6 sm:px-12 lg:px-[108px]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 flex flex-col justify-center">
             <span className="text-white/80 text-sm font-bold uppercase tracking-wider mb-2 block">
@@ -137,7 +137,7 @@ export default function TelecomSolutionsHub() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {challenges.map((challenge, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 border border-slate-100 dark:border-gray-800 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.05)] flex flex-col min-h-[220px]">
+              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col min-h-[220px]">
                 <h3 className="text-sky-900 dark:text-white text-xl font-bold mb-3 leading-tight">
                   {challenge.title}
                 </h3>
@@ -163,7 +163,7 @@ export default function TelecomSolutionsHub() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {capabilities.map((cap, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-8 border border-slate-100 dark:border-gray-700 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.05)] flex flex-col justify-center min-h-[160px]">
+              <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col justify-center min-h-[160px]">
                 <h3 className="text-sky-900 dark:text-white text-xl font-bold mb-2.5">
                   {cap.title}
                 </h3>
@@ -189,9 +189,9 @@ export default function TelecomSolutionsHub() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {platforms.map((plat, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 border border-slate-100 dark:border-gray-800 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.05)] flex flex-col justify-between min-h-[200px]">
+              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col justify-between min-h-[200px]">
                 <div>
-                  <h3 className="text-fuchsia-700 dark:text-fuchsia-400 text-2xl lg:text-3xl font-bold mb-1">
+                  <h3 className="text-teal-700 dark:text-teal-400 text-2xl lg:text-3xl font-bold mb-1">
                     {plat.name}
                   </h3>
                   <span className="text-sky-900 dark:text-gray-400 text-sm sm:text-base font-bold tracking-tight block mb-4">
@@ -220,7 +220,7 @@ export default function TelecomSolutionsHub() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {caseStudies.map((cs, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-8 border border-slate-100 dark:border-gray-700 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.05)] flex flex-col justify-center min-h-[160px]">
+              <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col justify-center min-h-[160px]">
                 <h3 className="text-sky-900 dark:text-white text-xl font-bold mb-2.5">
                   {cs.title}
                 </h3>
@@ -236,7 +236,7 @@ export default function TelecomSolutionsHub() {
       {/* =========================================================
           SECTION 6: WHY TELECOMS TRUST ZOIKO
           ========================================================= */}
-      <section className="w-full bg-gradient-to-br from-fuchsia-700 to-sky-900 text-white py-16 px-4 sm:px-8 lg:px-[108px]">
+      <section className="w-full bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 text-white py-16 px-4 sm:px-8 lg:px-[108px]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
@@ -246,7 +246,7 @@ export default function TelecomSolutionsHub() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {trustFactors.map((factor, idx) => (
-              <div key={idx} className="bg-white/10 rounded-xl p-8 border border-white/20 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.05)] backdrop-blur-[5px] flex flex-col justify-center min-h-[140px]">
+              <div key={idx} className="bg-white/10 rounded-xl p-8 outline outline-1 outline-offset-[-1px] outline-white/20 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] backdrop-blur-[5px] flex flex-col justify-center min-h-[140px]">
                 <h3 className="text-white text-xl lg:text-2xl font-bold mb-2">
                   {factor.title}
                 </h3>
@@ -272,11 +272,11 @@ export default function TelecomSolutionsHub() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {insights.map((insight, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 border border-slate-100 dark:border-gray-800 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.05)] flex flex-col min-h-[160px] group hover:shadow-md transition-shadow">
-                <span className="text-fuchsia-700 dark:text-fuchsia-400 text-xs font-bold uppercase tracking-wider mb-2 block">
+              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col min-h-[160px] group hover:shadow-md transition-shadow">
+                <span className="text-teal-700 dark:text-teal-400 text-xs font-bold uppercase tracking-wider mb-2 block">
                   {insight.type}
                 </span>
-                <h3 className="text-sky-900 dark:text-white text-xl font-bold leading-tight group-hover:text-fuchsia-700 dark:group-hover:text-fuchsia-400 transition-colors">
+                <h3 className="text-sky-900 dark:text-white text-xl font-bold leading-tight group-hover:text-teal-700 dark:group-hover:text-teal-400 transition-colors">
                   {insight.title}
                 </h3>
               </div>
@@ -300,7 +300,7 @@ export default function TelecomSolutionsHub() {
             <div className="flex flex-col gap-8">
               {/* Email */}
               <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
                   <img src="/images/about/SVG.svg" alt="Email Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
@@ -312,7 +312,7 @@ export default function TelecomSolutionsHub() {
 
               {/* Call */}
               <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
                   <img src="/images/about/SVG-1.svg" alt="Phone Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
@@ -324,7 +324,7 @@ export default function TelecomSolutionsHub() {
 
               {/* Chat */}
               <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
                   <img src="/images/about/SVG-2.svg" alt="Chat Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
@@ -344,7 +344,7 @@ export default function TelecomSolutionsHub() {
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Full Name</label>
                 <input
                   type="text"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all"
                   placeholder=""
                 />
               </div>
@@ -353,7 +353,7 @@ export default function TelecomSolutionsHub() {
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Business Email</label>
                 <input
                   type="email"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all"
                   placeholder=""
                 />
               </div>
@@ -362,7 +362,7 @@ export default function TelecomSolutionsHub() {
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Company</label>
                 <input
                   type="text"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all"
                   placeholder=""
                 />
               </div>
@@ -370,7 +370,7 @@ export default function TelecomSolutionsHub() {
               <div className="flex flex-col gap-[6px]">
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Service Interest</label>
                 <div className="relative">
-                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
+                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all">
                     <option value="" disabled className="text-neutral-400">Select a service</option>
                     <option value="cloud">Cloud Solutions</option>
                     <option value="web">Web Development</option>
@@ -386,7 +386,7 @@ export default function TelecomSolutionsHub() {
               <div className="flex flex-col gap-[6px]">
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Budget</label>
                 <div className="relative">
-                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
+                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all">
                     <option value="" disabled className="text-neutral-400">Select budget range</option>
                     <option value="small">Under $10,000</option>
                     <option value="medium">$10,000 - $50,000</option>
@@ -401,14 +401,14 @@ export default function TelecomSolutionsHub() {
               <div className="flex flex-col gap-[6px]">
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Details</label>
                 <textarea
-                  className="w-full h-28 p-4 bg-neutral-100 rounded-lg border border-stone-300 resize-none focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all text-zinc-800 placeholder-neutral-400"
+                  className="w-full h-28 p-4 bg-neutral-100 rounded-lg border border-stone-300 resize-none focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all text-zinc-800 placeholder-neutral-400"
                   placeholder="Tell us about your project requirements, timeline, and objectives..."
                 ></textarea>
               </div>
 
               <button
                 type="button"
-                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-fuchsia-700 to-sky-900 hover:from-fuchsia-800 hover:to-sky-950 text-white text-base font-semibold    rounded-xl transition-all"
+                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 hover:from-indigo-900 hover:via-teal-800 hover:to-teal-500 text-white text-base font-semibold    rounded-xl transition-all cursor-pointer"
               >
                 Start Your Project
               </button>

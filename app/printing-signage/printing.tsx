@@ -40,7 +40,7 @@ export default function Printing(){
   const features = [
     {
       icon: (
-        <img className="w-{4} h-{4}"
+        <img className="w-12 h-12"
             src="/images/printing/Symbol (18).png"
             alt="icon"
         />
@@ -49,7 +49,7 @@ export default function Printing(){
     },
     {
       icon: (
-        <img className="w-{4} h-{4}"
+        <img className="w-12 h-12"
             src="/images/printing/Symbol (19).png"
             alt="icon"
         />
@@ -58,7 +58,7 @@ export default function Printing(){
     },
     {
       icon: (
-       <img className="w-{4} h-{4}"
+       <img className="w-12 h-12"
             src="/images/printing/Symbol (20).png"
             alt="icon"
         />
@@ -67,7 +67,7 @@ export default function Printing(){
     },
     {
       icon: (
-        <img className="w-{4} h-{4}"
+        <img className="w-12 h-12"
             src="/images/printing/Symbol (21).png"
             alt="icon"
         />
@@ -78,7 +78,7 @@ export default function Printing(){
   const logisticsSteps = [
     {
       icon: (
-        <img className="w-{4} h-{4}"
+        <img className="w-12 h-12"
             src="/images/printing/Symbol (22).png"
             alt="icon"
         />
@@ -88,7 +88,7 @@ export default function Printing(){
     },
     {
       icon: (
-        <img className="w-{4} h-{4}"
+        <img className="w-12 h-12"
             src="/images/printing/Symbol (23).png"
             alt="icon"
         />
@@ -98,7 +98,7 @@ export default function Printing(){
     },
     {
       icon: (
-        <img className="w-{4} h-{4}"
+        <img className="w-12 h-12"
             src="/images/printing/Symbol (24).png"
             alt="icon"
         />
@@ -111,22 +111,22 @@ export default function Printing(){
     <div>
 
 
-      <section className="relative w-full bg-gradient-to-r from-fuchsia-700 to-sky-900 text-white overflow-hidden py-16 lg:py-24">
+      <section className="relative w-full bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 text-white overflow-hidden py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10">
           
           {/* Left Side: Content & CTA Buttons */}
           <div className="w-full lg:flex-1 space-y-6 text-left">
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-8 lg:leading-[50px] max-w-2xl font-sans">
+            <h1 className="text-2xl sm:text-4xl lg:text-4xl font-semibold leading-[50px] font-sans">
               Enterprise-Grade Printing & Signage Consistent, Durable, On-Brand
             </h1>
-            <p className="text-white/90 text-base lg:text-lg font-normal leading-6 lg:leading-7 max-w-xl font-sans">
-              Nationwide production, color accuracy, rapid turnaround and managed rollouts at Tier-1 scale.
+            <p className="text-white text-lg font-normal leading-7 max-w-xl font-sans">
+              Nationwide production, color accuracy, rapid turnaround and<br/>managed rollouts at Tier-1 scale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-start pt-2">
-              <button className="w-full sm:w-auto bg-white hover:bg-slate-100 text-fuchsia-700 font-bold text-sm px-6 py-3.5 rounded-lg transition-all text-center border border-white cursor-pointer shadow-sm">
+              <button className="w-72 h-14 bg-white hover:bg-slate-50 text-teal-700 font-bold text-base rounded-lg outline outline-1 outline-offset-[-1px] outline-white transition-colors flex items-center justify-center cursor-pointer">
                 Get a Print & Signage Quote
               </button>
-              <button className="w-full sm:w-auto border-2 border-white hover:bg-white/10 text-white font-bold text-sm px-6 py-3.5 rounded-lg transition-all text-center cursor-pointer">
+              <button className="w-64 h-14 hover:bg-white/10 text-white font-bold text-base rounded-lg outline outline-2 outline-offset-[-2px] outline-white transition-colors flex items-center justify-center cursor-pointer">
                 Download Print Specifications
               </button>
             </div>
@@ -209,9 +209,9 @@ export default function Printing(){
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             
             {/* Card 1 */}
-            <div className="w-full max-w-sm h-{4}4 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
+            <div className="w-full max-w-sm h-44 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
               <div className="text-sky-900 text-4xl font-black mb-4">
-                <img className="w-{4} h-{4}"
+                <img className="w-12 h-12"
                     src="/images/printing/Symbol (3).png"
                     alt="icon"
                 
@@ -223,9 +223,9 @@ export default function Printing(){
             </div>
 
             {/* Card 2 */}
-            <div className="w-full max-w-sm h-{4}4 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
+            <div className="w-full max-w-sm h-44 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
               <div className="text-sky-900 text-4xl font-black mb-4">
-                <img className="w-{4} h-{4}"
+                <img className="w-12 h-12"
                     src="/images/printing/Symbol (4).png"
                     alt="icon"
                 
@@ -237,9 +237,9 @@ export default function Printing(){
             </div>
 
             {/* Card 3 */}
-            <div className="w-full max-w-sm h-{4}4 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
+            <div className="w-full max-w-sm h-44 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
               <div className="text-sky-900 text-4xl font-black mb-4">
-                <img className="w-{4} h-{4}"
+                <img className="w-12 h-12"
                     src="/images/printing/Symbol (5).png"
                     alt="icon"
                 
@@ -251,9 +251,9 @@ export default function Printing(){
             </div>
 
             {/* Card 4 */}
-            <div className="w-full max-w-sm h-{4}4 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
+            <div className="w-full max-w-sm h-44 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
               <div className="text-sky-900 text-4xl font-black mb-4">
-                <img className="w-{4} h-{4}"
+                <img className="w-12 h-12"
                     src="/images/printing/Symbol (6).png"
                     alt="icon"
                 
@@ -265,9 +265,9 @@ export default function Printing(){
             </div>
 
             {/* Card 5 */}
-            <div className="w-full max-w-sm h-{4}4 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
+            <div className="w-full max-w-sm h-44 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
               <div className="text-sky-900 text-4xl font-black mb-4">
-                <img className="w-{4} h-{4}"
+                <img className="w-12 h-12"
                     src="/images/printing/Symbol (7).png"
                     alt="icon"
                 
@@ -278,9 +278,9 @@ export default function Printing(){
             </div>
 
             {/* Card 6 */}
-            <div className="w-full max-w-sm h-{4}4 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
+            <div className="w-full max-w-sm h-44 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-6 text-center">
               <div className="text-sky-900 text-4xl font-black mb-4">
-                <img className="w-{4} h-{4}"
+                <img className="w-12 h-12"
                     src="/images/printing/Symbol (8).png"
                     alt="icon"
                 
@@ -312,7 +312,7 @@ export default function Printing(){
             <div className="w-full max-w-sm h-64 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] p-8 relative flex flex-col justify-between text-left">
               <div className="text-center">
                 <div className="flex justify-center mb-4">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
                     src="/images/printing/Symbol (9).png"
                     alt="icon"
                 
@@ -323,7 +323,7 @@ export default function Printing(){
               <div className="flex justify-between items-end mt-4">
                 <div>
                   <p className="text-gray-500 text-sm font-normal font-sans">Durability:</p>
-                  <p className="text-fuchsia-700 text-base font-bold font-sans">3-5 years</p>
+                  <p className="text-teal-700 text-base font-bold font-sans">3-5 years</p>
                 </div>
                 <div className="flex gap-2 text-green-600 text-xl font-black">
                   <span><img className="w-2 h-2"
@@ -346,7 +346,7 @@ export default function Printing(){
             <div className="w-full max-w-sm h-64 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] p-8 relative flex flex-col justify-between text-left">
               <div className="text-center">
                 <div className="flex justify-center mb-4">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
                     src="/images/printing/Symbol (10).png"
                     alt="icon"
                 
@@ -358,7 +358,7 @@ export default function Printing(){
               <div className="flex justify-between items-end mt-4">
                 <div>
                   <p className="text-gray-500 text-sm font-normal font-sans">Durability:</p>
-                  <p className="text-fuchsia-700 text-base font-bold font-sans">10+ years</p>
+                  <p className="text-teal-700 text-base font-bold font-sans">10+ years</p>
                 </div>
                 <div className="flex gap-2 text-green-600 text-xl font-black">
                  <span><img className="w-2 h-2"
@@ -381,7 +381,7 @@ export default function Printing(){
             <div className="w-full max-w-sm h-64 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] p-8 relative flex flex-col justify-between text-left">
               <div className="text-center">
               <div className="flex justify-center mb-4">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
                     src="/images/printing/Symbol (11).png"
                     alt="icon"
                 
@@ -391,7 +391,7 @@ export default function Printing(){
               <div className="flex justify-between items-end mt-4">
                 <div>
                   <p className="text-gray-500 text-sm font-normal font-sans">Durability:</p>
-                  <p className="text-fuchsia-700 text-base font-bold font-sans">7-10 years</p>
+                  <p className="text-teal-700 text-base font-bold font-sans">7-10 years</p>
                 </div>
                 <div className="flex gap-2 text-green-600 text-xl font-black">
                   <span><img className="w-2 h-2"
@@ -411,7 +411,7 @@ export default function Printing(){
             <div className="w-full max-w-sm h-64 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] p-8 relative flex flex-col justify-between text-left">
               <div className="text-center">
 <div className="flex justify-center mb-4">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
                     src="/images/printing/Symbol (12).png"
                     alt="icon"
                 
@@ -422,7 +422,7 @@ export default function Printing(){
               <div className="flex justify-between items-end mt-4">
                 <div>
                   <p className="text-gray-500 text-sm font-normal font-sans">Durability:</p>
-                  <p className="text-fuchsia-700 text-base font-bold font-sans">2-3 years</p>
+                  <p className="text-teal-700 text-base font-bold font-sans">2-3 years</p>
                 </div>
                 <div className="flex gap-2 text-green-600 text-xl font-black">
                   <span><img className="w-2 h-2"
@@ -442,7 +442,7 @@ export default function Printing(){
             <div className="w-full max-w-sm h-64 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] p-8 relative flex flex-col justify-between text-left">
               <div className="text-center">
                 <div className="flex justify-center mb-4">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
                     src="/images/printing/Symbol (13).png"
                     alt="icon"
                 
@@ -454,7 +454,7 @@ export default function Printing(){
               <div className="flex justify-between items-end mt-4">
                 <div>
                   <p className="text-gray-500 text-sm font-normal font-sans">Durability:</p>
-                  <p className="text-fuchsia-700 text-base font-bold font-sans">5-7 years</p>
+                  <p className="text-teal-700 text-base font-bold font-sans">5-7 years</p>
                 </div>
                 <div className="flex gap-2 text-green-600 text-xl font-black">
                   <span><img className="w-2 h-2"
@@ -474,7 +474,7 @@ export default function Printing(){
             <div className="w-full max-w-sm h-64 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] p-8 relative flex flex-col justify-between text-left">
               <div className="text-center">
 <div className="flex justify-center mb-4">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
                     src="/images/printing/Symbol (14).png"
                     alt="icon"
                 
@@ -485,7 +485,7 @@ export default function Printing(){
               <div className="flex justify-between items-end mt-4">
                 <div>
                   <p className="text-gray-500 text-sm font-normal font-sans">Durability:</p>
-                  <p className="text-fuchsia-700 text-base font-bold font-sans">Varies</p>
+                  <p className="text-teal-700 text-base font-bold font-sans">Varies</p>
                 </div>
                 <div className="flex gap-2 text-green-600 text-xl font-black">
                   <span><img className="w-2 h-2"
@@ -536,7 +536,7 @@ export default function Printing(){
 
         {/* Action Button Trigger */}
         <div className="w-full flex justify-center">
-          <button className="w-full max-w-[384px] h-14 bg-white hover:bg-fuchsia-50/50 text-fuchsia-700 rounded-lg outline outline-2 outline-offset-[-2px] outline-fuchsia-700 text-base font-bold font-sans tracking-wide shadow-sm transition-colors duration-200 cursor-pointer flex items-center justify-center">
+          <button className="w-96 h-14 bg-white hover:bg-teal-50/50 text-teal-700 rounded-lg outline outline-2 outline-offset-[-2px] outline-teal-700 text-base font-bold font-sans transition-colors flex items-center justify-center cursor-pointer">
             Download Color Assurance Guide (PDF)
           </button>
         </div>
@@ -587,7 +587,7 @@ export default function Printing(){
             
             {/* Stat 1 */}
             <div className="mb-5">
-              <div className="text-fuchsia-700 text-4xl sm:text-5xl font-bold font-sans leading-none tracking-tight mb-1.5">
+              <div className="text-teal-700 text-4xl font-bold font-sans leading-[64px] mb-1.5">
                 98%
               </div>
               <div className="text-gray-500 text-base font-normal font-sans tracking-wide">
@@ -597,7 +597,7 @@ export default function Printing(){
 
             {/* Stat 2 */}
             <div className="mt-2">
-              <div className="text-fuchsia-700 text-4xl sm:text-5xl font-bold font-sans leading-none tracking-tight mb-1.5">
+              <div className="text-teal-700 text-4xl font-bold font-sans leading-[64px] mb-1.5">
                 &lt;2%
               </div>
               <div className="text-gray-500 text-base font-normal font-sans tracking-wide">
@@ -626,8 +626,8 @@ export default function Printing(){
           onClick={() => setActiveTab(tab)} // <-- track active tab in state
           className={`h-11 px-6 rounded-3xl text-sm font-normal cursor-pointer transition-all
             ${activeTab === tab 
-              ? "bg-fuchsia-700 text-white border border-fuchsia-700 shadow-sm" 
-              : "bg-white border border-zinc-200 text-gray-500 hover:text-sky-900"}`}
+              ? "bg-teal-700 text-white outline outline-2 outline-offset-[-2px] outline-teal-700 shadow-sm" 
+              : "bg-white outline outline-2 outline-offset-[-2px] outline-zinc-200 text-gray-500 hover:text-sky-900"}`}
         >
           {tab}
         </button>
@@ -639,9 +639,9 @@ export default function Printing(){
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
         {/* Card 1 */}
         <div className="w-full max-w-sm h-80 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] overflow-hidden text-left flex flex-col justify-between">
-          <div className="w-full h-48 bg-gradient-to-br from-fuchsia-700 to-sky-900 flex items-center justify-center">
+          <div className="w-full h-48 bg-gradient-to-br from-indigo-950 via-teal-700 to-teal-400 flex items-center justify-center">
             <div className="text-white text-6xl font-black">
-              <img className="w-{4} h-{4}"
+              <img className="w-12 h-12"
             src="/images/printing/Symbol (25).png"
             alt="icon"
         />
@@ -659,9 +659,9 @@ export default function Printing(){
 
          {/* Card 2 */}
             <div className="w-full max-w-sm h-80 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] overflow-hidden text-left flex flex-col justify-between">
-              <div className="w-full h-48 bg-gradient-to-br from-fuchsia-700 to-sky-900 flex items-center justify-center">
+              <div className="w-full h-48 bg-gradient-to-br from-indigo-950 via-teal-700 to-teal-400 flex items-center justify-center">
                 <div className="text-white text-6xl font-black">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
             src="/images/printing/Symbol (26).png"
             alt="icon"
         />
@@ -679,9 +679,9 @@ export default function Printing(){
 
             {/* Card 3 */}
             <div className="w-full max-w-sm h-80 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] overflow-hidden text-left flex flex-col justify-between">
-              <div className="w-full h-48 bg-gradient-to-br from-fuchsia-700 to-sky-900 flex items-center justify-center">
+              <div className="w-full h-48 bg-gradient-to-br from-indigo-950 via-teal-700 to-teal-400 flex items-center justify-center">
                 <div className="text-white text-6xl font-black">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
             src="/images/printing/Symbol (27).png"
             alt="icon"
         />
@@ -699,9 +699,9 @@ export default function Printing(){
 
             {/* Card 4 */}
             <div className="w-full max-w-sm h-80 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] overflow-hidden text-left flex flex-col justify-between">
-              <div className="w-full h-48 bg-gradient-to-br from-fuchsia-700 to-sky-900 flex items-center justify-center">
+              <div className="w-full h-48 bg-gradient-to-br from-indigo-950 via-teal-700 to-teal-400 flex items-center justify-center">
                 <div className="text-white text-6xl font-black">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
             src="/images/printing/Symbol (28).png"
             alt="icon"
         />
@@ -719,9 +719,9 @@ export default function Printing(){
 
             {/* Card 5 */}
             <div className="w-full max-w-sm h-80 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] overflow-hidden text-left flex flex-col justify-between">
-              <div className="w-full h-48 bg-gradient-to-br from-fuchsia-700 to-sky-900 flex items-center justify-center">
+              <div className="w-full h-48 bg-gradient-to-br from-indigo-950 via-teal-700 to-teal-400 flex items-center justify-center">
                 <div className="text-white text-6xl font-black">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
             src="/images/printing/Symbol (29).png"
             alt="icon"
         />
@@ -739,9 +739,9 @@ export default function Printing(){
 
             {/* Card 6 */}
             <div className="w-full max-w-sm h-80 bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] overflow-hidden text-left flex flex-col justify-between">
-              <div className="w-full h-48 bg-gradient-to-br from-fuchsia-700 to-sky-900 flex items-center justify-center">
+              <div className="w-full h-48 bg-gradient-to-br from-indigo-950 via-teal-700 to-teal-400 flex items-center justify-center">
                 <div className="text-white text-6xl font-black">
-                  <img className="w-{4} h-{4}"
+                  <img className="w-12 h-12"
             src="/images/printing/Symbol (30).png"
             alt="icon"
         />
@@ -770,29 +770,29 @@ export default function Printing(){
       Nationwide Retail Rollout in 120 Locations in 6 Weeks
     </h2>
     {/* Metrics Row */}
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-{4}xl mx-auto mb-8">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1440px] mx-auto mb-8">
       <div className="flex flex-col items-center justify-center">
-        <span className="text-fuchsia-700 text-4xl sm:text-5xl font-bold font-sans leading-tight">99.2%</span>
+        <span className="text-teal-700 text-4xl font-bold font-sans leading-[64px]">99.2%</span>
         <span className="text-gray-500 text-base font-normal font-sans mt-1">On-time rate</span>
       </div>
       <div className="flex flex-col items-center justify-center">
-        <span className="text-fuchsia-700 text-4xl sm:text-5xl font-bold font-sans leading-tight">15%</span>
+        <span className="text-teal-700 text-4xl font-bold font-sans leading-[64px]">15%</span>
         <span className="text-gray-500 text-base font-normal font-sans mt-1">Cost efficiency</span>
       </div>
       <div className="flex flex-col items-center justify-center">
-        <span className="text-fuchsia-700 text-4xl sm:text-5xl font-bold font-sans leading-tight">0.8%</span>
+        <span className="text-teal-700 text-4xl font-bold font-sans leading-[64px]">0.8%</span>
         <span className="text-gray-500 text-base font-normal font-sans mt-1">Defect rate</span>
       </div>
     </div>
 
     {/* Description Block */}
-    <p className="max-w-5xl mx-auto text-gray-500 text-base sm:text-lg font-normal font-sans leading-7 sm:leading-8 mb-10">
+    <p className="max-w-[1175px] mx-auto text-gray-500 text-lg font-normal font-sans leading-7 mb-10">
       A major retail chain needed to rebrand 120 locations across the country within a tight 6-week window for their holiday campaign launch. Our team coordinated production across multiple facilities, managed logistics for synchronized delivery, and deployed certified installers nationwide. The project was completed ahead of schedule with exceptional quality standards, enabling the client to launch their campaign on time and achieve record holiday sales.
     </p>
 
     {/* CTA Link Action Button */}
     <div className="flex justify-center">
-      <button className="h-12 px-8 bg-fuchsia-700 hover:bg-fuchsia-800 text-white text-base font-bold rounded-lg shadow-md transition-all cursor-pointer">
+      <button className="w-64 h-12 bg-teal-700 hover:bg-teal-800 text-white text-base font-bold rounded-lg transition-all cursor-pointer">
         Read Full Case Study
       </button>
     </div>
@@ -809,45 +809,45 @@ export default function Printing(){
           <div className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-4 gap-6 justify-items-center mb-10">
             
             {/* Standard Print Jobs Card */}
-            <div className="w-full max-w-xs h-60 bg-white rounded-xl border-2 border-gray-200 p-6 flex flex-col justify-between text-center transition-all">
+            <div className="w-full max-w-xs h-60 bg-white rounded-xl outline outline-2 outline-offset-[-2px] outline-gray-200 p-6 flex flex-col justify-between text-center transition-all">
               <h3 className="text-sky-900 text-2xl font-bold font-sans leading-10 pt-2">
                 Standard Print<br />Jobs
               </h3>
               <div className="pb-4">
-                <p className="text-fuchsia-700 text-3xl font-bold font-sans mb-1">$5k–$20k</p>
+                <p className="text-teal-700 text-3xl font-bold font-sans leading-[51.20px] mb-1">$5k–$20k</p>
                 <p className="text-gray-500 text-base font-normal font-sans">per run</p>
               </div>
             </div>
 
             {/* Multi-Site Signage Rollouts Card */}
-            <div className="w-full max-w-xs h-60 bg-white rounded-xl border-2 border-fuchsia-700 shadow-[0px_10px_30px_0px_rgba(144,80,159,0.20)] p-6 flex flex-col justify-between text-center transition-all">
+            <div className="w-full max-w-xs h-60 bg-white rounded-xl outline outline-2 outline-offset-[-2px] outline-teal-700 shadow-[0px_10px_30px_0px_rgba(144,80,159,0.20)] p-6 flex flex-col justify-between text-center transition-all">
               <h3 className="text-sky-900 text-2xl font-bold font-sans leading-10 pt-2">
                 Multi-Site Signage<br />Rollouts
               </h3>
               <div className="pb-4">
-                <p className="text-fuchsia-700 text-3xl font-bold font-sans mb-1">$30k–$120k</p>
+                <p className="text-teal-700 text-3xl font-bold font-sans leading-[51.20px] mb-1">$30k–$120k</p>
                 <p className="text-gray-500 text-base font-normal font-sans">per wave</p>
               </div>
             </div>
 
             {/* Fleet Wraps Card */}
-            <div className="w-full max-w-xs h-60 bg-white rounded-xl border-2 border-gray-200 p-6 flex flex-col justify-between text-center transition-all">
+            <div className="w-full max-w-xs h-60 bg-white rounded-xl outline outline-2 outline-offset-[-2px] outline-gray-200 p-6 flex flex-col justify-between text-center transition-all">
               <h3 className="text-sky-900 text-2xl font-bold font-sans leading-10 pt-2">
                 Fleet Wraps
               </h3>
               <div className="pb-4">
-                <p className="text-fuchsia-700 text-3xl font-bold font-sans mb-1">$2k–$5k</p>
+                <p className="text-teal-700 text-3xl font-bold font-sans leading-[51.20px] mb-1">$2k–$5k</p>
                 <p className="text-gray-500 text-base font-normal font-sans">per vehicle</p>
               </div>
             </div>
 
             {/* Enterprise SLA Packages Card */}
-            <div className="w-full max-w-xs h-60 bg-white rounded-xl border-2 border-gray-200 p-6 flex flex-col justify-between text-center transition-all">
+            <div className="w-full max-w-xs h-60 bg-white rounded-xl outline outline-2 outline-offset-[-2px] outline-gray-200 p-6 flex flex-col justify-between text-center transition-all">
               <h3 className="text-sky-900 text-2xl font-bold font-sans leading-10 pt-2">
                 Enterprise SLA<br />Packages
               </h3>
               <div className="pb-4">
-                <p className="text-fuchsia-700 text-3xl font-bold font-sans mb-1">$10k+/mo</p>
+                <p className="text-teal-700 text-3xl font-bold font-sans leading-[51.20px] mb-1">$10k+/mo</p>
                 <p className="text-gray-500 text-sm font-normal font-sans px-2">managed service with SLAs</p>
               </div>
             </div>
@@ -861,7 +861,7 @@ export default function Printing(){
       </section>
 
           <section className="w-full bg-sky-50 py-16">
-        <div className="max-w-{4}xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-sky-900 text-2xl sm:text-3xl font-bold font-sans text-center mb-12">
             Frequently Asked Questions
           </h2>
@@ -873,19 +873,19 @@ export default function Printing(){
                 <div 
                   key={index} 
                   className={`w-full bg-white rounded-lg border transition-all duration-200 overflow-hidden ${
-                    isOpen ? 'border-fuchsia-700 shadow-sm' : 'border-gray-200 shadow-xs'
+                    isOpen ? 'border-teal-700 shadow-sm' : 'border-gray-200 shadow-xs'
                   }`}
                 >
                   <button 
                     onClick={() => toggleFaq(index)}
                     className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-slate-50/50 transition-colors focus:outline-hidden cursor-pointer group"
                   >
-                    <span className="text-sky-900 text-lg font-bold font-sans group-hover:text-fuchsia-900 transition-colors">
+                    <span className="text-sky-900 text-lg font-bold font-sans group-hover:text-teal-900 transition-colors">
                       {faq.question}
                     </span>
-                    {/* Fuchsia Arrow with smooth rotation state */}
+                    {/* Teal Arrow with smooth rotation state */}
                     <svg 
-                      className={`size-4 text-fuchsia-700 transform transition-transform duration-200 ml-4 shrink-0 ${
+                      className={`size-4 text-teal-700 transform transition-transform duration-200 ml-4 shrink-0 ${
                         isOpen ? 'rotate-180' : 'rotate-0'
                       }`} 
                       fill="none" 
@@ -900,7 +900,7 @@ export default function Printing(){
                   {/* Expandable Content Area */}
                   <div 
                     className={`transition-all duration-200 ease-in-out ${
-                      isOpen ? 'max-h-{4}0 border-t border-gray-100' : 'max-h-0'
+                      isOpen ? 'max-h-40 border-t border-gray-100' : 'max-h-0'
                     }`}
                   >
                     <div className="p-6 text-gray-600 text-base font-normal leading-relaxed">
@@ -1037,7 +1037,7 @@ export default function Printing(){
 
               <button
                 type="button"
-                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-fuchsia-700 to-sky-900 hover:from-fuchsia-800 hover:to-sky-950 text-white text-base font-semibold rounded-xl transition-all"
+                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 hover:from-indigo-900 hover:via-teal-800 hover:to-teal-500 text-white text-base font-semibold rounded-xl transition-all cursor-pointer"
               >
                 Start Your Project
               </button>

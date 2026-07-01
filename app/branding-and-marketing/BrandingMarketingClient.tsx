@@ -93,68 +93,68 @@ export default function BrandingMarketingClient() {
   const positioningCards = [
     {
       title: "Positioning & Narrative\nDevelopment",
-      icon: <Target className="w-10 h-10 text-sky-900" />
+      icon: <img src="/images/brand1/target.png" alt="Target" className="w-10 h-10 object-contain" />
     },
     {
       title: "Audience Research & Personas",
-      icon: <Users className="w-10 h-10 text-sky-900" />
+      icon: <img src="/images/brand1/users.png" alt="Users" className="w-10 h-10 object-contain" />
     },
     {
       title: "Competitive Mapping &\nDifferentiation",
-      icon: <Search className="w-10 h-10 text-sky-900" />
+      icon: <img src="/images/brand1/search.png" alt="Search" className="w-10 h-10 object-contain" />
     },
     {
       title: "Voice, Tone & Messaging Matrix",
-      icon: <DoubleMessageIcon className="w-10 h-10 text-sky-900" />
+      icon: <img src="/images/brand1/messages.png" alt="Messages" className="w-10 h-10 object-contain" />
     },
     {
       title: "Architecture (Masterbrand,\nEndorsed, House of Brands)",
-      icon: <SitemapIcon className="w-10 h-10 text-sky-900" />
+      icon: <img src="/images/brand1/sitemap.png" alt="Sitemap" className="w-10 h-10 object-contain" />
     }
   ];
 
   const identityCards = [
     {
       title: "Logos, Typography, Color\nSystems",
-      icon: <Palette className="w-10 h-10 text-sky-900" />
+      icon: <img src="/images/brand1/typography.png" alt="Logos & Typography" className="w-10 h-10 object-contain" />
     },
     {
       title: "Accessibility-first palettes\n(contrast ≥ 4.5:1)",
-      icon: <Eye className="w-10 h-10 text-sky-900" />
+      icon: <img src="/images/brand1/accessibility.png" alt="Accessibility" className="w-10 h-10 object-contain" />
     },
     {
       title: "Motion & Interaction Guidelines",
-      icon: <Zap className="w-10 h-10 text-sky-900" />
+      icon: <img src="/images/brand1/motion.png" alt="Motion" className="w-10 h-10 object-contain" />
     }
   ];
 
   const campaignCards = [
     {
       title: "Editorial Calendars",
-      iconPath: "/images/brand/calendar.png"
+      icon: <img src="/images/brand1/calendar.png" alt="Calendar" className="w-10 h-10 object-contain" />
     },
     {
       title: "Creative Production (photo,\nvideo, 3D)",
-      iconPath: "/images/brand/camera.png"
+      icon: <img src="/images/brand1/camera.png" alt="Camera" className="w-10 h-10 object-contain" />
     },
     {
       title: "Social Media & Paid Creative",
-      iconPath: "/images/brand/share.png"
+      icon: <img src="/images/brand1/share.png" alt="Share" className="w-10 h-10 object-contain" />
     }
   ];
 
   const performanceCards = [
     {
       title: "Channel Mix Strategy (Search, Social, Display, Affiliate)",
-      icon: <TrendingUp className="w-8 h-8 text-fuchsia-700" />
+      icon: <img src="/images/brand1/bar-chart.png" alt="Chart" className="w-10 h-10 object-contain" />
     },
     {
       title: "KPI Framework (CAC, CPA, ROAS, LTV)",
-      icon: <BarChart2 className="w-8 h-8 text-fuchsia-700" />
+      icon: null
     },
     {
       title: "Experimentation & CRO",
-      icon: <FlaskConical className="w-8 h-8 text-fuchsia-700" />
+      icon: <img src="/images/brand1/flask.png" alt="Flask" className="w-10 h-10 object-contain" />
     }
   ];
 
@@ -165,7 +165,7 @@ export default function BrandingMarketingClient() {
       metric: "+45% Recognition",
       category: "B2C",
       outcome: "Growth",
-      iconPath: "/images/brand/cart.svg"
+      icon: <img src="/images/brand1/portfolio-cart.svg" alt="Cart" className="w-14 h-12 object-contain" />
     },
     {
       title: "Healthcare Identity",
@@ -173,7 +173,7 @@ export default function BrandingMarketingClient() {
       metric: "+35% Trust Score",
       category: "B2B",
       outcome: "Trust",
-      iconPath: "/images/brand/pulse.svg"
+      icon: <img src="/images/brand1/portfolio-health.svg" alt="Heart" className="w-14 h-12 object-contain" />
     },
     {
       title: "EdTech Campaign",
@@ -181,7 +181,7 @@ export default function BrandingMarketingClient() {
       metric: "-60% CAC",
       category: "B2C",
       outcome: "CAC Reduction",
-      iconPath: "/images/brand/cap.svg"
+      icon: <img src="/images/brand1/portfolio-edtech.svg" alt="Education" className="w-16 h-12 object-contain" />
     }
   ];
 
@@ -245,7 +245,7 @@ export default function BrandingMarketingClient() {
     <div className="flex flex-col min-h-screen bg-white text-slate-800 animate-fade-in">
       
       {/* Hero Section */}
-      <section className="w-full py-16 md:py-24 bg-gradient-to-r from-fuchsia-700 to-sky-900 text-white flex justify-center px-5 relative overflow-hidden">
+      <section className="w-full py-16 md:py-24 bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 text-white flex justify-center px-5 relative overflow-hidden">
         
         {/* Glow Effects */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(255,255,255,0.08),transparent_50%)] pointer-events-none" />
@@ -265,13 +265,13 @@ export default function BrandingMarketingClient() {
             <div className="flex flex-wrap items-center gap-4 mt-2">
               <a
                 href="#contact"
-                className="px-6 py-4 bg-white text-fuchsia-700 rounded-xl text-base font-bold shadow-md hover:bg-neutral-50 transition-all duration-200"
+                className="px-6 py-4 bg-white text-teal-700 rounded-xl text-base font-bold shadow-md outline outline-1 outline-offset-[-1px] outline-white hover:bg-neutral-50 transition-all duration-200"
               >
                 Book a Brand Strategy Session
               </a>
               <a
                 href="#portfolio"
-                className="px-6 py-4 border border-white text-white rounded-xl text-base font-bold hover:bg-white/10 transition-all duration-200"
+                className="px-6 py-4 border-2 border-white outline outline-2 outline-offset-[-2px] outline-white text-white rounded-xl text-base font-bold hover:bg-white/10 transition-all duration-200"
               >
                 View Portfolio
               </a>
@@ -310,16 +310,16 @@ export default function BrandingMarketingClient() {
             {/* Grid of 4 floating cards with design/performance icons */}
             <div className="grid grid-cols-2 gap-4 w-full max-w-[280px] xs:max-w-[320px] shrink-0">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-xl flex items-center justify-center aspect-[5/4] group hover:bg-white/15 transition-all">
-                <Palette className="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-200" />
+                <img src="/images/brand1/palette.png" alt="Design" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-200" />
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-xl flex items-center justify-center aspect-[5/4] group hover:bg-white/15 transition-all">
-                <Smartphone className="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-200" />
+                <img src="/images/brand1/mobile.png" alt="Mobile" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-200" />
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-xl flex items-center justify-center aspect-[5/4] group hover:bg-white/15 transition-all">
-                <TrendingUp className="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-200" />
+                <img src="/images/brand1/chart.png" alt="Performance" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-200" />
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-xl flex items-center justify-center aspect-[5/4] group hover:bg-white/15 transition-all">
-                <Megaphone className="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-200" />
+                <img src="/images/brand1/megaphone.png" alt="Marketing" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-200" />
               </div>
             </div>
 
@@ -328,11 +328,11 @@ export default function BrandingMarketingClient() {
       </section>
 
       {/* Stats Banner Section */}
-      <section className="w-full bg-purple-50/50 py-10 flex justify-center px-5 border-b border-purple-100">
+      <section className="w-full bg-purple-50 py-10 flex justify-center px-5">
         <div className="max-w-[1180px] w-full grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, i) => (
             <div key={i} className="flex flex-col items-center justify-center text-center">
-              <div className="text-fuchsia-700 text-4xl md:text-5xl font-black mb-2">
+              <div className="text-teal-700 text-4xl md:text-5xl font-bold mb-2">
                 {stat.value}
               </div>
               <div className="text-gray-500 text-base font-semibold">
@@ -404,7 +404,7 @@ export default function BrandingMarketingClient() {
       </section>
 
       {/* Category 3: Content & Campaigns */}
-      <section className="w-full py-16 flex justify-center px-5 bg-fuchsia-50/50 border-b border-fuchsia-100">
+      <section className="w-full py-16 flex justify-center px-5 bg-fuchsia-50">
         <div className="max-w-[1180px] w-full flex flex-col items-center">
           <h2 className="text-sky-900 text-2xl sm:text-3xl font-bold text-center mb-10">
             Content & Campaigns
@@ -416,9 +416,11 @@ export default function BrandingMarketingClient() {
                 key={i}
                 className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[384px] h-[176px] bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-4 hover:shadow-lg transition-all duration-200 select-none"
               >
-                <div className="w-10 h-10 flex items-center justify-center mb-3">
-                  <img src={card.iconPath} alt={card.title} className="h-10 object-contain" />
-                </div>
+                {card.icon && (
+                  <div className="w-10 h-10 flex items-center justify-center mb-3">
+                    {card.icon}
+                  </div>
+                )}
                 <h3 className="text-sky-900 text-xl font-medium font-sans text-center leading-7 whitespace-pre-line">
                   {card.title}
                 </h3>
@@ -439,16 +441,18 @@ export default function BrandingMarketingClient() {
             Performance Marketing
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+          <div className="flex flex-wrap justify-center gap-6 w-full max-w-[1200px]">
             {performanceCards.map((card, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-6 shadow-sm border border-gray-250 flex flex-col items-center text-center justify-center gap-4 hover:shadow-md transition-shadow duration-200 min-h-[160px]"
+                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[384px] h-[176px] bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center p-4 hover:shadow-lg transition-all duration-200 select-none"
               >
-                <div className="w-12 h-12 flex items-center justify-center">
-                  {card.icon}
-                </div>
-                <h3 className="text-sky-900 text-lg font-bold leading-snug">
+                {card.icon && (
+                  <div className="w-10 h-10 flex items-center justify-center mb-3">
+                    {card.icon}
+                  </div>
+                )}
+                <h3 className="text-sky-900 text-xl font-medium font-sans text-center leading-7 whitespace-pre-line">
                   {card.title}
                 </h3>
               </div>
@@ -464,7 +468,7 @@ export default function BrandingMarketingClient() {
       {/* Portfolio Showcase */}
       <section id="portfolio" className="w-full py-16 flex justify-center px-5 bg-sky-50 border-b border-sky-100">
         <div className="max-w-[1180px] w-full flex flex-col items-center">
-          <h2 className="text-sky-900 text-3xl font-bold text-center mb-8">
+          <h2 className="text-sky-900 text-2xl font-semibold text-center mb-8">
             Portfolio Showcase
           </h2>
 
@@ -474,10 +478,10 @@ export default function BrandingMarketingClient() {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-6 py-2.5 rounded-full text-sm transition-all select-none border-2 ${
+                className={`px-6 py-2.5 rounded-3xl text-sm transition-all select-none outline outline-2 outline-offset-[-2px] ${
                   activeFilter === filter
-                    ? "bg-sky-900 text-white border-sky-900 font-semibold"
-                    : "bg-white text-gray-500 border-zinc-200 hover:bg-gray-50 font-normal"
+                    ? "bg-sky-900 text-white outline-sky-900 font-normal"
+                    : "bg-white text-gray-500 outline-zinc-200 hover:bg-gray-50 font-normal"
                 }`}
               >
                 {filter}
@@ -494,7 +498,7 @@ export default function BrandingMarketingClient() {
               >
                 <div className="flex flex-col items-center text-center mt-2">
                   <div className="w-16 h-12 flex items-center justify-center mb-4">
-                    <img src={item.iconPath} alt={item.title} className="h-12 object-contain" />
+                    {item.icon}
                   </div>
                   <h3 className="text-sky-900 text-2xl font-bold font-sans mb-3 leading-7">
                     {item.title}
@@ -522,9 +526,9 @@ export default function BrandingMarketingClient() {
       </section>
 
       {/* Pricing Anchors Section */}
-      <section className="w-full py-16 flex justify-center px-5 bg-fuchsia-50/50 border-b border-fuchsia-100">
+      <section className="w-full py-16 flex justify-center px-5 bg-fuchsia-50">
         <div className="max-w-[1180px] w-full flex flex-col items-center">
-          <h2 className="text-sky-900 text-3xl font-bold text-center mb-10">
+          <h2 className="text-sky-900 text-2xl font-semibold text-center mb-10">
             Pricing Anchors
           </h2>
 
@@ -532,15 +536,15 @@ export default function BrandingMarketingClient() {
             {pricingAnchors.map((anchor, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm flex flex-col items-center text-center justify-center min-h-[220px] hover:shadow-md transition-shadow"
+                className="bg-white rounded-xl p-6 outline outline-2 outline-offset-[-2px] outline-gray-200 flex flex-col items-center text-center justify-center min-h-[240px]"
               >
-                <h3 className="text-sky-900 text-xl font-bold mb-3">
+                <h3 className="text-sky-900 text-2xl font-bold mb-3 font-sans">
                   {anchor.title}
                 </h3>
-                <div className="text-fuchsia-700 text-3xl font-bold mb-2">
+                <div className="text-teal-700 text-3xl font-bold mb-2">
                   {anchor.price}
                 </div>
-                <div className="text-gray-500 text-sm">
+                <div className="text-gray-500 text-base font-normal">
                   {anchor.duration}
                 </div>
               </div>
@@ -555,11 +559,11 @@ export default function BrandingMarketingClient() {
 
       {/* Sarah Chen Quote Section */}
       <section className="w-full py-16 bg-white border-b border-gray-150 flex justify-center px-5">
-        <div className="max-w-[800px] w-full text-center flex flex-col items-center gap-6">
-          <blockquote className="text-zinc-700 text-xl sm:text-2xl font-normal leading-relaxed italic">
+        <div className="max-w-[820px] w-full text-center flex flex-col items-center gap-6">
+          <blockquote className="text-neutral-700 text-xl sm:text-2xl font-normal leading-8">
             "Zoiko transformed our brand from generic to genuinely distinctive. ROI was clear within 90 days."
           </blockquote>
-          <cite className="text-gray-500 text-base font-medium not-italic">
+          <cite className="text-gray-500 text-base font-medium">
             — Sarah Chen, CMO at TechFlow
           </cite>
         </div>
@@ -569,7 +573,7 @@ export default function BrandingMarketingClient() {
       <section className="w-full py-16 md:py-24 bg-white flex justify-center px-5">
         <div className="max-w-[780px] w-full flex flex-col items-center">
           
-          <h2 className="text-sky-900 text-3xl font-bold text-center mb-12">
+          <h2 className="text-sky-900 text-2xl font-semibold text-center mb-12">
             Frequently Asked Questions
           </h2>
 
@@ -585,10 +589,10 @@ export default function BrandingMarketingClient() {
                     onClick={() => toggleFAQ(i)}
                     className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
                   >
-                    <span className="text-zinc-900 text-base font-bold leading-relaxed pr-4">
+                    <span className="text-sky-900 text-lg font-bold leading-relaxed pr-4">
                       {faq.question}
                     </span>
-                    <span className="text-indigo-600 text-xl font-normal shrink-0">
+                    <span className="text-teal-700 text-xl font-normal shrink-0">
                       {isOpen ? (
                         <ChevronUp className="w-5 h-5" />
                       ) : (
@@ -618,10 +622,10 @@ export default function BrandingMarketingClient() {
           {/* Left info column */}
           <div className="lg:col-span-5 flex flex-col gap-8">
             <div>
-              <h2 className="text-zinc-800 text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-zinc-800 text-2xl font-bold mb-4 font-sans leading-9">
                 Ready to Transform<br/>Your Business?
               </h2>
-              <p className="text-neutral-600 text-base sm:text-lg leading-relaxed">
+              <p className="text-neutral-600 text-lg font-normal leading-7">
                 Connect with our global team of experts to discuss your digital transformation journey and discover how we can accelerate your success.
               </p>
             </div>
@@ -630,8 +634,8 @@ export default function BrandingMarketingClient() {
               
               {/* Email */}
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 bg-sky-900 rounded-xl flex items-center justify-center shrink-0 border border-zinc-800">
-                  <Mail className="w-5 h-5 text-white" />
+                <div className="w-14 h-14 bg-teal-700 rounded-xl flex items-center justify-center shrink-0 outline outline-1 outline-offset-[-1px] outline-zinc-800">
+                  <img src="/images/brand1/contact-email.png" alt="Email" className="w-6 h-6 object-contain" />
                 </div>
                 <div>
                   <h4 className="text-zinc-800 font-semibold text-lg">Email Us</h4>
@@ -642,8 +646,8 @@ export default function BrandingMarketingClient() {
 
               {/* Call */}
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 bg-sky-900 rounded-xl flex items-center justify-center shrink-0 border border-zinc-800">
-                  <Phone className="w-5 h-5 text-white" />
+                <div className="w-14 h-14 bg-teal-700 rounded-xl flex items-center justify-center shrink-0 outline outline-1 outline-offset-[-1px] outline-zinc-800">
+                  <img src="/images/brand1/contact-phone.png" alt="Phone" className="w-6 h-6 object-contain" />
                 </div>
                 <div>
                   <h4 className="text-zinc-800 font-semibold text-lg">Call Us</h4>
@@ -654,8 +658,8 @@ export default function BrandingMarketingClient() {
 
               {/* Live Chat */}
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 bg-sky-900 rounded-xl flex items-center justify-center shrink-0 border border-zinc-800">
-                  <MessageCircle className="w-5 h-5 text-white" />
+                <div className="w-14 h-14 bg-teal-700 rounded-xl flex items-center justify-center shrink-0 outline outline-1 outline-offset-[-1px] outline-zinc-800">
+                  <img src="/images/brand1/contact-chat.png" alt="Chat" className="w-6 h-6 object-contain" />
                 </div>
                 <div>
                   <h4 className="text-zinc-800 font-semibold text-lg">Live Chat</h4>
@@ -795,7 +799,7 @@ export default function BrandingMarketingClient() {
                 {/* Submit button */}
                 <button
                   type="submit"
-                  className="w-full py-4 text-center justify-center text-white text-base font-semibold bg-gradient-to-r from-fuchsia-700 to-sky-900 rounded-xl hover:opacity-95 shadow-md transition-all mt-4"
+                  className="w-full py-4 text-center justify-center text-white text-base font-semibold bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 rounded-xl hover:opacity-95 shadow-md transition-all mt-4"
                 >
                   Start Your Project
                 </button>

@@ -28,22 +28,22 @@ export default function WebAppDevelopmentPage() {
 
   return (
     <div>
-    <section className="relative w-full bg-gradient-to-r from-fuchsia-700 to-sky-900 text-white overflow-hidden py-16 lg:py-24">
+    <section className="relative w-full bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 text-white overflow-hidden py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10">
           
           {/* Left Side: Content & CTA Buttons */}
           <div className="w-full lg:flex-1 space-y-6 text-left">
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-8 lg:leading-[50px] max-w-2xl font-sans">
-              Build World-Class Web & Mobile Apps Secure, Scalable, Fast
+            <h1 className="text-2xl sm:text-4xl lg:text-4xl font-semibold leading-[50px] font-sans">
+              Build World-Class Web &<br/>Mobile Apps Secure,<br/>Scalable, Fast
             </h1>
-            <p className="text-white/90 text-base lg:text-lg font-normal leading-6 lg:leading-7 max-w-xl font-sans">
-              We engineer mission-critical digital products with Tier-1 reliability and measurable outcomes.
+            <p className="text-white text-lg font-normal leading-7 max-w-xl font-sans">
+              We engineer mission-critical digital products with Tier-1<br/>reliability and measurable outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-start pt-2">
-              <button className="w-full sm:w-auto bg-white hover:bg-slate-100 text-fuchsia-700 font-bold text-sm px-6 py-3.5 rounded-lg transition-all text-center border border-white cursor-pointer shadow-sm">
+              <button className="w-72 h-14 bg-white hover:bg-slate-50 text-teal-700 font-bold text-base rounded-lg outline outline-1 outline-offset-[-1px] outline-white transition-colors flex items-center justify-center">
                 Schedule an Architecture Review
               </button>
-              <button className="w-full sm:w-auto border-2 border-white hover:bg-white/10 text-white font-bold text-sm px-6 py-3.5 rounded-lg transition-all text-center cursor-pointer">
+              <button className="w-56 h-14 hover:bg-white/10 text-white font-bold text-base rounded-lg outline outline-2 outline-offset-[-2px] outline-white transition-colors flex items-center justify-center">
                 Get a Cloud Cost Audit
               </button>
             </div>
@@ -141,94 +141,93 @@ export default function WebAppDevelopmentPage() {
         </div>
       </section>
 
-      <section className="bg-fuchsia-50 border-b border-slate-200 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 mb-8 opacity-60 text-slate-500 text-3xl font-normal">
-            <span><img className="w-6 h-6"
+      <section className="w-full bg-fuchsia-50 border-b border-gray-200 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16 mb-12 opacity-60">
+            <span><img className="w-7 h-8 object-contain"
                 src="/images/web-app-development/Symbol.png"
                 alt="icon"
             /></span>
-             <span><img className="w-6 h-6"
+             <span><img className="size-8 object-contain"
                 src="/images/web-app-development/Symbol (1).png"
                 alt="icon"
             /></span>
-             <span><img className="w-6 h-6"
+             <span><img className="w-7 h-8 object-contain"
                 src="/images/web-app-development/Symbol (2).png"
                 alt="icon"
             /></span>
-             <span><img className="w-6 h-6"
+             <span><img className="w-6 h-8 object-contain"
                 src="/images/web-app-development/Symbol (3).png"
                 alt="icon"
             /></span>
-             <span><img className="w-6 h-6"
+             <span><img className="size-8 object-contain"
                 src="/images/web-app-development/Symbol (4).png"
                 alt="icon"
             /></span>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center border-t border-slate-200/60 pt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-16 md:gap-24 text-center">
             <div>
-              <div className="text-3xl font-bold text-fuchsia-700">-42%</div>
-              <div className="text-sm font-normal text-slate-500 uppercase tracking-wider mt-1">load time</div>
+              <div className="text-teal-700 text-2xl font-bold leading-10">-42%</div>
+              <div className="text-gray-500 text-sm font-normal uppercase leading-6 mt-1">load time</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-fuchsia-700">+31%</div>
-              <div className="text-sm font-normal text-slate-500 uppercase tracking-wider mt-1">conversion</div>
+              <div className="text-teal-700 text-2xl font-bold leading-10">+31%</div>
+              <div className="text-gray-500 text-sm font-normal uppercase leading-6 mt-1">conversion</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-fuchsia-700">74</div>
-              <div className="text-sm font-normal text-slate-500 uppercase tracking-wider mt-1">NPS Score</div>
+              <div className="text-teal-700 text-2xl font-bold leading-10">74</div>
+              <div className="text-gray-500 text-sm font-normal uppercase leading-6 mt-1">NPS</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* --- CAPABILITIES SECTION --- */}
-      <section className="bg-fuchsia-50/50 py-16 lg:py-20">
+      <section className="w-full bg-fuchsia-50 py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-sky-900 text-2xl lg:text-3xl font-bold mb-12">Capabilities</h2>
+          <h2 className="text-center text-sky-900 text-2xl font-bold leading-[64px] mb-12">Capabilities</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
             {/* Strategy Card */}
-            <div className="bg-white p-8 rounded-xl shadow-xs border border-slate-100 flex flex-col items-center text-center">
-              <img className="text-fuchsia-700 text-4xl mb-4"
+            <div className="bg-white p-8 rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center text-center">
+              <img className="w-9 h-12 object-contain mb-8"
                     src="/images/web-app-development/Symbol (5).png"
                     alt="icon"
               />
-              <h3 className="text-sky-900 text-xl font-bold mb-2">Product Strategy & UX</h3>
-              <p className="text-slate-500 text-base font-normal leading-relaxed">
-                Discovery, IA, prototypes, design systems engineered for conversion.
+              <h3 className="text-sky-900 text-2xl font-medium leading-10 mb-2">Product Strategy & UX</h3>
+              <p className="text-gray-500 text-base font-normal leading-6">
+                Discovery, IA, prototypes, design<br/>systems
               </p>
             </div>
 
             {/* Engineering Card */}
-            <div className="bg-white p-8 rounded-xl shadow-xs border border-slate-100 flex flex-col items-center text-center">
-                            <img className="text-fuchsia-700 text-4xl mb-4"
+            <div className="bg-white p-8 rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center text-center">
+              <img className="w-16 h-12 object-contain mb-8"
                     src="/images/web-app-development/Symbol (6).png"
                     alt="icon"
               />
-              <h3 className="text-sky-900 text-xl font-bold mb-2">Engineering</h3>
-              <p className="text-slate-500 text-base font-normal leading-relaxed">
-                Web apps, native iOS/Android development, headless architecture platforms, APIs, custom payments integrations.
+              <h3 className="text-sky-900 text-2xl font-medium leading-10 mb-2">Engineering</h3>
+              <p className="text-gray-500 text-base font-normal leading-6">
+                Web apps, iOS/Android, APIs, headless<br/>CMS, payments
               </p>
             </div>
 
             {/* Quality Card */}
-            <div className="bg-white p-8 rounded-xl shadow-xs border border-slate-100 flex flex-col items-center text-center">
-                            <img className="text-fuchsia-700 text-4xl mb-4"
+            <div className="bg-white p-8 rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center text-center">
+              <img className="size-12 object-contain mb-8"
                     src="/images/web-app-development/Symbol (7).png"
                     alt="icon"
               />
-              <h3 className="text-sky-900 text-xl font-bold mb-2">Quality & Lifecycle</h3>
-              <p className="text-slate-500 text-base font-normal leading-relaxed">
-                Continuous delivery orchestration, automated regression testing architectures, unified service observability, strict uptime SLAs.
+              <h3 className="text-sky-900 text-2xl font-medium leading-10 mb-2">Quality & Lifecycle</h3>
+              <p className="text-gray-500 text-base font-normal leading-6">
+                CI/CD, testing, observability, SLAs
               </p>
             </div>
           </div>
 
           <div className="text-center">
-            <p className="text-slate-500 text-base font-normal">
-              <span className="font-bold text-slate-700">Deliverable Artifacts:</span> Prototype &middot; Architecture Diagram &middot; Functional QA Plan
-            </p>
+            <span className="text-gray-500 text-base font-bold leading-6">Artifacts: </span>
+            <span className="text-gray-500 text-base font-normal leading-6">Prototype · Architecture Diagram · QA Plan</span>
           </div>
         </div>
       </section>
@@ -236,31 +235,31 @@ export default function WebAppDevelopmentPage() {
       {/* --- CASE STUDY LEAD --- */}
       <section className="bg-white py-16 lg:py-20 border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6">
-          <h2 className="text-sky-900 text-2xl lg:text-3xl font-bold">
+          <h2 className="text-sky-900 text-2xl font-bold leading-[64px]">
             From Legacy to Lightning-Fast: 31% Conversion Uplift
           </h2>
           
-          <div className="grid grid-cols-3 gap-4 max-w-md mx-auto pt-2">
-            <div>
-              <div className="text-fuchsia-700 text-xl font-bold">31%</div>
-              <div className="text-slate-500 text-xs mt-1">Conversion Increase</div>
+          <div className="flex justify-center gap-16 md:gap-32 pt-2">
+            <div className="flex flex-col items-center">
+              <div className="text-teal-700 text-xl font-bold leading-8">31%</div>
+              <div className="text-teal-700 text-sm font-normal leading-6">Conversion increase</div>
             </div>
-            <div>
-              <div className="text-fuchsia-700 text-xl font-bold">2.1s</div>
-              <div className="text-slate-500 text-xs mt-1">Load speed savings</div>
+            <div className="flex flex-col items-center">
+              <div className="text-teal-700 text-xl font-bold leading-8">2.1s</div>
+              <div className="text-teal-700 text-sm font-normal leading-6">Load speed</div>
             </div>
-            <div>
-              <div className="text-fuchsia-700 text-xl font-bold">85</div>
-              <div className="text-slate-500 text-xs mt-1">NPS Score</div>
+            <div className="flex flex-col items-center">
+              <div className="text-teal-700 text-xl font-bold leading-8">85</div>
+              <div className="text-teal-700 text-sm font-normal leading-6">NPS Score</div>
             </div>
           </div>
 
-          <p className="text-slate-500 text-base md:text-lg font-normal leading-relaxed pt-4">
-            A leading e-commerce platform was struggling with a legacy system that couldn't scale during peak traffic. Our team rebuilt their entire platform using modern architecture, implementing microservices, CDN optimization, and progressive web app features. The result: dramatically improved performance, user experience, and business metrics that exceeded all expectations.
+          <p className="text-gray-500 text-lg font-normal leading-7 pt-8">
+            A leading e-commerce platform was struggling with a legacy system that couldn't scale during peak<br/>traffic. Our team rebuilt their entire platform using modern architecture, implementing microservices,<br/>CDN optimization, and progressive web app features. The result: dramatically improved<br/>performance, user experience, and business metrics that exceeded all expectations.
           </p>
 
-          <div className="pt-4">
-            <button className="bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-bold text-base px-8 py-3.5 rounded-lg transition-all inline-block shadow-md">
+          <div className="pt-10 flex justify-center">
+            <button className="w-56 h-12 bg-teal-700 text-white font-bold text-base rounded-lg transition-colors inline-flex items-center justify-center">
               Read Full Case Study
             </button>
           </div>
@@ -268,31 +267,31 @@ export default function WebAppDevelopmentPage() {
       </section>
 
       {/* --- EXPERT PROCESS WORKFLOW --- */}
-      <section className="bg-sky-50/60 py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-32">
-          <h2 className="text-center text-sky-900 text-2xl lg:text-3xl font-bold mb-16">Our Process</h2>
+      <section className="w-full bg-sky-50 py-16 lg:py-20">
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-6">
+          <h2 className="text-center text-sky-900 text-2xl font-bold leading-[64px] mb-12">Our Process</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
-              { num: 1, title: 'Discovery', desc: 'Requirements mapping workshops, operational stakeholder interviews, and comprehensive technical legacy code assessment architectures.', badge: 'User stories, Specs' },
-              { num: 2, title: 'Research', desc: 'User persona research data extraction strategies, intensive cross-market competitive matrix engineering validation modules.', badge: 'Research reports, Personas' },
-              { num: 3, title: 'Design', desc: 'High-fidelity wireframing workflow protocols, click-through prototyping environments, cohesive scalable atomic design system generation.', badge: 'Prototypes, Design systems' },
-              { num: 4, title: 'Build', desc: 'Sprinted agile cloud software delivery cycles, test-driven implementations, secure peer review automation pipelines.', badge: 'MVP builds, Beta releases' },
-              { num: 5, title: 'QA & Security', desc: 'End-to-end continuous regression cycles, advanced static/dynamic application test frameworks, optimization vectors.', badge: 'Test logs, Security matrix' },
-              { num: 6, title: 'Launch & SRE', desc: 'Zero-downtime production cutovers, real-time microservice log telemetry aggregation monitors, proactive DevOps operational support frameworks.', badge: 'Live environment, SLA execution' },
+              { num: 1, title: 'Discovery', desc: 'Requirements gathering, stakeholder interviews, technical assessment', badge: 'User stories, Technical specs' },
+              { num: 2, title: 'Research', desc: 'User research, competitive analysis, market validation', badge: 'Research report, Personas' },
+              { num: 3, title: 'Design', desc: 'Wireframing, prototyping, design system creation', badge: 'Prototypes, Design system' },
+              { num: 4, title: 'Build', desc: 'Agile development, code reviews, continuous integration', badge: 'MVP, Beta release' },
+              { num: 5, title: 'QA & Security', desc: 'Automated testing, security audits, performance optimization', badge: 'Test results, Security report' },
+              { num: 6, title: 'Launch & SRE', desc: 'Deployment, monitoring, ongoing support and maintenance', badge: 'Live product, SLA agreement' },
             ].map((step) => (
-              <div key={step.num} className="bg-white p-6 rounded-xl shadow-xs border border-slate-100 flex flex-col justify-between">
+              <div key={step.num} className="bg-white p-8 rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col justify-between h-52 relative">
                 <div>
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-10 h-10 rounded-full bg-sky-900 text-white flex items-center justify-center font-bold text-lg">
+                  <div className="flex items-center gap-6 mb-4">
+                    <div className="w-10 h-10 rounded-[20px] bg-sky-900 text-white flex items-center justify-center font-bold text-xl leading-8">
                       {step.num}
                     </div>
-                    <h3 className="text-sky-900 text-xl font-bold">{step.title}</h3>
+                    <h3 className="text-sky-900 text-xl font-bold leading-8">{step.title}</h3>
                   </div>
-                  <p className="text-slate-500 text-sm leading-relaxed mb-6">{step.desc}</p>
+                  <p className="text-gray-500 text-base font-normal leading-6 pl-16">{step.desc}</p>
                 </div>
-                <div className="inline-block self-start bg-fuchsia-100 text-sky-900 text-xs font-semibold px-3 py-1.5 rounded-full">
-                  {step.badge}
+                <div className="absolute bottom-6 left-24 inline-flex items-center h-10 bg-fuchsia-700/10 px-4 rounded-[20px]">
+                  <span className="text-sky-900 text-sm font-medium leading-6">{step.badge}</span>
                 </div>
               </div>
             ))}
@@ -301,20 +300,20 @@ export default function WebAppDevelopmentPage() {
       </section>
 
       {/* --- TECH TAB MODULE --- */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="w-full bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-sky-900 text-2xl lg:text-3xl font-bold mb-8">Tech Stack</h2>
+          <h2 className="text-center text-sky-900 text-2xl font-bold leading-[64px] mb-8">Tech Stack</h2>
           
           {/* Tab Headers wrapper */}
-          <div className="flex flex-wrap justify-center gap-2 mb-12 border-b border-slate-100 pb-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-12 border-b border-transparent pb-4">
             {Object.keys(techStacks).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTechTab(tab)}
-                className={`px-5 py-2 rounded-full text-sm font-medium transition-all cursor-pointer ${
+                className={`h-11 px-6 rounded-3xl outline outline-2 outline-offset-[-2px] text-sm font-normal font-['Arial'] transition-all cursor-pointer flex items-center justify-center ${
                   activeTechTab === tab 
-                    ? 'bg-fuchsia-700 text-white shadow-xs' 
-                    : 'bg-slate-50 text-slate-500 hover:bg-slate-100'
+                    ? 'bg-teal-700 text-white outline-teal-700' 
+                    : 'bg-white text-gray-500 outline-zinc-200 hover:bg-slate-50'
                 }`}
               >
                 {tab}
@@ -323,11 +322,11 @@ export default function WebAppDevelopmentPage() {
           </div>
 
           {/* Tab dynamic panel grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto justify-items-center">
             {techStacks[activeTechTab as keyof typeof techStacks].map((tech, idx) => (
-              <div key={idx} className="bg-white border border-slate-100 p-6 rounded-xl shadow-xs text-center space-y-3 hover:border-fuchsia-300 transition-colors">
-                <div className="text-fuchsia-700 text-2xl"></div>
-                <div className="text-sky-900 font-bold text-base">{tech}</div>
+              <div key={idx} className="w-44 h-36 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] flex flex-col items-center justify-center text-center">
+                <div className="text-teal-700 text-3xl font-normal mb-4"></div>
+                <div className="text-sky-900 font-bold text-base leading-6">{tech}</div>
               </div>
             ))}
           </div>
@@ -335,39 +334,39 @@ export default function WebAppDevelopmentPage() {
       </section>
 
       {/* --- COMPLIANCE / DATA ASSURANCE --- */}
-      <section className="bg-fuchsia-50 py-16 lg:py-20">
+      <section className="w-full bg-fuchsia-50 py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-sky-900 text-2xl font-bold mb-12">Security, Privacy & Compliance</h2>
+          <h2 className="text-center text-sky-900 text-2xl font-bold leading-[64px] mb-12">Security, Privacy & Compliance</h2>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 justify-items-center">
             {[
-              { icon: <img className="w-8 h-8 block mx-auto"
+              { icon: <img className="w-9 h-10 block mx-auto object-contain"
                 src="/images/web-app-development/Symbol (8).png"
                 alt="icon"
-            />, title: 'Encryption', text: 'End-to-end encrypted tunnels, absolute TLS 1.3 architecture maps, full hardware AES state rest keys.' },
-              { icon: <img className="w-8 h-8 block mx-auto"
+            />, title: 'Encryption', text: 'End-to-end encryption, TLS\n1.3, encrypted data storage' },
+              { icon: <img className="size-10 block mx-auto object-contain"
                 src="/images/web-app-development/Symbol (9).png"
                 alt="icon"
-            />, title: 'SAST/DAST', text: 'Continuous automated integration security testing schedules paired natively alongside comprehensive runtime leak diagnostics.' },
-              { icon: <img className="w-8 h-8 block mx-auto"
+            />, title: 'SAST/DAST', text: 'Automated security testing,\nvulnerability scanning' },
+              { icon: <img className="w-8 h-10 block mx-auto object-contain"
                 src="/images/web-app-development/Symbol (10).png"
                 alt="icon"
-            />, title: 'DPAs', text: 'Compliant production data management processing pacts operating fully within standard cross-regional privacy modules.' },
-              { icon: <img className="w-8 h-8 block mx-auto"
+            />, title: 'DPAs', text: 'Data Processing Agreements,\nGDPR compliance' },
+              { icon: <img className="size-10 block mx-auto object-contain"
                 src="/images/web-app-development/Symbol (11).png"
                 alt="icon"
-            />, title: 'Data Residency', text: 'Localized architecture hosting clusters deployed inside US, EU, UK, and APAC regions instantly.' }
+            />, title: 'Data Residency', text: 'US/EU/UK/India hosting\noptions available' }
             ].map((item, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl shadow-xs border border-slate-100 text-center">
-                <div className="text-3xl mb-3 text-fuchsia-700">{item.icon}</div>
-                <h3 className="text-sky-900 font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{item.text}</p>
+              <div key={i} className="w-72 h-56 bg-white rounded-xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.10)] text-center flex flex-col items-center justify-center p-6">
+                <div className="text-teal-700 mb-6">{item.icon}</div>
+                <h3 className="text-sky-900 font-bold text-xl leading-8 mb-4">{item.title}</h3>
+                <p className="text-gray-500 text-base font-normal leading-6 whitespace-pre-line">{item.text}</p>
               </div>
             ))}
           </div>
 
-          <div className="text-center">
-            <button className="border-2 border-fuchsia-700 text-fuchsia-700 hover:bg-fuchsia-50 font-bold text-sm px-6 py-3 rounded-lg transition-all">
+          <div className="text-center flex justify-center">
+            <button className="h-14 rounded-lg outline outline-2 outline-offset-[-2px] outline-teal-700 text-teal-700 font-bold text-base px-8 transition-colors hover:bg-teal-50">
               Download Security Overview (PDF)
             </button>
           </div>
@@ -375,38 +374,37 @@ export default function WebAppDevelopmentPage() {
       </section>
 
       {/* --- ACCESSIBILITY AND WEB PERFORMANCE --- */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="w-full bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-sky-900 text-2xl lg:text-3xl font-bold">Accessibility & Performance</h2>
-            <div className="space-y-3">
-                <div className="text-sky-900 font-bold text-sm sm:text-base">WCAG 2.2 AA engineering compliant
-              </div>
-                <div className="text-sky-900 font-bold text-sm sm:text-base"> Lighthouse  90+ scores
-              </div>
-              <div className="text-sky-900 font-bold text-sm sm:text-base"> Techniques:
+            <h2 className="text-sky-900 text-4xl font-bold leading-[64px]">Accessibility & Performance</h2>
+            <div className="space-y-4">
+              <div className="text-sky-900 text-base font-bold leading-6">WCAG 2.2 AA compliant</div>
+              <div className="text-sky-900 text-base font-bold leading-6">Lighthouse 90+ scores</div>
+              <div className="pt-4">
+                <span className="text-sky-900 text-base font-bold leading-6 mr-2">Techniques:</span>
+                <span className="text-gray-500 text-base font-normal leading-6">
+                  WebP optimization, lazy loading, deferred JavaScript
+                </span>
               </div>
             </div>
-            <p className="text-slate-500 text-sm leading-relaxed">
-              WebP optimization, lazy loading, deferred JavaScript
-            </p>
           </div>
 
           {/* Performance Targets */}
-          <div className="bg-slate-50 p-8 rounded-xl border border-slate-100">
-            <h3 className="text-sky-900 text-lg font-bold mb-6 text-center">Standard Continuous Performance Budgets</h3>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="bg-white p-4 rounded-lg text-center border border-slate-200">
-                <div className="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">LCP</div>
-                <div className="text-fuchsia-700 font-bold text-base sm:text-lg">≤ 2.5s</div>
+          <div className="flex flex-col items-center lg:items-start lg:pl-16">
+            <h3 className="text-sky-900 text-2xl font-bold leading-10 mb-8 text-center w-full">Performance Budgets</h3>
+            <div className="grid grid-cols-3 gap-6">
+              <div className="w-44 h-28 bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-zinc-300 flex flex-col items-center justify-center p-4">
+                <div className="text-gray-500 text-base font-normal leading-6 mb-2">LCP</div>
+                <div className="text-teal-700 text-xl font-bold leading-8">≤ 2.5s</div>
               </div>
-              <div className="bg-white p-4 rounded-lg text-center border border-slate-200">
-                <div className="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">CLS</div>
-                <div className="text-fuchsia-700 font-bold text-base sm:text-lg">≤ 0.1</div>
+              <div className="w-44 h-28 bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-zinc-300 flex flex-col items-center justify-center p-4">
+                <div className="text-gray-500 text-base font-normal leading-6 mb-2">CLS</div>
+                <div className="text-teal-700 text-xl font-bold leading-8">≤ 0.1</div>
               </div>
-              <div className="bg-white p-4 rounded-lg text-center border border-slate-200">
-                <div className="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">INP</div>
-                <div className="text-fuchsia-700 font-bold text-base sm:text-lg">≤ 200ms</div>
+              <div className="w-44 h-28 bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-zinc-300 flex flex-col items-center justify-center p-4">
+                <div className="text-gray-500 text-base font-normal leading-6 mb-2">INP</div>
+                <div className="text-teal-700 text-xl font-bold leading-8">≤ 200ms</div>
               </div>
             </div>
           </div>
@@ -414,11 +412,11 @@ export default function WebAppDevelopmentPage() {
       </section>
 
       {/* --- PRICING TIERS --- */}
-      <section className="bg-fuchsia-50 py-16 lg:py-20">
+      <section className="w-full bg-fuchsia-50 py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-sky-900 text-2xl font-bold mb-12">Pricing Anchors</h2>
+          <h2 className="text-center text-sky-900 text-2xl font-bold leading-[64px] mb-12">Pricing Anchors</h2>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
             {[
               { title: 'Foundation', price: '$30k–$60k', time: '6–10 weeks', highlight: false },
               { title: 'Growth Build', price: '$60k–$180k', time: '10–20 weeks', highlight: true },
@@ -427,19 +425,17 @@ export default function WebAppDevelopmentPage() {
             ].map((tier, i) => (
               <div 
                 key={i} 
-                className={`bg-white p-6 rounded-xl text-center flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1 ${
+                className={`w-72 h-52 bg-white rounded-xl outline outline-2 outline-offset-[-2px] flex flex-col items-center justify-center text-center p-6 ${
                   tier.highlight 
-                    ? 'ring-2 ring-fuchsia-700 shadow-xl shadow-fuchsia-900/10 scale-102 z-10' 
-                    : 'border border-slate-200'
+                    ? 'shadow-[0px_10px_30px_0px_rgba(144,80,159,0.20)] outline-teal-700' 
+                    : 'outline-gray-200'
                 }`}
               >
-                <div>
-                  <h3 className="text-sky-900 font-bold text-xl mb-4">{tier.title}</h3>
-                  <div className="text-fuchsia-700 text-2xl sm:text-3xl font-bold tracking-tight mb-2">
-                    {tier.price}
-                  </div>
+                <h3 className="text-sky-900 text-2xl font-bold leading-10 mb-2">{tier.title}</h3>
+                <div className="text-teal-700 text-3xl font-bold leading-[51.20px] mb-4">
+                  {tier.price}
                 </div>
-                <div className="text-slate-500 text-sm font-normal pt-4 border-t border-slate-100 mt-4">
+                <div className="text-gray-500 text-base font-normal leading-6">
                   {tier.time}
                 </div>
               </div>
@@ -449,39 +445,37 @@ export default function WebAppDevelopmentPage() {
       </section>
 
       {/* --- TESTIMONIAL --- */}
-      <section className="bg-white py-16 text-center border-b border-slate-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-neutral-700 text-xl lg:text-2xl font-normal italic leading-relaxed">
-            "Zoiko delivered exactly what they promised. Our new platform handles
-10x the traffic with better performance."
-          </p>
-          <div className="text-slate-500 font-medium text-base mt-3">
-            — David Chen, CTO at ScaleUp Inc
-          </div>
+      {/* --- TESTIMONIAL SECTION --- */}
+      <section className="w-full bg-white h-60 flex flex-col items-center justify-center text-center px-4 sm:px-6">
+        <p className="text-neutral-700 text-2xl font-normal leading-8 mb-4 max-w-[810px]">
+          "Zoiko delivered exactly what they promised. Our new platform handles<br/>10x the traffic with better performance."
+        </p>
+        <div className="text-gray-500 text-base font-medium leading-6 mt-4">
+          — David Chen, CTO at ScaleUp Inc
         </div>
       </section>
 
       {/* --- ACCORDION FAQ SECTION --- */}
-      <section className="bg-white py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="text-center text-sky-900 text-2xl lg:text-3xl font-bold mb-12">Frequently Asked Questions</h2>
+      <section className="w-full bg-white py-16 lg:py-20">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6">
+          <h2 className="text-center text-sky-900 text-2xl font-bold leading-[64px] mb-12">Frequently Asked Questions</h2>
           
-          <div className="space-y-4">
+          <div className="space-y-5">
             {faqs.map((faq, idx) => {
               const isOpen = activeFaq === idx;
               return (
-                <div key={idx} className="border border-slate-200 rounded-lg overflow-hidden">
+                <div key={idx} className="bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-stone-300 overflow-hidden">
                   <button
                     onClick={() => setActiveFaq(isOpen ? null : idx)}
-                    className="w-full flex items-center justify-between p-5 bg-white text-left text-sky-900 font-bold text-base sm:text-lg transition-colors hover:bg-slate-50 cursor-pointer"
+                    className="w-full h-16 flex items-center justify-between px-6 bg-white text-left transition-colors hover:bg-slate-50 cursor-pointer"
                   >
-                    <span>{faq.q}</span>
-                    <span className={`text-fuchsia-700 font-bold transform transition-transform ${isOpen ? 'rotate-180' : ''}`}>
+                    <span className="text-sky-900 text-lg font-bold font-['Arial']">{faq.q}</span>
+                    <span className={`text-teal-700 text-lg font-black transform transition-transform ${isOpen ? 'rotate-180' : ''}`}>
                       ▼
                     </span>
                   </button>
-                  {isOpen && (
-                    <div className="p-5 bg-slate-50/50 border-t border-slate-100 text-slate-500 text-sm sm:text-base leading-relaxed">
+                  {isOpen && faq.a && (
+                    <div className="px-6 py-4 bg-slate-50 border-t border-stone-200 text-slate-500 text-base leading-relaxed">
                       {faq.a}
                     </div>
                   )}

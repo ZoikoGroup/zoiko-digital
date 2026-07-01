@@ -5,7 +5,7 @@ export default function ZoikoGovServices() {
     <div className="w-full min-h-screen bg-white dark:bg-slate-950 text-sky-900 dark:text-slate-100  selection:bg-sky-900/10 transition-colors duration-300">
       
       {/* SECTION 1: HERO BANNER */}
-      <section className="relative bg-gradient-to-r from-fuchsia-700 to-sky-900 dark:from-fuchsia-900 dark:to-slate-900 text-white overflow-hidden py-16 md:py-20 lg:py-24">
+      <section className="relative bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 dark:from-indigo-950 dark:via-teal-900 dark:to-slate-900 text-white overflow-hidden py-16 md:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
             <h1 className="text-4xl md:text-5xl font-semibold leading-[1.15]">
@@ -36,7 +36,7 @@ export default function ZoikoGovServices() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 flex flex-col justify-between min-h-[240px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none flex flex-col justify-between min-h-[240px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold leading-snug mb-4">
                 Legacy IT Infrastructure
               </h3>
@@ -46,7 +46,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 flex flex-col justify-between min-h-[240px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none flex flex-col justify-between min-h-[240px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold leading-snug mb-4">
                 Cybersecurity & Data Privacy
               </h3>
@@ -56,7 +56,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 flex flex-col justify-between min-h-[240px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none flex flex-col justify-between min-h-[240px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold leading-snug mb-4">
                 Regulatory Complexity
               </h3>
@@ -66,7 +66,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 flex flex-col justify-between min-h-[240px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none flex flex-col justify-between min-h-[240px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold leading-snug mb-4">
                 Procurement & Inter-Agency Complexity
               </h3>
@@ -76,7 +76,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Card 5 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 flex flex-col justify-between min-h-[240px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none flex flex-col justify-between min-h-[240px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold leading-snug mb-4">
                 Budget Pressures & Public Accountability
               </h3>
@@ -86,7 +86,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Card 6 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 flex flex-col justify-between min-h-[240px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none flex flex-col justify-between min-h-[240px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold leading-snug mb-4">
                 Talent & Skills Gaps
               </h3>
@@ -107,7 +107,7 @@ export default function ZoikoGovServices() {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Capability 1 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[192px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[192px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold mb-4">
                 Cloud Modernization
               </h3>
@@ -117,7 +117,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Capability 2 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[192px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[192px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold mb-4">
                 AI-Powered Citizen Services
               </h3>
@@ -127,7 +127,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Capability 3 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[240px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[240px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold mb-4">
                 Cybersecurity & Sovereign Cloud (ZoikoShield)
               </h3>
@@ -137,7 +137,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Capability 4 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[240px]">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[240px]">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold mb-4">
                 Regulatory & Compliance Platforms (ZoikoAssure)
               </h3>
@@ -158,7 +158,7 @@ export default function ZoikoGovServices() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Platform 1 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[240px] flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[240px] flex flex-col justify-between">
               <div>
                 <h3 className="text-fuchsia-700 dark:text-fuchsia-400 text-3xl font-bold mb-2">
                   ZoikoAssure
@@ -173,7 +173,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Platform 2 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[240px] flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[240px] flex flex-col justify-between">
               <div>
                 <h3 className="text-fuchsia-700 dark:text-fuchsia-400 text-3xl font-bold mb-2">
                   ZoikoShield
@@ -188,7 +188,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Platform 3 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[240px] flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[240px] flex flex-col justify-between">
               <div>
                 <h3 className="text-fuchsia-700 dark:text-fuchsia-400 text-3xl font-bold mb-2">
                   ZoikoAxis
@@ -214,7 +214,7 @@ export default function ZoikoGovServices() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Case 1 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[256px] flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[256px] flex flex-col justify-between">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold leading-snug mb-4">
                 E-Government<br />Transformation
               </h3>
@@ -224,7 +224,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Case 2 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[256px] flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[256px] flex flex-col justify-between">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold leading-snug mb-4">
                 Cybersecurity Upgrade
               </h3>
@@ -234,7 +234,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Case 3 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[256px] flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[256px] flex flex-col justify-between">
               <h3 className="text-sky-900 dark:text-slate-200 text-2xl font-bold leading-snug mb-4">
                 Smart City Deployment
               </h3>
@@ -247,7 +247,7 @@ export default function ZoikoGovServices() {
       </section>
 
       {/* SECTION 6: WHY GOVERNMENTS TRUST ZOIKO */}
-      <section className="bg-gradient-to-r from-fuchsia-700 to-sky-900 dark:from-fuchsia-950 dark:to-slate-900 text-white py-16 md:py-20">
+      <section className="bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 dark:from-indigo-950 dark:to-slate-900 text-white py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2 className="text-center text-white text-3xl font-bold leading-[52px] mb-12">
             Why Governments Trust Zoiko
@@ -255,7 +255,7 @@ export default function ZoikoGovServices() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {/* Trust Card 1 */}
-            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl shadow-lg ring-1 ring-white/20 backdrop-blur-[5px] min-h-[192px]">
+            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl outline outline-1 outline-offset-[-1px] outline-white/20 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] backdrop-blur-[5px] min-h-[192px]">
               <h3 className="text-white text-2xl font-bold mb-4">
                 Compliance-First DNA
               </h3>
@@ -265,7 +265,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Trust Card 2 */}
-            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl shadow-lg ring-1 ring-white/20 backdrop-blur-[5px] min-h-[192px]">
+            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl outline outline-1 outline-offset-[-1px] outline-white/20 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] backdrop-blur-[5px] min-h-[192px]">
               <h3 className="text-white text-2xl font-bold mb-4">
                 Vendor-Neutral Partner
               </h3>
@@ -275,7 +275,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Trust Card 3 */}
-            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl shadow-lg ring-1 ring-white/20 backdrop-blur-[5px] min-h-[192px]">
+            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl outline outline-1 outline-offset-[-1px] outline-white/20 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] backdrop-blur-[5px] min-h-[192px]">
               <h3 className="text-white text-2xl font-bold mb-4">
                 Proven Deployments
               </h3>
@@ -287,7 +287,7 @@ export default function ZoikoGovServices() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Trust Card 4 */}
-            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl shadow-lg ring-1 ring-white/20 backdrop-blur-[5px] min-h-[240px]">
+            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl outline outline-1 outline-offset-[-1px] outline-white/20 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] backdrop-blur-[5px] min-h-[240px]">
               <h3 className="text-white text-2xl font-bold mb-4">
                 Telecom + Public Sector Dual DNA
               </h3>
@@ -297,7 +297,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Trust Card 5 */}
-            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl shadow-lg ring-1 ring-white/20 backdrop-blur-[5px] min-h-[240px]">
+            <div className="bg-white/10 dark:bg-slate-900/40 p-8 rounded-xl outline outline-1 outline-offset-[-1px] outline-white/20 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] backdrop-blur-[5px] min-h-[240px]">
               <h3 className="text-white text-2xl font-bold mb-4">
                 Social Impact & ESG Commitment
               </h3>
@@ -318,7 +318,7 @@ export default function ZoikoGovServices() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Article 1 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[192px] flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[192px] flex flex-col justify-between">
               <h3 className="text-sky-900 dark:text-sky-400 text-2xl font-bold mb-4">
                 Whitepaper
               </h3>
@@ -328,7 +328,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Article 2 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[192px] flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[192px] flex flex-col justify-between">
               <h3 className="text-sky-900 dark:text-sky-400 text-2xl font-bold mb-4">
                 Webinar
               </h3>
@@ -338,7 +338,7 @@ export default function ZoikoGovServices() {
             </div>
 
             {/* Article 3 */}
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.06)] dark:shadow-none ring-1 ring-slate-100 dark:ring-slate-800 min-h-[192px] flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] dark:shadow-none min-h-[192px] flex flex-col justify-between">
               <h3 className="text-sky-900 dark:text-sky-400 text-2xl font-bold mb-4">
                 Report
               </h3>
@@ -365,7 +365,7 @@ export default function ZoikoGovServices() {
             <div className="flex flex-col gap-8">
               {/* Email */}
               <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
                   <img src="/images/about/SVG.svg" alt="Email Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
@@ -377,7 +377,7 @@ export default function ZoikoGovServices() {
 
               {/* Call */}
               <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
                   <img src="/images/about/SVG-1.svg" alt="Phone Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
@@ -389,7 +389,7 @@ export default function ZoikoGovServices() {
 
               {/* Chat */}
               <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
                   <img src="/images/about/SVG-2.svg" alt="Chat Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
@@ -409,7 +409,7 @@ export default function ZoikoGovServices() {
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Full Name</label>
                 <input
                   type="text"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all"
                   placeholder=""
                 />
               </div>
@@ -418,7 +418,7 @@ export default function ZoikoGovServices() {
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Business Email</label>
                 <input
                   type="email"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all"
                   placeholder=""
                 />
               </div>
@@ -427,7 +427,7 @@ export default function ZoikoGovServices() {
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Company</label>
                 <input
                   type="text"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all"
                   placeholder=""
                 />
               </div>
@@ -435,7 +435,7 @@ export default function ZoikoGovServices() {
               <div className="flex flex-col gap-[6px]">
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Service Interest</label>
                 <div className="relative">
-                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
+                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all">
                     <option value="" disabled className="text-neutral-400">Select a service</option>
                     <option value="cloud">Cloud Solutions</option>
                     <option value="web">Web Development</option>
@@ -451,7 +451,7 @@ export default function ZoikoGovServices() {
               <div className="flex flex-col gap-[6px]">
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Budget</label>
                 <div className="relative">
-                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
+                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all">
                     <option value="" disabled className="text-neutral-400">Select budget range</option>
                     <option value="small">Under $10,000</option>
                     <option value="medium">$10,000 - $50,000</option>
@@ -466,14 +466,14 @@ export default function ZoikoGovServices() {
               <div className="flex flex-col gap-[6px]">
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Details</label>
                 <textarea
-                  className="w-full h-28 p-4 bg-neutral-100 rounded-lg border border-stone-300 resize-none focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all text-zinc-800 placeholder-neutral-400"
+                  className="w-full h-28 p-4 bg-neutral-100 rounded-lg border border-stone-300 resize-none focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all text-zinc-800 placeholder-neutral-400"
                   placeholder="Tell us about your project requirements, timeline, and objectives..."
                 ></textarea>
               </div>
 
               <button
                 type="button"
-                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-fuchsia-700 to-sky-900 hover:from-fuchsia-800 hover:to-sky-950 text-white text-base font-semibold    rounded-xl transition-all"
+                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 hover:from-indigo-900 hover:via-teal-800 hover:to-teal-500 text-white text-base font-semibold    rounded-xl transition-all cursor-pointer"
               >
                 Start Your Project
               </button>

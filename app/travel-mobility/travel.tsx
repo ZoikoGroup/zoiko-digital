@@ -147,7 +147,7 @@ export default function TravelMobilitySolutionsHub() {
       {/* =========================================================
           SECTION 1: HERO CONTAINER
           ========================================================= */}
-      <section className="w-full bg-gradient-to-br from-fuchsia-700 to-sky-900 text-white py-16 px-6 sm:px-12 lg:px-[108px] overflow-hidden">
+      <section className="w-full bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 text-white py-16 px-6 sm:px-12 lg:px-[108px] overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 flex flex-col justify-center">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight mb-6">
@@ -178,7 +178,7 @@ export default function TravelMobilitySolutionsHub() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {challenges.map((item, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 border border-slate-100 dark:border-gray-800 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.04)] flex flex-col min-h-[240px]">
+              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col min-h-[240px]">
                 <h3 className="text-sky-900 dark:text-white text-xl font-bold mb-3 leading-tight">
                   {item.title}
                 </h3>
@@ -204,7 +204,7 @@ export default function TravelMobilitySolutionsHub() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {capabilities.map((item, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-8 border border-slate-100 dark:border-gray-700 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.04)] flex flex-col justify-center min-h-[160px]">
+              <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col justify-center min-h-[160px]">
                 <h3 className="text-sky-900 dark:text-white text-xl font-bold mb-2.5">
                   {item.title}
                 </h3>
@@ -230,9 +230,9 @@ export default function TravelMobilitySolutionsHub() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {platforms.map((plat, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 border border-slate-100 dark:border-gray-800 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.04)] flex flex-col justify-between min-h-[240px]">
+              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col justify-between min-h-[240px]">
                 <div>
-                  <h3 className="text-fuchsia-700 dark:text-fuchsia-400 text-2xl lg:text-3xl font-bold mb-1">
+                  <h3 className="text-teal-700 dark:text-teal-400 text-2xl lg:text-3xl font-bold mb-1">
                     {plat.name}
                   </h3>
                   <span className="text-sky-900 dark:text-gray-400 text-sm sm:text-base font-bold tracking-tight block mb-4">
@@ -261,7 +261,7 @@ export default function TravelMobilitySolutionsHub() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {caseStudies.map((cs, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-8 border border-slate-100 dark:border-gray-700 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.04)] flex flex-col min-h-[240px]">
+              <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col min-h-[240px]">
                 <h3 className="text-sky-900 dark:text-white text-xl font-bold mb-3 leading-tight">
                   {cs.title}
                 </h3>
@@ -277,7 +277,7 @@ export default function TravelMobilitySolutionsHub() {
       {/* =========================================================
           SECTION 6: WHY MOBILITY LEADERS TRUST ZOIKO (3+2 Layout Matrix)
           ========================================================= */}
-      <section className="w-full bg-gradient-to-br from-fuchsia-700 to-sky-900 text-white py-16 px-4 sm:px-8 lg:px-[108px]">
+      <section className="w-full bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 text-white py-16 px-4 sm:px-8 lg:px-[108px]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
@@ -286,13 +286,13 @@ export default function TravelMobilitySolutionsHub() {
           </div>
 
           {/* Top Matrix Layer: 3 Columns row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-6">
+          <div className="flex flex-wrap justify-center gap-8 w-full mx-auto mb-8">
             {trustFactors.slice(0, 3).map((factor, idx) => (
-              <div key={idx} className="bg-white/10 rounded-xl p-8 border border-white/20 shadow-md backdrop-blur-[5px] flex flex-col min-h-[200px] justify-center">
-                <h3 className="text-white text-xl font-bold mb-2">
+              <div key={idx} className="w-full md:w-96 bg-white/10 rounded-xl p-8 outline outline-1 outline-offset-[-1px] outline-white/20 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] backdrop-blur-[5px] flex flex-col min-h-[224px]">
+                <h3 className="text-white text-2xl font-bold mb-4 leading-10">
                   {factor.title}
                 </h3>
-                <p className="text-white/90 text-sm lg:text-base font-normal leading-relaxed">
+                <p className="text-white text-lg font-normal leading-7">
                   {factor.description}
                 </p>
               </div>
@@ -300,13 +300,13 @@ export default function TravelMobilitySolutionsHub() {
           </div>
 
           {/* Bottom Matrix Layer: Center Balanced 2 Columns row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-8 w-full mx-auto">
             {trustFactors.slice(3, 5).map((factor, idx) => (
-              <div key={idx} className="bg-white/10 rounded-xl p-8 border border-white/20 shadow-md backdrop-blur-[5px] flex flex-col min-h-[200px] justify-center">
-                <h3 className="text-white text-xl font-bold mb-2">
+              <div key={idx} className="w-full md:w-96 bg-white/10 rounded-xl p-8 outline outline-1 outline-offset-[-1px] outline-white/20 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] backdrop-blur-[5px] flex flex-col min-h-[240px]">
+                <h3 className="text-white text-2xl font-bold mb-4 leading-10">
                   {factor.title}
                 </h3>
-                <p className="text-white/90 text-sm lg:text-base font-normal leading-relaxed">
+                <p className="text-white text-lg font-normal leading-7">
                   {factor.description}
                 </p>
               </div>
@@ -328,11 +328,11 @@ export default function TravelMobilitySolutionsHub() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {insights.map((insight, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 border border-slate-100 dark:border-gray-800 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.04)] flex flex-col min-h-[160px] group hover:shadow-md transition-shadow">
-                <span className="text-fuchsia-700 dark:text-fuchsia-400 text-xs font-bold uppercase tracking-wider mb-2 block">
+              <div key={idx} className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-[0px_4px_20px_0px_rgba(17,71,105,0.10)] flex flex-col min-h-[160px] group hover:shadow-md transition-shadow">
+                <span className="text-teal-700 dark:text-teal-400 text-xs font-bold uppercase tracking-wider mb-2 block">
                   {insight.type}
                 </span>
-                <h3 className="text-sky-900 dark:text-white text-xl font-bold leading-tight group-hover:text-fuchsia-700 dark:group-hover:text-fuchsia-400 transition-colors">
+                <h3 className="text-sky-900 dark:text-white text-xl font-bold leading-tight group-hover:text-teal-700 dark:group-hover:text-teal-400 transition-colors">
                   {insight.title}
                 </h3>
               </div>
@@ -356,7 +356,7 @@ export default function TravelMobilitySolutionsHub() {
             <div className="flex flex-col gap-8">
               {/* Email */}
               <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
                   <img src="/images/about/SVG.svg" alt="Email Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
@@ -368,7 +368,7 @@ export default function TravelMobilitySolutionsHub() {
 
               {/* Call */}
               <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
                   <img src="/images/about/SVG-1.svg" alt="Phone Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
@@ -380,7 +380,7 @@ export default function TravelMobilitySolutionsHub() {
 
               {/* Chat */}
               <div className="flex items-start gap-6">
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-sky-900 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-teal-700 rounded-xl border border-zinc-800 flex items-center justify-center shrink-0">
                   <img src="/images/about/SVG-2.svg" alt="Chat Icon" className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex flex-col mt-1 lg:gap-1">
@@ -400,7 +400,7 @@ export default function TravelMobilitySolutionsHub() {
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Full Name</label>
                 <input
                   type="text"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all"
                   placeholder=""
                 />
               </div>
@@ -409,7 +409,7 @@ export default function TravelMobilitySolutionsHub() {
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Business Email</label>
                 <input
                   type="email"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all"
                   placeholder=""
                 />
               </div>
@@ -418,7 +418,7 @@ export default function TravelMobilitySolutionsHub() {
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Company</label>
                 <input
                   type="text"
-                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all"
+                  className="w-full h-12 px-4 bg-neutral-100 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all"
                   placeholder=""
                 />
               </div>
@@ -426,7 +426,7 @@ export default function TravelMobilitySolutionsHub() {
               <div className="flex flex-col gap-[6px]">
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Service Interest</label>
                 <div className="relative">
-                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
+                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all">
                     <option value="" disabled className="text-neutral-400">Select a service</option>
                     <option value="cloud">Cloud Solutions</option>
                     <option value="web">Web Development</option>
@@ -442,7 +442,7 @@ export default function TravelMobilitySolutionsHub() {
               <div className="flex flex-col gap-[6px]">
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Budget</label>
                 <div className="relative">
-                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all">
+                  <select defaultValue="" className="w-full h-14 px-4 bg-neutral-100 rounded-lg border border-stone-300 appearance-none text-zinc-800 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all">
                     <option value="" disabled className="text-neutral-400">Select budget range</option>
                     <option value="small">Under $10,000</option>
                     <option value="medium">$10,000 - $50,000</option>
@@ -457,14 +457,14 @@ export default function TravelMobilitySolutionsHub() {
               <div className="flex flex-col gap-[6px]">
                 <label className="text-zinc-800 text-sm font-semibold    leading-6">Project Details</label>
                 <textarea
-                  className="w-full h-28 p-4 bg-neutral-100 rounded-lg border border-stone-300 resize-none focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent transition-all text-zinc-800 placeholder-neutral-400"
+                  className="w-full h-28 p-4 bg-neutral-100 rounded-lg border border-stone-300 resize-none focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all text-zinc-800 placeholder-neutral-400"
                   placeholder="Tell us about your project requirements, timeline, and objectives..."
                 ></textarea>
               </div>
 
               <button
                 type="button"
-                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-fuchsia-700 to-sky-900 hover:from-fuchsia-800 hover:to-sky-950 text-white text-base font-semibold    rounded-xl transition-all"
+                className="mt-4 w-56 h-14 self-start bg-gradient-to-r from-indigo-950 via-teal-700 to-teal-400 hover:from-indigo-900 hover:via-teal-800 hover:to-teal-500 text-white text-base font-semibold    rounded-xl transition-all cursor-pointer"
               >
                 Start Your Project
               </button>
