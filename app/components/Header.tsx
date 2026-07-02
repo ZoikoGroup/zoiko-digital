@@ -103,7 +103,7 @@ export default function Header() {
               {/* Close (X) button with matching background color */}
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-1.5 rounded bg-[#90509F] text-white hover:bg-[#7b4388] transition-colors"
+                className="p-1.5 rounded bg-[#207373] text-white hover:bg-[#207373] transition-colors"
                 aria-label="Close Menu"
               >
                 <svg
@@ -175,7 +175,7 @@ export default function Header() {
               <Link
                 href="/#contact"
                 onClick={() => setIsOpen(false)}
-                className="mt-4 w-full text-center py-3 bg-[#90509F] text-white rounded-xl text-sm font-semibold shadow-md active:bg-[#7b4388]"
+                className="mt-4 w-full text-center py-3 bg-[#207373] text-white rounded-xl text-sm font-semibold shadow-md active:bg-[#7b4388]"
               >
                 Request a Demo
               </Link>
