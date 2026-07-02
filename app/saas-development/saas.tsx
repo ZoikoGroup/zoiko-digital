@@ -52,9 +52,9 @@ const faqData = [
 ];
 
 export default function Home() {
-     const [openId, setOpenId] = useState(null);
+     const [openId, setOpenId] = useState<number | null>(null);
 
-const toggleAccordion = (id) => {
+const toggleAccordion = (id: number) => {
   setOpenId(openId === id ? null : id);
 };
 

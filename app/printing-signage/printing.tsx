@@ -5,9 +5,9 @@ import React, { useState } from "react";
 
 export default function Printing(){
    const [activeTab, setActiveTab] = useState("All");
-   const [openIndex, setOpenIndex] = useState(null);
+   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFaq = (index) => {
+  const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
